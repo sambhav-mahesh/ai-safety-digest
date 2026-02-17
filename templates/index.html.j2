@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Safety Weekly Digest — {{ week_start }} to {{ week_end }}</title>
+  <meta name="description" content="A curated weekly digest of {{ total_count }} AI safety research papers from leading organizations and researchers. {{ week_start }} through {{ week_end }}.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    {{ css | safe }}
+  </style>
+</head>
+<body>
+
+  {# ── Reusable date-formatting macro ── #}
+  {%- macro fmt_date(date_val) -%}
+    {%- set months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'] -%}
+    {%- set dstr = date_val|string -%}
+    {%- if date_val and 'T' in dstr -%}
+      {%- set pd_date = dstr.split('T')[0] -%}
+      {%- set pd_year = pd_date.split('-')[0] -%}
+      {%- set pd_month = pd_date.split('-')[1]|int -%}
+      {%- set pd_day = pd_date.split('-')[2]|int -%}
+      {{ months[pd_month - 1] }} {{ pd_day }}, {{ pd_year }}
+    {%- elif date_val and '-' in dstr -%}
+      {%- set pd_year = dstr.split('-')[0] -%}
+      {%- set pd_month = dstr.split('-')[1]|int -%}
+      {%- set pd_day = dstr.split('-')[2]|int -%}
+      {{ months[pd_month - 1] }} {{ pd_day }}, {{ pd_year }}
+    {%- else -%}
+      {{ date_val }}
+    {%- endif -%}
+  {%- endmacro -%}
+
+  {# ── Reusable paper card macro ── #}
+  {%- macro paper_card(paper, card_class="grid-card") -%}
+  <article class="paper-card {{ card_class }}" data-org="{{ paper.organization }}">
+    <div class="paper-meta">
+      <span class="org-tag" data-org="{{ paper.organization }}">{{ paper.organization }}</span>
+      <span class="paper-date">{{ fmt_date(paper.published_date) }}</span>
+    </div>
+    <h3 class="paper-title">
+      <a href="{{ paper.url }}" target="_blank" rel="noopener noreferrer">{{ paper.title }}</a>
+    </h3>
+    {%- if paper.authors %}
+    <p class="paper-authors">{{ paper.authors | join(', ') if paper.authors is iterable and paper.authors is not string else paper.authors }}</p>
+    {%- endif %}
+    {%- if paper.abstract %}
+    <div class="paper-abstract">
+      <details class="abstract-expand">
+        <summary class="abstract-toggle">
+          <span class="abstract-preview">{{ paper.abstract }}</span>
+          <span class="toggle-label">More</span>
+        </summary>
+        <div class="abstract-full">{{ paper.abstract }}</div>
+      </details>
+    </div>
+    {%- endif %}
+    <a href="{{ paper.url }}" class="read-link" target="_blank" rel="noopener noreferrer">Read paper &rarr;</a>
+  </article>
+  {%- endmacro -%}
+
+  <!-- Masthead -->
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="site-title">AI Safety Weekly Digest</h1>
+      <hr class="header-rule">
+      <div class="header-meta">
+        <span class="header-daterange">{{ week_start }} &mdash; {{ week_end }}</span>
+        {%- if total_count %}
+        <span class="header-separator">&middot;</span>
+        <span class="header-count"><strong>{{ total_count }}</strong> papers</span>
+        {%- endif %}
+      </div>
+    </div>
+  </header>
+
+  <!-- Filter Bar -->
+  <nav class="filter-bar" aria-label="Filter papers by organization">
+    <div class="filter-bar-inner">
+      <div class="filter-scroll">
+        <button class="filter-pill active" data-filter="all">All{% if total_count %} <span class="pill-count">{{ total_count }}</span>{% endif %}</button>
+        {%- for org in organizations %}
+        <button class="filter-pill" data-filter="{{ org }}">{{ org }}</button>
+        {%- endfor %}
+      </div>
+    </div>
+  </nav>
+
+  <!-- Featured Section -->
+  {% if featured_papers %}
+  <section class="hero-section">
+    <h2 class="section-label">Featured Research</h2>
+    <div class="hero-grid">
+      {%- for paper in featured_papers %}
+      {{ paper_card(paper, "hero-card") }}
+      {%- endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- Papers Grid -->
+  <main class="papers-section">
+    {% if papers %}
+    <h2 class="section-label">All Papers</h2>
+    <div class="papers-grid">
+      {%- for paper in papers %}
+      {{ paper_card(paper, "grid-card") }}
+      {%- endfor %}
+    </div>
+    {% elif not featured_papers %}
+    <div class="empty-state">
+      <p>No papers found for this week.</p>
+      <p class="empty-sub">Check back soon &mdash; new research is published daily.</p>
+    </div>
+    {% endif %}
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-note">Curated automatically &middot; Powered by Python + GitHub Actions</p>
+      <p class="footer-timestamp">{{ last_updated }}</p>
+    </div>
+  </footer>
+
+  <!-- Filter JS -->
+  <script>
+    (function () {
+      var pills = document.querySelectorAll('.filter-pill');
+      var cards = document.querySelectorAll('.paper-card');
+      var heroSection = document.querySelector('.hero-section');
+      var heroLabel = heroSection ? heroSection.querySelector('.section-label') : null;
+      var gridLabel = document.querySelector('.papers-section .section-label');
+
+      pills.forEach(function (pill) {
+        pill.addEventListener('click', function () {
+          var filter = this.getAttribute('data-filter');
+
+          // Update active pill
+          pills.forEach(function (p) { p.classList.remove('active'); });
+          this.classList.add('active');
+
+          // Filter cards and count visible
+          var visible = 0;
+          var heroVisible = 0;
+          var gridVisible = 0;
+          cards.forEach(function (card) {
+            if (filter === 'all' || card.getAttribute('data-org') === filter) {
+              card.style.display = '';
+              visible++;
+              if (card.classList.contains('hero-card')) heroVisible++;
+              if (card.classList.contains('grid-card')) gridVisible++;
+            } else {
+              card.style.display = 'none';
+            }
+          });
+
+          // Show/hide section labels when no cards visible in that section
+          if (heroSection) heroSection.style.display = heroVisible > 0 ? '' : 'none';
+          if (gridLabel) gridLabel.style.display = gridVisible > 0 ? '' : 'none';
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>

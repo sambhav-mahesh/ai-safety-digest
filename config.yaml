@@ -1,0 +1,211 @@
+# =============================================================================
+# AI Safety Weekly Digest — Source Configuration
+# =============================================================================
+# Add or remove sources by editing this file. Each section maps to a fetcher.
+
+# --- RSS / Atom Feeds ---
+rss_feeds:
+  # Frontier lab blogs
+  - name: "Google DeepMind"
+    url: "https://deepmind.google/blog/rss.xml"
+    org: "Google DeepMind"
+    keywords: ["research", "paper", "model", "training", "benchmark", "evaluation", "safety", "alignment", "interpretability", "scaling", "architecture", "dataset", "fine-tuning", "reinforcement learning", "neural", "transformer"]
+
+  - name: "Microsoft Research (AI)"
+    url: "https://www.microsoft.com/en-us/research/feed/"
+    org: "Microsoft Research"
+    keywords: ["research", "paper", "model", "training", "benchmark", "evaluation", "safety", "alignment", "dataset", "neural", "transformer", "architecture", "fine-tuning", "optimization", "inference"]
+
+  # Frontier lab blogs (RSS alternatives for JS-rendered sites)
+  - name: "Anthropic News (research only)"
+    url: "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml"
+    org: "Anthropic"
+    keywords: ["research", "paper", "safety", "alignment", "interpretability", "evaluation", "benchmark", "constitutional", "scaling", "reasoning", "fine-tuning", "RLHF", "system card", "technical", "capability", "red team", "model", "training", "mechanistic", "probe", "ablation"]
+
+  - name: "Anthropic Engineering"
+    url: "https://raw.githubusercontent.com/conoro/anthropic-engineering-rss-feed/main/anthropic_engineering_rss.xml"
+    org: "Anthropic"
+    keywords: ["research", "paper", "model", "training", "architecture", "safety", "alignment", "interpretability", "scaling", "inference", "optimization", "benchmark", "technical"]
+
+  - name: "OpenAI News (research only)"
+    url: "https://openai.com/news/rss.xml"
+    org: "OpenAI"
+    keywords: ["research", "paper", "safety", "alignment", "evaluation", "benchmark", "scaling", "reasoning", "fine-tuning", "RLHF", "interpretability", "model", "training", "technical report", "system card"]
+
+  # Safety orgs
+  - name: "Redwood Research"
+    url: "https://feeds.type3.audio/redwood-research.rss"
+    org: "Redwood Research"
+    keywords: ["research", "paper", "alignment", "interpretability", "safety", "model", "training", "evaluation", "mechanistic", "circuit", "ablation"]
+
+  - name: "Alignment Forum"
+    url: "https://www.alignmentforum.org/feed.xml"
+    org: "Alignment Forum"
+    keywords: ["research", "paper", "alignment", "interpretability", "safety", "model", "training", "evaluation", "mechanistic", "RLHF", "reward model", "scalable oversight", "benchmark", "framework", "architecture", "optimization", "probe", "ablation", "transformer", "gradient"]
+
+  # Substacks & newsletters — REMOVED pure news/opinion/commentary sources:
+  # - Zvi Mowshowitz (weekly news roundups)
+  # - Dean Ball — Hyperdimensional (policy opinion)
+  # - Peter Wildeford (opinion)
+  # - Jack Clark — Import AI (newsletter)
+  # - Scott Alexander — Astral Codex Ten (essays/opinion)
+  # - Nathan Labenz — Cognitive Revolution (podcast/opinion)
+  # - Kelsey Piper — Vox Future Perfect (journalism)
+
+  - name: "Dan Hendrycks — ML Safety Newsletter"
+    url: "https://newsletter.mlsafety.org/feed"
+    org: "Dan Hendrycks"
+    keywords: ["research", "paper", "safety", "alignment", "benchmark", "evaluation", "model", "training", "dataset", "robustness", "adversarial", "red team"]
+
+  # Policy orgs with RSS
+  - name: "FLI"
+    url: "https://futureoflife.org/feed/"
+    org: "FLI"
+    keywords: ["research", "paper", "study", "report", "technical", "evaluation", "benchmark", "model", "safety", "alignment", "governance"]
+
+  - name: "Epoch AI"
+    url: "https://epochai.org/blog/rss.xml"
+    org: "Epoch AI"
+    keywords: ["research", "paper", "study", "model", "training", "compute", "scaling", "benchmark", "dataset", "trend", "forecast"]
+
+# --- arXiv keyword search ---
+arxiv:
+  categories: ["cs.AI", "cs.LG", "cs.CL"]
+  keywords:
+    - "AI safety"
+    - "alignment"
+    - "interpretability"
+    - "mechanistic interpretability"
+    - "RLHF"
+    - "scalable oversight"
+    - "AI governance"
+    - "red teaming"
+    - "AI evaluations"
+  max_results: 40
+  days_back: 7
+
+# --- Web scrapers (for orgs without RSS) ---
+scrapers:
+  # Safety orgs
+  - name: "METR"
+    url: "https://metr.org/blog/"
+    org: "METR"
+    link_must_contain: "/blog/"
+
+  - name: "Apollo Research"
+    url: "https://www.apolloresearch.ai/blog"
+    org: "Apollo Research"
+
+  - name: "ARC"
+    url: "https://www.alignment.org/blog/"
+    org: "ARC"
+    link_must_contain: "/blog/"
+
+  - name: "MIRI"
+    url: "https://intelligence.org/research/"
+    org: "MIRI"
+    link_must_contain: "/research/"
+
+  - name: "CAIS"
+    url: "https://safe.ai/research"
+    org: "CAIS"
+    link_must_contain: "arxiv.org"
+
+  - name: "FAR AI"
+    url: "https://far.ai/blog/"
+    org: "FAR AI"
+    link_must_contain: "/topic/"
+
+  # Policy / governance
+  - name: "UK AISI"
+    url: "https://www.aisi.gov.uk/work"
+    org: "UK AISI"
+    link_must_contain: "/blog/"
+
+  - name: "US AISI (NIST)"
+    url: "https://www.nist.gov/artificial-intelligence/executive-order-safe-secure-and-trustworthy-artificial-intelligence"
+    org: "US AISI"
+    link_must_contain: "/artificial-intelligence"
+
+  - name: "RAND AI"
+    url: "https://www.rand.org/topics/artificial-intelligence.html"
+    org: "RAND"
+
+  - name: "CSET Georgetown"
+    url: "https://cset.georgetown.edu/publications/"
+    org: "CSET"
+
+  - name: "GovAI Oxford"
+    url: "https://www.governance.ai/research"
+    org: "GovAI"
+    link_must_contain: "/research-paper/"
+
+  - name: "IAPS"
+    url: "https://www.iaps.ai/research"
+    org: "IAPS"
+    link_must_contain: "/research/"
+
+  - name: "CLTR"
+    url: "https://www.longtermresilience.org/research"
+    org: "CLTR"
+
+  # Academic
+  - name: "CHAI Berkeley"
+    url: "https://humancompatible.ai/news"
+    org: "CHAI"
+
+  - name: "MATS"
+    url: "https://www.matsprogram.org/research"
+    org: "MATS"
+    link_must_contain: "/research/"
+
+  # Individual researchers
+  - name: "Paul Christiano"
+    url: "https://paulfchristiano.com/"
+    org: "Paul Christiano"
+
+  - name: "Yoshua Bengio"
+    url: "https://yoshuabengio.org/category/ai-safety/"
+    org: "Yoshua Bengio"
+
+  - name: "Lennart Heim"
+    url: "https://blog.heim.xyz/"
+    org: "Lennart Heim"
+
+# --- LessWrong (high-karma posts via GraphQL API) ---
+lesswrong:
+  min_karma: 150
+  days_back: 7
+  max_results: 20
+
+# --- Trending (viral content from HN + Reddit) ---
+trending:
+  hn_queries:
+    - "AI safety"
+    - "AI alignment"
+    - "mechanistic interpretability"
+    - "AI governance"
+    - "AI evaluations"
+  hn_min_points: 100
+  hn_keywords:
+    - "paper"
+    - "research"
+    - "study"
+    - "arxiv"
+    - "model"
+    - "training"
+    - "benchmark"
+    - "evaluation"
+    - "alignment"
+    - "interpretability"
+    - "safety"
+    - "dataset"
+    - "neural"
+    - "transformer"
+    - "RLHF"
+    - "fine-tuning"
+  subreddits:
+    - "aisafety"
+    - "mlsafety"
+    - "ControlProblem"
+  days_back: 7

@@ -1,0 +1,64 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## What This Is
+
+Weekly AI safety **research** digest. Python scripts fetch from multiple sources, deduplicate, enrich abstracts, filter for research relevance, and render a static HTML site. Deployed via GitHub Pages with a Monday 9AM UTC cron workflow.
+
+## Commands
+
+```bash
+# Install dependencies
+pip3 install -r requirements.txt
+
+# Fetch papers from all sources → data/papers.json
+python3 scripts/fetch.py
+
+# Render static site → site/index.html
+python3 scripts/render.py
+
+# Full local update + open in browser
+bash scripts/update-and-open.sh
+```
+
+There are no tests or linting configured.
+
+## Architecture
+
+**Pipeline:** `config.yaml` → fetchers → dedup → research filter → enrich → clean → `data/papers.json` → `render.py` → `site/index.html`
+
+**Data model:** Everything flows through `scripts/models.Paper` dataclass. Fields: title, authors, organization, abstract, url, published_date, source_type (`"rss"`, `"arxiv"`, `"scrape"`), source_url, fetched_at. All fetchers must return `list[Paper]`.
+
+**Fetchers** (`scripts/fetchers/`):
+- `rss.py` — RSS/Atom feeds via feedparser. 7-day window. Two-layer keyword filtering: explicit per-feed keywords + default research keywords for all feeds.
+- `arxiv_fetcher.py` — arXiv API via `arxiv` package. Searches by keyword+category.
+- `scraper.py` — BeautifulSoup scraper for orgs without RSS. Heuristic article element detection. Optional `link_must_contain` filter.
+- `lesswrong.py` — LessWrong GraphQL API. Filters by karma threshold (150+) client-side.
+- `trending.py` — HN (Algolia API) + Reddit JSON API. Research content filtering via URL domain checks and title keyword analysis. All use `source_type="rss"`.
+
+**Processing** (called by `fetch.py` in order):
+1. `dedup.py` — Two-pass: exact normalized title match, then SequenceMatcher (ratio > 0.85). Keeps entry with longest abstract.
+2. **Research relevance filter** in `fetch.py` — Scoring-based: 144 research terms checked against title+abstract. arXiv always passes. Known research orgs need score >= 1, others >= 2.
+3. `enrich.py` — Fetches URLs of papers with short/missing abstracts (<50 chars). Strategies: LessWrong GraphQL API, arXiv abs/html pages, meta descriptions, semantic CSS classes, first paragraph. Synthetic fallback for remaining. ThreadPoolExecutor (5 workers), retry on 5xx/timeout, User-Agent rotation.
+4. Abstract cleaning in `fetch.py` — strips HTML, collapses whitespace, removes date prefixes, caps at 150 words.
+
+**Rendering** (`render.py`):
+- Jinja2 template at `templates/index.html.j2`, CSS inlined from `static/style.css`.
+- Featured section: up to 3 papers selected by multi-signal scoring (source authority tiers, abstract richness, research title terms, named authors, arXiv boost, exponential recency decay). Org diversity enforced. Minimum score threshold (12.0).
+- Client-side JS org filter. Dark mode support.
+
+**Deployment:** GitHub Pages serves `site/` directory. Weekly cron workflow fetches, renders, commits, and deploys.
+
+## Adding a New Source
+
+- **RSS/Atom feed:** Add entry to `rss_feeds` in `config.yaml`. Use `keywords` list for selective feeds.
+- **Web scraper:** Add entry to `scrapers` in `config.yaml`. Use `link_must_contain` to filter noise.
+- **New fetcher type:** Create `scripts/fetchers/new_fetcher.py` returning `list[Paper]`, wire it into `fetch.py` main loop, add config section to `config.yaml`.
+
+## Conventions
+
+- All Python files use `from __future__ import annotations` (Python 3.9 compatibility).
+- Use `pip3` not `pip` on the dev machine.
+- Scripts are run from the project root. Each script adds `PROJECT_ROOT` to `sys.path` so `scripts.*` imports work when invoked directly.
+- Output artifacts: `data/papers.json` (committed), `site/index.html` (committed, deployed to GitHub Pages).
