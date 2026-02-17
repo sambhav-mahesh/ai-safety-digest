@@ -27,10 +27,9 @@ rss_feeds:
     org: "Anthropic"
     keywords: ["research", "paper", "model", "training", "architecture", "safety", "alignment", "interpretability", "scaling", "inference", "optimization", "benchmark", "technical"]
 
-  - name: "OpenAI News (research only)"
-    url: "https://openai.com/news/rss.xml"
+  - name: "OpenAI Alignment Research"
+    url: "https://alignment.openai.com/rss.xml"
     org: "OpenAI"
-    keywords: ["research", "paper", "safety", "alignment", "evaluation", "benchmark", "scaling", "reasoning", "fine-tuning", "RLHF", "interpretability", "model", "training", "technical report", "system card"]
 
   # Safety orgs
   - name: "Redwood Research"
@@ -114,7 +113,7 @@ scrapers:
   - name: "FAR AI"
     url: "https://far.ai/blog/"
     org: "FAR AI"
-    link_must_contain: "/topic/"
+    link_must_contain: "/news/"
 
   # Policy / governance
   - name: "UK AISI"
