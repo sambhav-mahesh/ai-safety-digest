@@ -1,15 +1,18 @@
 #!/bin/bash
-# Update the AI Safety Weekly Digest and open it in the browser.
-# Used by the macOS Launch Agent for automatic Monday updates.
-
+# Fetch papers, render the site, and open it in the default browser.
 set -e
 
-PROJECT_DIR="/Users/sambhavmaheshwari/projects/ai-safety-digest"
+PROJECT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$PROJECT_DIR"
 
-# Fetch papers and render the site
-/usr/bin/python3 scripts/fetch.py 2>> /tmp/ai-safety-digest.log
-/usr/bin/python3 scripts/render.py 2>> /tmp/ai-safety-digest.log
+python3 scripts/fetch.py
+python3 scripts/render.py
 
-# Open in default browser
-open "$PROJECT_DIR/site/index.html"
+# macOS: open in browser; Linux: xdg-open
+if command -v open &>/dev/null; then
+    open "$PROJECT_DIR/site/index.html"
+elif command -v xdg-open &>/dev/null; then
+    xdg-open "$PROJECT_DIR/site/index.html"
+else
+    echo "Site rendered at: $PROJECT_DIR/site/index.html"
+fi
