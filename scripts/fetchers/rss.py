@@ -165,6 +165,7 @@ def fetch_rss(feeds_config: list[dict]) -> list[Paper]:
         org = feed_cfg.get("org", "Unknown")
         feed_name = feed_cfg.get("name", feed_url)
         explicit_keywords = [k.lower() for k in feed_cfg.get("keywords", [])]
+        required_categories = [c.lower() for c in feed_cfg.get("categories", [])]
         is_research_org = org.lower() in _KNOWN_RESEARCH_FEED_ORGS
 
         logger.info("Fetching RSS feed: %s (%s)", feed_name, feed_url)
@@ -204,6 +205,18 @@ def fetch_rss(feeds_config: list[dict]) -> list[Paper]:
                 abstract = _extract_abstract(entry)
 
                 # ---------------------------------------------------------
+                # Category filtering (RSS <category> tags)
+                # ---------------------------------------------------------
+                if required_categories:
+                    entry_cats = [
+                        c.term.strip() if hasattr(c, "term") else str(c).strip()
+                        for c in getattr(entry, "tags", [])
+                    ]
+                    entry_cats_lower = [c.lower() for c in entry_cats]
+                    if not any(rc in entry_cats_lower for rc in required_categories):
+                        continue
+
+                # ---------------------------------------------------------
                 # Keyword filtering (two layers)
                 # ---------------------------------------------------------
 
@@ -215,7 +228,7 @@ def fetch_rss(feeds_config: list[dict]) -> list[Paper]:
                 # Layer 2: Default research keywords (applies to ALL feeds)
                 # For known research orgs this is a soft filter (warn only).
                 # For other feeds this is a hard skip.
-                if not explicit_keywords:
+                if not explicit_keywords and not required_categories:
                     if not _matches_keywords(title, abstract, _DEFAULT_RESEARCH_KEYWORDS):
                         if is_research_org:
                             logger.warning(

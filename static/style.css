@@ -364,7 +364,7 @@ a:hover {
 }
 
 .hero-card .abstract-preview {
-  -webkit-line-clamp: 4;
+  -webkit-line-clamp: 5;
 }
 
 .hero-card .paper-abstract {

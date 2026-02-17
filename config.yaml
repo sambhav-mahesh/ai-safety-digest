@@ -27,6 +27,11 @@ rss_feeds:
     org: "Anthropic"
     keywords: ["research", "paper", "model", "training", "architecture", "safety", "alignment", "interpretability", "scaling", "inference", "optimization", "benchmark", "technical"]
 
+  - name: "OpenAI Research Publications"
+    url: "https://openai.com/news/rss.xml"
+    org: "OpenAI"
+    categories: ["Research", "Safety & Alignment", "Publication"]
+
   - name: "OpenAI Alignment Research"
     url: "https://alignment.openai.com/rss.xml"
     org: "OpenAI"
@@ -142,7 +147,7 @@ scrapers:
   - name: "IAPS"
     url: "https://www.iaps.ai/research"
     org: "IAPS"
-    link_must_contain: "/research/"
+    link_must_contain: "/research-paper/"
 
   - name: "CLTR"
     url: "https://www.longtermresilience.org/research"

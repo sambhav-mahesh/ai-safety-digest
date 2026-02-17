@@ -15,6 +15,7 @@ import os
 import re
 import sys
 from collections import Counter
+from datetime import datetime, timedelta, timezone
 
 # ---------------------------------------------------------------------------
 # Ensure the project root is on sys.path so that ``scripts.*`` imports work
@@ -101,6 +102,24 @@ def main() -> None:
             all_papers.extend(fetch_fn(cfg))
 
     logger.info("Total papers before processing: %d", len(all_papers))
+
+    # -- Global date filter: keep only papers from the last 7 days -------------
+    cutoff = datetime.now(timezone.utc) - timedelta(days=7)
+    date_filtered: list[Paper] = []
+    for p in all_papers:
+        try:
+            pub_dt = datetime.fromisoformat(p.published_date)
+            if pub_dt.tzinfo is None:
+                pub_dt = pub_dt.replace(tzinfo=timezone.utc)
+            if pub_dt >= cutoff:
+                date_filtered.append(p)
+        except (ValueError, TypeError):
+            # If we can't parse the date, keep the paper
+            date_filtered.append(p)
+    removed = len(all_papers) - len(date_filtered)
+    if removed:
+        logger.info("Date filter: removed %d papers older than 7 days", removed)
+    all_papers = date_filtered
 
     # -- Pipeline: dedup → filter → enrich → clean -----------------------------
     papers = deduplicate(all_papers)

@@ -23,12 +23,18 @@ HEADERS = {
     "Accept": "text/html,application/xhtml+xml",
 }
 
-REQUEST_TIMEOUT = 5  # seconds
+REQUEST_TIMEOUT = 15  # seconds
 
 # Regex for dates like "2026-01-15", "Jan 15, 2026", "15 January 2026", etc.
 DATE_PATTERNS = [
     # ISO-style
     re.compile(r"\b(\d{4}-\d{2}-\d{2})\b"),
+    # "January 15, 2026" or "January 15 2026"
+    re.compile(
+        r"\b((?:January|February|March|April|May|June|July|August|September|"
+        r"October|November|December)\s+\d{1,2},?\s+\d{4})\b",
+        re.IGNORECASE,
+    ),
     # "Jan 15, 2026"
     re.compile(
         r"\b((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)"
@@ -41,15 +47,22 @@ DATE_PATTERNS = [
         r"August|September|October|November|December)\s+\d{4})\b",
         re.IGNORECASE,
     ),
+    # "February 2026" (month + year only, no day)
+    re.compile(
+        r"\b((?:January|February|March|April|May|June|July|August|September|"
+        r"October|November|December)\s+\d{4})\b",
+        re.IGNORECASE,
+    ),
 ]
 
 DATE_FORMATS = [
     "%Y-%m-%d",
+    "%B %d, %Y",
+    "%B %d %Y",
     "%b %d, %Y",
     "%b %d %Y",
     "%d %B %Y",
-    "%B %d, %Y",
-    "%B %d %Y",
+    "%B %Y",
 ]
 
 
@@ -78,7 +91,7 @@ def _parse_date_string(text: str) -> Optional[str]:
     return None
 
 
-def _extract_date(element) -> str:
+def _extract_date(element) -> Optional[str]:
     """
     Try to find a date associated with a DOM element.
 
@@ -103,7 +116,7 @@ def _extract_date(element) -> str:
     if parsed:
         return parsed
 
-    return datetime.now(timezone.utc).isoformat()
+    return None
 
 
 def _extract_title(element) -> str:
@@ -266,6 +279,11 @@ def fetch_scraped(scrapers_config: list[dict]) -> list[Paper]:
 
                 abstract = _extract_abstract(elem)
                 pub_date = _extract_date(elem)
+
+                # Skip papers without a parseable date — they are likely
+                # old papers from a research listing page.
+                if pub_date is None:
+                    continue
 
                 papers.append(
                     Paper(
