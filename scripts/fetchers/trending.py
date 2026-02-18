@@ -372,6 +372,7 @@ def _fetch_reddit(config: dict) -> list[Paper]:
     Returns a list of Paper objects.
     """
     subreddits: list[str] = config.get("subreddits", ["aisafety", "mlsafety"])
+    min_score: int = config.get("reddit_min_score", 0)
     papers: list[Paper] = []
 
     for subreddit in subreddits:
@@ -380,6 +381,15 @@ def _fetch_reddit(config: dict) -> list[Paper]:
         for post in posts:
             title = (post.get("title") or "").strip()
             if not title:
+                continue
+
+            # Skip posts below minimum score threshold
+            score = post.get("score", 0)
+            if min_score and score < min_score:
+                logger.info(
+                    "Reddit: skipping low-score post (%d < %d): '%s'",
+                    score, min_score, title,
+                )
                 continue
 
             is_self = post.get("is_self", False)

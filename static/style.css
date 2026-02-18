@@ -90,6 +90,7 @@
   --org-paul-christiano: #7a6a4a;
   --org-yoshua-bengio: #4a6a7a;
   --org-lennart-heim: #6a7a4a;
+  --org-semianalysis: #b86a3a;
   --org-hacker-news: #e86424;
   --org-reddit: #e84420;
   --org-default: #888888;
@@ -440,6 +441,7 @@ a:hover {
 .paper-card[data-org="Paul Christiano"] { --card-accent: var(--org-paul-christiano); }
 .paper-card[data-org="Yoshua Bengio"] { --card-accent: var(--org-yoshua-bengio); }
 .paper-card[data-org="Lennart Heim"] { --card-accent: var(--org-lennart-heim); }
+.paper-card[data-org="SemiAnalysis"] { --card-accent: var(--org-semianalysis); }
 .paper-card[data-org="Hacker News"] { --card-accent: var(--org-hacker-news); }
 .paper-card[data-org="Reddit"] { --card-accent: var(--org-reddit); }
 
@@ -503,6 +505,7 @@ a:hover {
 .org-tag[data-org="Paul Christiano"] { background-color: color-mix(in srgb, var(--org-paul-christiano) 12%, var(--bg-card)); color: var(--org-paul-christiano); }
 .org-tag[data-org="Yoshua Bengio"] { background-color: color-mix(in srgb, var(--org-yoshua-bengio) 12%, var(--bg-card)); color: var(--org-yoshua-bengio); }
 .org-tag[data-org="Lennart Heim"] { background-color: color-mix(in srgb, var(--org-lennart-heim) 12%, var(--bg-card)); color: var(--org-lennart-heim); }
+.org-tag[data-org="SemiAnalysis"] { background-color: color-mix(in srgb, var(--org-semianalysis) 12%, var(--bg-card)); color: var(--org-semianalysis); }
 .org-tag[data-org="Hacker News"] { background-color: color-mix(in srgb, var(--org-hacker-news) 12%, var(--bg-card)); color: var(--org-hacker-news); }
 .org-tag[data-org="Reddit"] { background-color: color-mix(in srgb, var(--org-reddit) 12%, var(--bg-card)); color: var(--org-reddit); }
 
@@ -547,6 +550,7 @@ a:hover {
   .org-tag[data-org="Paul Christiano"] { background-color: color-mix(in srgb, var(--org-paul-christiano) 15%, var(--bg-card)); }
   .org-tag[data-org="Yoshua Bengio"] { background-color: color-mix(in srgb, var(--org-yoshua-bengio) 15%, var(--bg-card)); }
   .org-tag[data-org="Lennart Heim"] { background-color: color-mix(in srgb, var(--org-lennart-heim) 15%, var(--bg-card)); }
+  .org-tag[data-org="SemiAnalysis"] { background-color: color-mix(in srgb, var(--org-semianalysis) 15%, var(--bg-card)); }
   .org-tag[data-org="Hacker News"] { background-color: color-mix(in srgb, var(--org-hacker-news) 15%, var(--bg-card)); }
   .org-tag[data-org="Reddit"] { background-color: color-mix(in srgb, var(--org-reddit) 15%, var(--bg-card)); }
 }

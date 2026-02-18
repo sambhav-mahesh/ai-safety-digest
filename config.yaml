@@ -9,7 +9,7 @@ rss_feeds:
   - name: "Google DeepMind"
     url: "https://deepmind.google/blog/rss.xml"
     org: "Google DeepMind"
-    keywords: ["research", "paper", "model", "training", "benchmark", "evaluation", "safety", "alignment", "interpretability", "scaling", "architecture", "dataset", "fine-tuning", "reinforcement learning", "neural", "transformer"]
+    keywords: ["safety", "alignment", "interpretability", "evaluation", "red team", "responsible", "risk", "governance", "robustness", "benchmark", "adversarial", "oversight", "jailbreak", "reward model", "RLHF", "scalable oversight"]
 
   - name: "Microsoft Research (AI)"
     url: "https://www.microsoft.com/en-us/research/feed/"
@@ -72,6 +72,20 @@ rss_feeds:
     org: "Epoch AI"
     keywords: ["research", "paper", "study", "model", "training", "compute", "scaling", "benchmark", "dataset", "trend", "forecast"]
 
+  - name: "METR"
+    url: "https://metr.org/feed.xml"
+    org: "METR"
+
+  - name: "Zvi Mowshowitz"
+    url: "https://thezvi.substack.com/feed"
+    org: "Zvi Mowshowitz"
+    keywords: ["AI", "safety", "alignment", "model", "research", "policy", "governance", "risk", "lab", "compute", "evaluation", "benchmark", "training", "scaling"]
+
+  - name: "SemiAnalysis"
+    url: "https://newsletter.semianalysis.com/feed"
+    org: "SemiAnalysis"
+    keywords: ["AI", "model", "training", "inference", "compute", "chip", "gpu", "architecture", "scaling", "benchmark", "safety", "hardware"]
+
 # --- arXiv keyword search ---
 arxiv:
   categories: ["cs.AI", "cs.LG", "cs.CL"]
@@ -95,11 +109,11 @@ scrapers:
     url: "https://alignment.anthropic.com/"
     org: "Anthropic"
 
+  - name: "Google DeepMind Safety"
+    url: "https://deepmind.google/discover/blog/?category=responsible-development-and-safety"
+    org: "Google DeepMind"
+
   # Safety orgs
-  - name: "METR"
-    url: "https://metr.org/blog/"
-    org: "METR"
-    link_must_contain: "/blog/"
 
   - name: "Apollo Research"
     url: "https://www.apolloresearch.ai/blog"
@@ -213,6 +227,7 @@ trending:
     - "transformer"
     - "RLHF"
     - "fine-tuning"
+  reddit_min_score: 250
   subreddits:
     - "aisafety"
     - "mlsafety"

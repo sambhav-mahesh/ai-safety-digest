@@ -11,6 +11,25 @@ from scripts.models import Paper
 
 logger = logging.getLogger(__name__)
 
+# Strict AI safety terms — used to filter false positives from broad arXiv
+# keyword searches (e.g. "alignment" matching image/text alignment papers).
+# A paper must contain at least one of these in its title+abstract to be kept.
+STRICT_SAFETY_TERMS: list[str] = [
+    "ai safety", "ai alignment", "language model", "llm", "large model",
+    "rlhf", "reinforcement learning from human", "jailbreak", "red team",
+    "interpretability", "mechanistic", "scalable oversight", "reward model",
+    "corrigib", "deception", "sycophancy", "power-seeking", "power seeking",
+    "mesa-optim", "mesa optim", "adversarial robust", "guardrail",
+    "constitutional ai", "dangerous capability", "dual use", "dual-use",
+    "catastrophic risk", "existential risk", "x-risk", "superintelligence",
+    "reward hack", "specification gaming", "goal misgeneralization",
+    "inner alignment", "outer alignment", "value alignment", "human feedback",
+    "preference learning", "safety evaluation", "safety benchmark",
+    "frontier model", "foundation model", "chatbot", "assistant",
+    "helpfulness", "harmlessness", "honesty", "truthfulness",
+    "scheming", "sandbagging", "situational awareness",
+]
+
 
 def _build_query(keywords: list[str], categories: list[str]) -> str:
     """
@@ -92,6 +111,16 @@ def fetch_arxiv(arxiv_config: dict) -> list[Paper]:
 
             authors = [a.name for a in result.authors]
             organization = _extract_organization(result)
+
+            # Strict safety keyword filter — reject papers where "alignment"
+            # or other broad terms match non-AI-safety contexts
+            searchable = (result.title + " " + result.summary).lower()
+            if not any(term in searchable for term in STRICT_SAFETY_TERMS):
+                logger.info(
+                    "arXiv: skipping non-safety paper: '%s'",
+                    result.title.strip()[:80],
+                )
+                continue
 
             papers.append(
                 Paper(

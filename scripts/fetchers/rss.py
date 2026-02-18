@@ -42,7 +42,7 @@ _DEFAULT_RESEARCH_KEYWORDS = [
 _KNOWN_RESEARCH_FEED_ORGS = {
     "anthropic", "openai", "google deepmind", "microsoft research",
     "redwood research", "alignment forum", "dan hendrycks", "epoch ai",
-    "fli", "lesswrong",
+    "fli", "lesswrong", "semianalysis", "zvi mowshowitz",
 }
 
 

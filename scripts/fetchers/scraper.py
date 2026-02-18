@@ -134,19 +134,24 @@ def _extract_date(element) -> Optional[str]:
     return None
 
 
+def _strip_list_numbering(title: str) -> str:
+    """Strip leading list-numbering patterns like '1: ', '2. ' from titles."""
+    return re.sub(r"^\d+[\.:]\s*", "", title)
+
+
 def _extract_title(element) -> str:
     """Extract a title from headings or the first prominent link."""
     for tag in ("h1", "h2", "h3", "h4"):
         heading = element.find(tag)
         if heading:
-            return heading.get_text(strip=True)
+            return _strip_list_numbering(heading.get_text(strip=True))
 
     # Try the first link text
     link = element.find("a")
     if link:
         text = link.get_text(strip=True)
         if text:
-            return text
+            return _strip_list_numbering(text)
 
     return ""
 
@@ -185,6 +190,10 @@ _JUNK_TITLES = {
 # Minimum title length to avoid single-word nav items
 _MIN_TITLE_LENGTH = 10
 
+# Maximum title length — titles beyond this are likely garbled (concatenated
+# heading + date + subtitle from scraper extraction)
+_MAX_TITLE_LENGTH = 150
+
 
 def _is_junk_title(title: str) -> bool:
     """Return True if the title looks like navigation / non-paper content."""
@@ -193,8 +202,16 @@ def _is_junk_title(title: str) -> bool:
         return True
     if len(stripped) < _MIN_TITLE_LENGTH:
         return True
+    if len(stripped) > _MAX_TITLE_LENGTH:
+        return True
     # Reject titles that are just domain names or URLs
     if stripped.startswith("http") or ".gov" in stripped or ".com" in stripped:
+        return True
+    # Reject garbled titles where text nodes were concatenated without spaces
+    # e.g. "Some Title17 February 2026Some subtitleRead more"
+    if re.search(r"20\d{2}[A-Z]", stripped):
+        return True
+    if re.search(r"[Rr]ead more\s*$", stripped):
         return True
     return False
 
@@ -267,6 +284,7 @@ def fetch_scraped(scrapers_config: list[dict]) -> list[Paper]:
         org = site_cfg.get("org", "Unknown")
         site_name = site_cfg.get("name", site_url)
         link_must_contain = site_cfg.get("link_must_contain", "")
+        keywords = [k.lower() for k in site_cfg.get("keywords", [])]
 
         logger.info("Scraping: %s (%s)", site_name, site_url)
 
@@ -310,6 +328,13 @@ def fetch_scraped(scrapers_config: list[dict]) -> list[Paper]:
                 # old papers from a research listing page.
                 if pub_date is None:
                     continue
+
+                # Keyword filter: if configured, skip items that don't
+                # match any keyword in title + abstract
+                if keywords:
+                    searchable = (title + " " + abstract).lower()
+                    if not any(kw in searchable for kw in keywords):
+                        continue
 
                 papers.append(
                     Paper(
