@@ -88,7 +88,9 @@ def fetch_arxiv(arxiv_config: dict) -> list[Paper]:
     query = _build_query(keywords, categories)
     logger.info("arXiv query: %s", query)
 
-    cutoff = datetime.now(timezone.utc) - timedelta(days=days_back)
+    cutoff = (datetime.now(timezone.utc) - timedelta(days=days_back)).replace(
+        hour=0, minute=0, second=0, microsecond=0
+    )
     papers: list[Paper] = []
 
     try:

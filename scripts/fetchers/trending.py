@@ -440,7 +440,9 @@ def fetch_trending(config: dict) -> list[Paper]:
     list[Paper]
     """
     days_back: int = config.get("days_back", 7)
-    cutoff = datetime.now(timezone.utc) - timedelta(days=days_back)
+    cutoff = (datetime.now(timezone.utc) - timedelta(days=days_back)).replace(
+        hour=0, minute=0, second=0, microsecond=0
+    )
 
     papers: list[Paper] = []
 

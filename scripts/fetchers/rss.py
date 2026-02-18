@@ -157,7 +157,9 @@ def fetch_rss(feeds_config: list[dict]) -> list[Paper]:
     list[Paper]
         Papers published within the last 7 days.
     """
-    cutoff = datetime.now(timezone.utc) - timedelta(days=7)
+    cutoff = (datetime.now(timezone.utc) - timedelta(days=7)).replace(
+        hour=0, minute=0, second=0, microsecond=0
+    )
     papers: list[Paper] = []
 
     for feed_cfg in feeds_config:

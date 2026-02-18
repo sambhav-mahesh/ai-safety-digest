@@ -104,7 +104,10 @@ def main() -> None:
     logger.info("Total papers before processing: %d", len(all_papers))
 
     # -- Global date filter: keep only papers from the last 7 days -------------
-    cutoff = datetime.now(timezone.utc) - timedelta(days=7)
+    # Use start-of-day so we include the full day 7 days ago
+    cutoff = (datetime.now(timezone.utc) - timedelta(days=7)).replace(
+        hour=0, minute=0, second=0, microsecond=0
+    )
     date_filtered: list[Paper] = []
     for p in all_papers:
         try:
