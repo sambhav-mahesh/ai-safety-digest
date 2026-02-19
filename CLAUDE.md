@@ -40,8 +40,8 @@ There are no tests or linting configured.
 **Processing** (called by `fetch.py` in order):
 1. **Global 7-day date filter** — Removes all papers older than 7 days. Applied to ALL sources before dedup.
 2. `dedup.py` — Two-pass: exact normalized title match, then SequenceMatcher (ratio > 0.85). Keeps entry with longest abstract.
-3. **Research relevance filter** (`filter.py`) — Scoring-based: 144 research terms checked against title+abstract. arXiv always passes. Known research orgs need score >= 1, others >= 2.
-3. `enrich.py` — Fetches URLs of papers with short/missing abstracts (<50 chars). Strategies: LessWrong GraphQL API, arXiv abs/html pages, meta descriptions, semantic CSS classes, first paragraph. Synthetic fallback for remaining. ThreadPoolExecutor (5 workers), retry on 5xx/timeout, User-Agent rotation.
+3. **Research relevance filter** (`filter.py`) — Scoring-based: 144 research terms checked against title+abstract. Non-research titles (hiring, policy, org updates) rejected upfront via `_NON_RESEARCH_TITLE_RE`. Known research orgs and arXiv need score >= 1, others >= 2.
+4. `enrich.py` — Fetches URLs of papers with short/missing abstracts (<100 chars or <20 words). Strategies: LessWrong GraphQL API, arXiv abs/html pages, meta descriptions, semantic CSS classes, first paragraph. Synthetic fallback for remaining. ThreadPoolExecutor (5 workers), retry on 5xx/timeout, User-Agent rotation.
 4. Abstract cleaning in `fetch.py` — strips HTML, collapses whitespace, removes date prefixes, caps at 150 words.
 
 **Rendering** (`render.py`):

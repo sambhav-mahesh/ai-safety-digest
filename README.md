@@ -12,12 +12,12 @@ You can also open `site/index.html` directly in any browser if you clone the rep
 
 ## Sources
 
-The digest aggregates research from 35+ sources across five fetcher types:
+The digest aggregates research from 40+ sources across five fetcher types:
 
 ### RSS Feeds
 | Organization | Feed |
 |---|---|
-| Google DeepMind | Blog RSS |
+| Google DeepMind | Blog RSS (safety keywords filtered) |
 | Microsoft Research | Research feed (AI keyword filtered) |
 | Anthropic | News + Engineering (via community RSS mirrors) |
 | OpenAI | News RSS (Research/Safety/Publication categories) + Alignment Research Blog |
@@ -26,15 +26,18 @@ The digest aggregates research from 35+ sources across five fetcher types:
 | Dan Hendrycks | ML Safety Newsletter |
 | FLI | Blog feed |
 | Epoch AI | Blog RSS |
+| METR | Blog RSS feed |
+| Zvi Mowshowitz | Substack feed (AI/safety keyword filtered) |
+| SemiAnalysis | Newsletter feed (AI/compute keyword filtered) |
 
 ### arXiv
-Keyword search across `cs.AI`, `cs.LG`, `cs.CL` for: AI safety, alignment, interpretability, mechanistic interpretability, RLHF, scalable oversight, AI governance, red teaming, AI evaluations. Up to 40 papers per week.
+Keyword search across `cs.AI`, `cs.LG`, `cs.CL` for: AI safety, alignment, interpretability, mechanistic interpretability, RLHF, scalable oversight, AI governance, red teaming, AI evaluations. Strict safety keyword filter removes false positives from broad terms. Up to 40 papers per week.
 
 ### Web Scrapers
 | Organization | URL | Filter |
 |---|---|---|
 | Anthropic Alignment Science | alignment.anthropic.com | Blog posts with dates |
-| METR | metr.org/blog | Links containing `/blog/` |
+| Google DeepMind Safety | deepmind.google (responsible-development-and-safety) | Safety category |
 | Apollo Research | apolloresearch.ai/blog | All blog posts |
 | ARC (Alignment Research Center) | alignment.org/blog | Links containing `/blog/` |
 | MIRI | intelligence.org/research | Links containing `/research/` |
@@ -46,6 +49,7 @@ Keyword search across `cs.AI`, `cs.LG`, `cs.CL` for: AI safety, alignment, inter
 | CSET Georgetown | cset.georgetown.edu/publications | All publications |
 | GovAI Oxford | governance.ai/research | Links containing `/research-paper/` |
 | IAPS | iaps.ai/research | Links containing `/research-paper/` |
+| CLTR | longtermresilience.org/research | All items |
 | CHAI Berkeley | humancompatible.ai/news | All items |
 | MATS | matsprogram.org/research | Links containing `/research/` |
 | Paul Christiano | paulfchristiano.com | All items |
@@ -56,7 +60,7 @@ Keyword search across `cs.AI`, `cs.LG`, `cs.CL` for: AI safety, alignment, inter
 GraphQL API — posts with 150+ karma from the past 7 days.
 
 ### Trending
-Hacker News (Algolia API, 100+ points) + Reddit (r/aisafety, r/mlsafety, r/ControlProblem) — research-filtered by URL domain and title keywords.
+Hacker News (Algolia API, 100+ points) + Reddit (r/aisafety, r/mlsafety, r/ControlProblem, min 250 upvotes) — research-filtered by URL domain and title keywords.
 
 ## How It Works
 
@@ -67,7 +71,7 @@ config.yaml → fetchers → 7-day date filter → dedup → research filter →
 1. **Fetch** — Five fetcher types (RSS, arXiv, scraper, LessWrong, trending) collect papers
 2. **Date filter** — Only papers from the last 7 days are kept. Scraped papers without parseable dates are dropped.
 3. **Deduplicate** — Exact title match, then fuzzy matching (>85% similarity)
-4. **Research filter** — 144-term scoring filter removes news/opinion. arXiv always passes. Known research orgs need score >= 1, others >= 2.
+4. **Research filter** — 144-term scoring filter removes news/opinion. Non-research titles (hiring, policy, org updates) are rejected upfront. Known research orgs and arXiv need score >= 1, others >= 2.
 5. **Enrich** — Papers with short/missing abstracts get them fetched from URLs or a synthetic fallback
 6. **Render** — Jinja2 template produces a static site with featured section, org filters, and expandable abstracts
 
