@@ -65,6 +65,12 @@ RESEARCH_ORGS: set[str] = {
     "ajeya cotra", "cnas",
 }
 
+# Curated voices — always included (bypass research-term scoring).
+# These are hand-picked authors who primarily write about AI.
+ALWAYS_INCLUDE_ORGS: set[str] = {
+    "dean ball", "seb krier", "peter wildeford", "ajeya cotra",
+}
+
 # Minimum matching terms to keep a paper
 THRESHOLD_DEFAULT = 2       # general sources
 THRESHOLD_RESEARCH_ORG = 1  # known research orgs
@@ -94,10 +100,14 @@ def is_research_relevant(paper: Paper) -> bool:
         logger.info("Filtered non-research title: %s", paper.title[:80])
         return False
 
+    org_lower = paper.organization.lower()
+
+    # Curated voices are always included
+    if org_lower in ALWAYS_INCLUDE_ORGS:
+        return True
+
     searchable = (paper.title + " " + paper.abstract).lower()
     score = sum(1 for term in RESEARCH_TERMS if term in searchable)
-
-    org_lower = paper.organization.lower()
 
     # arXiv papers are treated like known research orgs (need score >= 1)
     if paper.source_type == "arxiv":

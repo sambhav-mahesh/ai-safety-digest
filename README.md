@@ -12,7 +12,7 @@ You can also open `site/index.html` directly in any browser if you clone the rep
 
 ## Sources
 
-The digest aggregates research from 40+ sources across five fetcher types:
+The digest aggregates research from 45+ sources across six fetcher types:
 
 ### RSS Feeds
 | Organization | Feed |
@@ -23,6 +23,10 @@ The digest aggregates research from 40+ sources across five fetcher types:
 | OpenAI | News RSS (Research/Safety/Publication categories) + Alignment Research Blog |
 | Redwood Research | Blog RSS |
 | Alignment Forum | Feed (research keyword filtered) |
+| Dean Ball | Hyperdimensional Substack (all posts) |
+| Seb Krier | Technologik Substack (all posts) |
+| Peter Wildeford | The Power Law Substack (all posts) |
+| Ajeya Cotra | Planned Obsolescence (all posts) |
 | Dan Hendrycks | ML Safety Newsletter |
 | FLI | Blog feed |
 | Epoch AI | Blog RSS |
@@ -46,7 +50,8 @@ Keyword search across `cs.AI`, `cs.LG`, `cs.CL` for: AI safety, alignment, inter
 | UK AISI | aisi.gov.uk/work | Links containing `/blog/` |
 | US AISI (NIST) | nist.gov | Links containing `/artificial-intelligence` |
 | RAND | rand.org/topics/artificial-intelligence | All items |
-| CSET Georgetown | cset.georgetown.edu/publications | All publications |
+| CSET Georgetown | cset.georgetown.edu/publications | Reports only (type-filtered) |
+| CNAS | cnas.org/publications | AI/ML keyword filtered |
 | GovAI Oxford | governance.ai/research | Links containing `/research-paper/` |
 | IAPS | iaps.ai/research | Links containing `/research-paper/` |
 | CLTR | longtermresilience.org/research | All items |
@@ -59,8 +64,11 @@ Keyword search across `cs.AI`, `cs.LG`, `cs.CL` for: AI safety, alignment, inter
 ### LessWrong
 GraphQL API — posts with 150+ karma from the past 7 days.
 
+### Twitter/X (optional)
+Fetches recent tweets from curated accounts (Dean Ball, Seb Krier, Peter Wildeford) filtered by AI keywords. Requires `TWITTER_BEARER_TOKEN` env var (X API Basic tier). Gracefully skipped if no token is set.
+
 ### Trending
-Hacker News (Algolia API, 100+ points) + Reddit (r/aisafety, r/mlsafety, r/ControlProblem, min 250 upvotes) — research-filtered by URL domain and title keywords.
+Reddit (r/aisafety, r/mlsafety, r/ControlProblem, min 250 upvotes) — research-filtered by URL domain and title keywords.
 
 ## How It Works
 
@@ -68,7 +76,7 @@ Hacker News (Algolia API, 100+ points) + Reddit (r/aisafety, r/mlsafety, r/Contr
 config.yaml → fetchers → 7-day date filter → dedup → research filter → enrich → render → GitHub Pages
 ```
 
-1. **Fetch** — Five fetcher types (RSS, arXiv, scraper, LessWrong, trending) collect papers
+1. **Fetch** — Six fetcher types (RSS, arXiv, scraper, LessWrong, Twitter/X, trending) collect papers
 2. **Date filter** — Only papers from the last 7 days are kept. Scraped papers without parseable dates are dropped.
 3. **Deduplicate** — Exact title match, then fuzzy matching (>85% similarity)
 4. **Research filter** — 144-term scoring filter removes news/opinion. Non-research titles (hiring, policy, org updates) are rejected upfront. Known research orgs and arXiv need score >= 1, others >= 2.

@@ -301,6 +301,8 @@ def fetch_scraped(scrapers_config: list[dict]) -> list[Paper]:
         link_must_contain = site_cfg.get("link_must_contain", "")
         keywords = [k.lower() for k in site_cfg.get("keywords", [])]
         article_class = site_cfg.get("article_class", "")
+        type_class = site_cfg.get("type_class", "")
+        type_values = [v.lower() for v in site_cfg.get("type_values", [])]
 
         logger.info("Scraping: %s (%s)", site_name, site_url)
 
@@ -329,6 +331,12 @@ def fetch_scraped(scrapers_config: list[dict]) -> list[Paper]:
                 # Filter obvious non-paper content
                 if _is_junk_title(title):
                     continue
+
+                # Filter by publication type (e.g. "Reports" eyebrow badge)
+                if type_class and type_values:
+                    type_tag = elem.find(class_=type_class)
+                    if not type_tag or type_tag.get_text(strip=True).lower() not in type_values:
+                        continue
 
                 link = _extract_link(elem, site_url)
 
