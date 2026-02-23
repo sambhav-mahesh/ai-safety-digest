@@ -10,7 +10,7 @@
     "published_date": "2026-02-23T19:45:22+00:00",
     "source_type": "rss",
     "source_url": "https://www.hyperdimensional.co/feed",
-    "fetched_at": "2026-02-23T21:02:13.530909+00:00"
+    "fetched_at": "2026-02-23T22:35:42.563434+00:00"
   },
   {
     "title": "Why we no longer evaluate SWE-bench Verified",
@@ -23,18 +23,18 @@
     "published_date": "2026-02-23T16:00:00+00:00",
     "source_type": "rss",
     "source_url": "https://openai.com/news/rss.xml",
-    "fetched_at": "2026-02-23T21:02:11.951775+00:00"
+    "fetched_at": "2026-02-23T22:35:40.698754+00:00"
   },
   {
-    "title": "The Hot Mess of AI: How Does Misalignment Scale with Model Intelligence and Task Complexity?",
+    "title": "The Persona Selection Model: Why AI Assistants might Behave like Humans",
     "authors": [],
     "organization": "Anthropic",
-    "abstract": "Research from Anthropic titled 'The Hot Mess of AI: How Does Misalignment Scale with Model Intelligence and Task Complexity?'. Published 2026-02-23.",
-    "url": "https://alignment.anthropic.com/2026/hot-mess-of-ai/",
+    "abstract": "We describe the persona selection model (PSM): the idea that LLMs learn to simulate diverse characters during pre-training, and post-training elicits and refines a particular such Assistant persona. Interactions with an AI assistant are then well-understood as being interactions with the Assistant—something roughly like a character in an LLM-generated story. We survey empirical behavioral, generalization, and interpretability-based evidence for PSM. PSM has consequences for AI development, such as recommending anthropomorphic reasoning about AI psychology and introduction of positive AI archetypes into training data. An important open question is how exhaustive PSM is, especially whether there might be sources of agency external to the Assistant persona, and how this might change in the future.",
+    "url": "https://alignment.anthropic.com/2026/psm/",
     "published_date": "2026-02-23T00:00:00+00:00",
     "source_type": "scrape",
     "source_url": "https://alignment.anthropic.com/",
-    "fetched_at": "2026-02-23T21:02:20.161136+00:00"
+    "fetched_at": "2026-02-23T22:35:49.748310+00:00"
   },
   {
     "title": "Gemini 3.1 Pro: A smarter model for your most complex tasks",
@@ -45,7 +45,7 @@
     "published_date": "2026-02-23T00:00:00+00:00",
     "source_type": "scrape",
     "source_url": "https://deepmind.google/discover/blog/?category=responsible-development-and-safety",
-    "fetched_at": "2026-02-23T21:02:20.713169+00:00"
+    "fetched_at": "2026-02-23T22:35:50.258919+00:00"
   },
   {
     "title": "Judge Reliability Harness",
@@ -56,7 +56,7 @@
     "published_date": "2026-02-23T00:00:00+00:00",
     "source_type": "scrape",
     "source_url": "https://www.rand.org/topics/artificial-intelligence.html",
-    "fetched_at": "2026-02-23T21:02:24.803777+00:00"
+    "fetched_at": "2026-02-23T22:35:55.333738+00:00"
   },
   {
     "title": "Decisive Economic Advantage: Modeling the Transition from Temporary First-Mover Leads to Economic Dominance in Artificial General Intelligence",
@@ -67,7 +67,7 @@
     "published_date": "2026-02-23T00:00:00+00:00",
     "source_type": "scrape",
     "source_url": "https://www.rand.org/topics/artificial-intelligence.html",
-    "fetched_at": "2026-02-23T21:02:24.804070+00:00"
+    "fetched_at": "2026-02-23T22:35:55.334031+00:00"
   },
   {
     "title": "China’s Military AI Wish List",
@@ -78,7 +78,7 @@
     "published_date": "2026-02-23T00:00:00+00:00",
     "source_type": "scrape",
     "source_url": "https://cset.georgetown.edu/publications/",
-    "fetched_at": "2026-02-23T21:02:25.008421+00:00"
+    "fetched_at": "2026-02-23T22:35:55.611408+00:00"
   },
   {
     "title": "Physical AI",
@@ -89,7 +89,7 @@
     "published_date": "2026-02-23T00:00:00+00:00",
     "source_type": "scrape",
     "source_url": "https://cset.georgetown.edu/publications/",
-    "fetched_at": "2026-02-23T21:02:25.008976+00:00"
+    "fetched_at": "2026-02-23T22:35:55.611966+00:00"
   },
   {
     "title": "Did Claude 3 Opus align itself via gradient hacking?",
@@ -102,7 +102,7 @@
     "published_date": "2026-02-21T22:24:31.247000+00:00",
     "source_type": "rss",
     "source_url": "https://www.lesswrong.com/graphql",
-    "fetched_at": "2026-02-23T21:02:29.184244+00:00"
+    "fetched_at": "2026-02-23T22:36:00.827834+00:00"
   },
   {
     "title": "The Spectre haunting the \"AI Safety\" Community",
@@ -115,7 +115,7 @@
     "published_date": "2026-02-21T11:14:10.772000+00:00",
     "source_type": "rss",
     "source_url": "https://www.lesswrong.com/graphql",
-    "fetched_at": "2026-02-23T21:02:29.184287+00:00"
+    "fetched_at": "2026-02-23T22:36:00.827883+00:00"
   },
   {
     "title": "How will we do SFT on models with opaque reasoning?",
@@ -128,7 +128,7 @@
     "published_date": "2026-02-21T05:00:17+00:00",
     "source_type": "rss",
     "source_url": "https://www.alignmentforum.org/feed.xml",
-    "fetched_at": "2026-02-23T21:02:13.120596+00:00"
+    "fetched_at": "2026-02-23T22:35:42.180860+00:00"
   },
   {
     "title": "Our First Proof submissions",
@@ -141,7 +141,7 @@
     "published_date": "2026-02-20T19:30:00+00:00",
     "source_type": "rss",
     "source_url": "https://openai.com/news/rss.xml",
-    "fetched_at": "2026-02-23T21:02:11.951836+00:00"
+    "fetched_at": "2026-02-23T22:35:40.698817+00:00"
   },
   {
     "title": "Theory and interpretability of Quantum Extreme Learning Machines: a Pauli-transfer matrix approach",
@@ -155,7 +155,7 @@
     "published_date": "2026-02-20T17:33:27+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T21:02:19.872642+00:00"
+    "fetched_at": "2026-02-23T22:35:49.420008+00:00"
   },
   {
     "title": "RamanSeg: Interpretability-driven Deep Learning on Raman Spectra for Cancer Diagnosis",
@@ -179,7 +179,7 @@
     "published_date": "2026-02-20T10:18:27+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T21:02:19.872724+00:00"
+    "fetched_at": "2026-02-23T22:35:49.420094+00:00"
   },
   {
     "title": "ROCKET: Residual-Oriented Multi-Layer Alignment for Spatially-Aware Vision-Language-Action Models",
@@ -200,7 +200,7 @@
     "published_date": "2026-02-20T03:06:22+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T21:02:19.873004+00:00"
+    "fetched_at": "2026-02-23T22:35:49.420377+00:00"
   },
   {
     "title": "Alignment in Time: Peak-Aware Orchestration for Long-Horizon Agentic Systems",
@@ -214,7 +214,7 @@
     "published_date": "2026-02-20T00:16:07+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T21:02:19.873051+00:00"
+    "fetched_at": "2026-02-23T22:35:49.420426+00:00"
   },
   {
     "title": "Differences in Typological Alignment in Language Models' Treatment of Differential Argument Marking",
@@ -229,7 +229,7 @@
     "published_date": "2026-02-19T18:56:34+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T21:02:19.873132+00:00"
+    "fetched_at": "2026-02-23T22:35:49.420475+00:00"
   },
   {
     "title": "ODESteer: A Unified ODE-Based Steering Framework for LLM Alignment",
@@ -252,7 +252,7 @@
     "published_date": "2026-02-19T17:13:44+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T21:02:19.873211+00:00"
+    "fetched_at": "2026-02-23T22:35:49.420540+00:00"
   },
   {
     "title": "Systematic Evaluation of Single-Cell Foundation Model Interpretability Reveals Attention Captures Co-Expression Rather Than Unique Regulatory Signal",
@@ -265,7 +265,7 @@
     "published_date": "2026-02-19T16:43:12+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T21:02:19.873272+00:00"
+    "fetched_at": "2026-02-23T22:35:49.420598+00:00"
   },
   {
     "title": "Inelastic Constitutive Kolmogorov-Arnold Networks: A generalized framework for automated discovery of interpretable inelastic material models",
@@ -282,7 +282,7 @@
     "published_date": "2026-02-19T15:51:24+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T21:02:19.873339+00:00"
+    "fetched_at": "2026-02-23T22:35:49.420663+00:00"
   },
   {
     "title": "Five lessons from having helped run an AI-Biology RCT",
@@ -295,7 +295,7 @@
     "published_date": "2026-02-19T13:00:00+00:00",
     "source_type": "rss",
     "source_url": "https://metr.org/feed.xml",
-    "fetched_at": "2026-02-23T21:02:16.823131+00:00"
+    "fetched_at": "2026-02-23T22:35:46.171764+00:00"
   },
   {
     "title": "All Leaks Count, Some Count More: Interpretable Temporal Contamination Detection in LLM Backtesting",
@@ -310,7 +310,7 @@
     "published_date": "2026-02-19T10:28:00+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T21:02:19.873705+00:00"
+    "fetched_at": "2026-02-23T22:35:49.421000+00:00"
   },
   {
     "title": "Mechanistic Interpretability of Cognitive Complexity in LLMs via Linear Probing using Bloom's Taxonomy",
@@ -324,7 +324,7 @@
     "published_date": "2026-02-19T10:19:04+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T21:02:19.873753+00:00"
+    "fetched_at": "2026-02-23T22:35:49.421047+00:00"
   },
   {
     "title": "The Emergence of Lab-Driven Alignment Signatures: A Psychometric Framework for Auditing Latent Bias and Compounding Risk in Generative AI",
@@ -337,7 +337,7 @@
     "published_date": "2026-02-19T06:56:01+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T21:02:19.873803+00:00"
+    "fetched_at": "2026-02-23T22:35:49.421095+00:00"
   },
   {
     "title": "Instructor-Aligned Knowledge Graphs for Personalized Learning",
@@ -353,7 +353,7 @@
     "published_date": "2026-02-19T06:15:10+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T21:02:19.873854+00:00"
+    "fetched_at": "2026-02-23T22:35:49.421158+00:00"
   },
   {
     "title": "FLoRG: Federated Fine-tuning with Low-rank Gram Matrices and Procrustes Alignment",
@@ -368,7 +368,7 @@
     "published_date": "2026-02-19T05:35:23+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T21:02:19.873905+00:00"
+    "fetched_at": "2026-02-23T22:35:49.421207+00:00"
   },
   {
     "title": "Fail-Closed Alignment for Large Language Models",
@@ -384,7 +384,7 @@
     "published_date": "2026-02-19T00:33:35+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T21:02:19.873953+00:00"
+    "fetched_at": "2026-02-23T22:35:49.421256+00:00"
   },
   {
     "title": "What will the first human-level AI look like, and how might things go wrong?",
@@ -395,7 +395,7 @@
     "published_date": "2026-02-19T00:00:00+00:00",
     "source_type": "scrape",
     "source_url": "https://far.ai/blog/",
-    "fetched_at": "2026-02-23T21:02:23.213256+00:00"
+    "fetched_at": "2026-02-23T22:35:53.738367+00:00"
   },
   {
     "title": "Method: Concept Influence",
@@ -406,7 +406,7 @@
     "published_date": "2026-02-19T00:00:00+00:00",
     "source_type": "scrape",
     "source_url": "https://far.ai/blog/",
-    "fetched_at": "2026-02-23T21:02:23.214822+00:00"
+    "fetched_at": "2026-02-23T22:35:53.740011+00:00"
   },
   {
     "title": "Funding 60 projects to advance AI alignment research",
@@ -417,7 +417,7 @@
     "published_date": "2026-02-19T00:00:00+00:00",
     "source_type": "scrape",
     "source_url": "https://www.aisi.gov.uk/work",
-    "fetched_at": "2026-02-23T21:02:24.201745+00:00"
+    "fetched_at": "2026-02-23T22:35:54.588097+00:00"
   },
   {
     "title": "Beyond Message Passing: A Symbolic Alternative for Expressive and Interpretable Graph Learning",
@@ -437,7 +437,7 @@
     "published_date": "2026-02-18T23:25:25+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T21:02:19.874017+00:00"
+    "fetched_at": "2026-02-23T22:35:49.421322+00:00"
   },
   {
     "title": "Narrow fine-tuning erodes safety alignment in vision-language agents",
@@ -451,7 +451,7 @@
     "published_date": "2026-02-18T22:47:28+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T21:02:19.874064+00:00"
+    "fetched_at": "2026-02-23T22:35:49.421374+00:00"
   },
   {
     "title": "Why we should expect ruthless sociopath ASI",
@@ -464,7 +464,7 @@
     "published_date": "2026-02-18T22:28:17+00:00",
     "source_type": "rss",
     "source_url": "https://www.alignmentforum.org/feed.xml",
-    "fetched_at": "2026-02-23T21:02:13.120750+00:00"
+    "fetched_at": "2026-02-23T22:35:42.181036+00:00"
   },
   {
     "title": "Formal Mechanistic Interpretability: Automated Circuit Discovery with Provable Guarantees",
@@ -479,7 +479,7 @@
     "published_date": "2026-02-18T19:41:01+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T21:02:19.874121+00:00"
+    "fetched_at": "2026-02-23T22:35:49.421432+00:00"
   },
   {
     "title": "References Improve LLM Alignment in Non-Verifiable Domains",
@@ -497,7 +497,7 @@
     "published_date": "2026-02-18T19:03:34+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T21:02:19.874176+00:00"
+    "fetched_at": "2026-02-23T22:35:49.421488+00:00"
   },
   {
     "title": "Causality is Key for Interpretability Claims to Generalise",
@@ -515,7 +515,7 @@
     "published_date": "2026-02-18T18:45:04+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T21:02:19.874227+00:00"
+    "fetched_at": "2026-02-23T22:35:49.421541+00:00"
   },
   {
     "title": "Align Once, Benefit Multilingually: Enforcing Multilingual Consistency for LLM Safety Alignment",
@@ -532,7 +532,7 @@
     "published_date": "2026-02-18T18:01:23+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T21:02:19.874280+00:00"
+    "fetched_at": "2026-02-23T22:35:49.421595+00:00"
   },
   {
     "title": "Functional Decomposition and Shapley Interactions for Interpreting Survival Models",
@@ -550,7 +550,7 @@
     "published_date": "2026-02-18T14:47:20+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T21:02:19.874340+00:00"
+    "fetched_at": "2026-02-23T22:35:49.421654+00:00"
   },
   {
     "title": "Interpretability-by-Design with Accurate Locally Additive Models and Conditional Feature Effects",
@@ -570,7 +570,7 @@
     "published_date": "2026-02-18T14:45:33+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T21:02:19.874404+00:00"
+    "fetched_at": "2026-02-23T22:35:49.421718+00:00"
   },
   {
     "title": "Intra-Fairness Dynamics: The Bias Spillover Effect in Targeted LLM Alignment",
@@ -585,7 +585,7 @@
     "published_date": "2026-02-18T13:19:11+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T21:02:19.874453+00:00"
+    "fetched_at": "2026-02-23T22:35:49.421766+00:00"
   },
   {
     "title": "Prediction of Major Solar Flares Using Interpretable Class-dependent Reward Framework with Active Region Magnetograms and Domain Knowledge",
@@ -614,7 +614,7 @@
     "published_date": "2026-02-18T08:30:02+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T21:02:19.874537+00:00"
+    "fetched_at": "2026-02-23T22:35:49.421851+00:00"
   },
   {
     "title": "Introducing EVMbench",
@@ -627,7 +627,7 @@
     "published_date": "2026-02-18T05:00:00+00:00",
     "source_type": "rss",
     "source_url": "https://openai.com/news/rss.xml",
-    "fetched_at": "2026-02-23T21:02:11.951918+00:00"
+    "fetched_at": "2026-02-23T22:35:40.698900+00:00"
   },
   {
     "title": "Multi-Objective Alignment of Language Models for Personalized Psychotherapy",
@@ -646,7 +646,7 @@
     "published_date": "2026-02-17T22:08:14+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T21:02:19.874590+00:00"
+    "fetched_at": "2026-02-23T22:35:49.421905+00:00"
   },
   {
     "title": "Operationalising the Superficial Alignment Hypothesis via Task Complexity",
@@ -664,7 +664,7 @@
     "published_date": "2026-02-17T18:59:39+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T21:02:19.874642+00:00"
+    "fetched_at": "2026-02-23T22:35:49.421957+00:00"
   },
   {
     "title": "The Geometry of Alignment Collapse: When Fine-Tuning Breaks Safety",
@@ -684,7 +684,7 @@
     "published_date": "2026-02-17T18:39:15+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T21:02:19.874698+00:00"
+    "fetched_at": "2026-02-23T22:35:49.422013+00:00"
   },
   {
     "title": "Intent Laundering: AI Safety Datasets Are Not What They Seem",
@@ -698,7 +698,7 @@
     "published_date": "2026-02-17T18:29:22+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T21:02:19.874745+00:00"
+    "fetched_at": "2026-02-23T22:35:49.422059+00:00"
   },
   {
     "title": "MRC-GAT: A Meta-Relational Copula-Based Graph Attention Network for Interpretable Multimodal Alzheimer's Disease Diagnosis",
@@ -713,7 +713,7 @@
     "published_date": "2026-02-17T17:15:32+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T21:02:19.874807+00:00"
+    "fetched_at": "2026-02-23T22:35:49.422120+00:00"
   },
   {
     "title": "Analyzing coding agent transcripts to upper bound productivity gains from AI agents",
@@ -726,7 +726,7 @@
     "published_date": "2026-02-17T13:00:00+00:00",
     "source_type": "rss",
     "source_url": "https://metr.org/feed.xml",
-    "fetched_at": "2026-02-23T21:02:16.823475+00:00"
+    "fetched_at": "2026-02-23T22:35:46.172129+00:00"
   },
   {
     "title": "GMAIL: Generative Modality Alignment for generated Image Learning",
@@ -740,7 +740,7 @@
     "published_date": "2026-02-17T05:40:25+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T21:02:19.875132+00:00"
+    "fetched_at": "2026-02-23T22:35:49.422444+00:00"
   },
   {
     "title": "Discovering Implicit Large Language Model Alignment Objectives",
@@ -755,7 +755,7 @@
     "published_date": "2026-02-17T03:58:55+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T21:02:19.875180+00:00"
+    "fetched_at": "2026-02-23T22:35:49.422491+00:00"
   },
   {
     "title": "Will reward-seekers respond to distant incentives?",
@@ -768,7 +768,7 @@
     "published_date": "2026-02-17T00:35:12+00:00",
     "source_type": "rss",
     "source_url": "https://www.alignmentforum.org/feed.xml",
-    "fetched_at": "2026-02-23T21:02:13.121025+00:00"
+    "fetched_at": "2026-02-23T22:35:42.181428+00:00"
   },
   {
     "title": "Boundary Point Jailbreaking: A new way to break the strongest AI defences",
@@ -779,7 +779,7 @@
     "published_date": "2026-02-17T00:00:00+00:00",
     "source_type": "scrape",
     "source_url": "https://www.aisi.gov.uk/work",
-    "fetched_at": "2026-02-23T21:02:24.203090+00:00"
+    "fetched_at": "2026-02-23T22:35:54.589438+00:00"
   },
   {
     "title": "InferenceX v2: NVIDIA Blackwell Vs AMD vs Hopper - Formerly InferenceMAX",
@@ -792,7 +792,7 @@
     "published_date": "2026-02-16T22:13:11+00:00",
     "source_type": "rss",
     "source_url": "https://newsletter.semianalysis.com/feed",
-    "fetched_at": "2026-02-23T21:02:19.505438+00:00"
+    "fetched_at": "2026-02-23T22:35:48.723350+00:00"
   },
   {
     "title": "Tool-Aware Planning in Contact Center AI: Evaluating LLMs through Lineage-Guided Query Decomposition",
@@ -807,7 +807,7 @@
     "published_date": "2026-02-16T17:36:05+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T21:02:19.875231+00:00"
+    "fetched_at": "2026-02-23T22:35:49.422541+00:00"
   },
   {
     "title": "Concept Influence: Leveraging Interpretability to Improve Performance and Efficiency in Training Data Attribution",
@@ -828,7 +828,7 @@
     "published_date": "2026-02-16T16:02:09+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T21:02:19.875411+00:00"
+    "fetched_at": "2026-02-23T22:35:49.422718+00:00"
   },
   {
     "title": "Interactionless Inverse Reinforcement Learning: A Data-Centric Framework for Durable Alignment",
@@ -842,7 +842,7 @@
     "published_date": "2026-02-16T15:40:10+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T21:02:19.875456+00:00"
+    "fetched_at": "2026-02-23T22:35:49.422762+00:00"
   },
   {
     "title": "“Will reward-seekers respond to distant incentives?” by Alex Mallen",
@@ -855,6 +855,6 @@
     "published_date": "2026-02-16T05:00:00+00:00",
     "source_type": "rss",
     "source_url": "https://feeds.type3.audio/redwood-research.rss",
-    "fetched_at": "2026-02-23T21:02:12.603021+00:00"
+    "fetched_at": "2026-02-23T22:35:41.421840+00:00"
   }
 ]
