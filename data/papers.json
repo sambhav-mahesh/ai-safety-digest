@@ -1,14 +1,82 @@
 [
   {
-    "title": "Future-Ready: Building Tomorrow’s Tech Workforce",
+    "title": "Why we no longer evaluate SWE-bench Verified",
+    "authors": [
+      "OpenAI News"
+    ],
+    "organization": "OpenAI",
+    "abstract": "SWE-bench Verified is increasingly contaminated and mismeasures frontier coding progress. Our analysis shows flawed tests and training leakage. We recommend SWE-bench Pro.",
+    "url": "https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified",
+    "published_date": "2026-02-23T16:00:00+00:00",
+    "source_type": "rss",
+    "source_url": "https://openai.com/news/rss.xml",
+    "fetched_at": "2026-02-23T18:09:23.979076+00:00"
+  },
+  {
+    "title": "The Hot Mess of AI: How Does Misalignment Scale with Model Intelligence and Task Complexity?",
+    "authors": [],
+    "organization": "Anthropic",
+    "abstract": "Research from Anthropic titled 'The Hot Mess of AI: How Does Misalignment Scale with Model Intelligence and Task Complexity?'. Published 2026-02-23.",
+    "url": "https://alignment.anthropic.com/2026/hot-mess-of-ai/",
+    "published_date": "2026-02-23T00:00:00+00:00",
+    "source_type": "scrape",
+    "source_url": "https://alignment.anthropic.com/",
+    "fetched_at": "2026-02-23T18:09:33.117093+00:00"
+  },
+  {
+    "title": "Gemini 3.1 Pro: A smarter model for your most complex tasks",
+    "authors": [],
+    "organization": "Google DeepMind",
+    "abstract": "Gemini 3.1 Pro is here to help you tackle complex tasks. The upgraded core intelligence is rolling out across consumer and developer products. You can access 3.1 Pro through the Gemini API, Vertex AI, the Gemini app, and NotebookLM.",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro",
+    "published_date": "2026-02-23T00:00:00+00:00",
+    "source_type": "scrape",
+    "source_url": "https://deepmind.google/discover/blog/?category=responsible-development-and-safety",
+    "fetched_at": "2026-02-23T18:09:33.678222+00:00"
+  },
+  {
+    "title": "Judge Reliability Harness",
+    "authors": [],
+    "organization": "RAND",
+    "abstract": "Tool Feb 23, 2026 RAND researchers developed the Judge Reliability Harness, an open-source library that orchestrates standardized, reproducible evaluations of large language model–based judges through systematic perturbation testing and human-in-the-loop validation.",
+    "url": "https://www.rand.org/pubs/tools/TLA4547-1.html",
+    "published_date": "2026-02-23T00:00:00+00:00",
+    "source_type": "scrape",
+    "source_url": "https://www.rand.org/topics/artificial-intelligence.html",
+    "fetched_at": "2026-02-23T18:09:39.311191+00:00"
+  },
+  {
+    "title": "Decisive Economic Advantage: Modeling the Transition from Temporary First-Mover Leads to Economic Dominance in Artificial General Intelligence",
+    "authors": [],
+    "organization": "RAND",
+    "abstract": "Research Feb 23, 2026 Artificial general intelligence may differ from past technologies in ways that would allow a leader to turn an early advantage into decisive economic advantage. Artificial general intelligence may differ from past technologies in ways that would allow a leader to turn an early advantage into decisive economic advantage.",
+    "url": "https://www.rand.org/pubs/research_reports/RRA4444-1.html",
+    "published_date": "2026-02-23T00:00:00+00:00",
+    "source_type": "scrape",
+    "source_url": "https://www.rand.org/topics/artificial-intelligence.html",
+    "fetched_at": "2026-02-23T18:09:39.311485+00:00"
+  },
+  {
+    "title": "China’s Military AI Wish List",
     "authors": [],
     "organization": "CSET",
-    "abstract": "Please join the Center for Security and Emerging Technology on Tuesday, March 10, for our 2026 Spring Symposium, which will include discussions on building the AI and emerging technology workforce. The event will feature a fireside chat with Senator Lisa Blunt Rochester, as well as insights from industry and labor experts at the cutting edge of technology workforce policy.",
-    "url": "https://cset.georgetown.edu/news",
-    "published_date": "2026-03-10T00:00:00+00:00",
+    "abstract": "This report examines thousands of Chinese-language open-source requests for proposal (RFPs) published by the People’s Liberation Army between January 1, 2023, and December 31, 2024. The RFPs the authors reviewed offer insights into the PLA’s priorities and ambitions for AI-enabled military technologies associated with C5ISRT: command, control, communications, computers, cyber, intelligence, surveillance, reconnaissance, and targeting.",
+    "url": "https://cset.georgetown.edu/publication/chinas-military-ai-wish-list/",
+    "published_date": "2026-02-23T00:00:00+00:00",
     "source_type": "scrape",
     "source_url": "https://cset.georgetown.edu/publications/",
-    "fetched_at": "2026-02-23T11:28:08.899681+00:00"
+    "fetched_at": "2026-02-23T18:09:39.768189+00:00"
+  },
+  {
+    "title": "Physical AI",
+    "authors": [],
+    "organization": "CSET",
+    "abstract": "This paper examines the convergence of artificial intelligence and robotics, analyzing the emerging field of Physical AI. It provides a detailed overview of the supply chain challenges, competitive dynamics, and policy considerations that define this potentially transformative emerging technology.",
+    "url": "https://cset.georgetown.edu/publication/physical-ai/",
+    "published_date": "2026-02-23T00:00:00+00:00",
+    "source_type": "scrape",
+    "source_url": "https://cset.georgetown.edu/publications/",
+    "fetched_at": "2026-02-23T18:09:39.768885+00:00"
   },
   {
     "title": "Did Claude 3 Opus align itself via gradient hacking?",
@@ -21,7 +89,7 @@
     "published_date": "2026-02-21T22:24:31.247000+00:00",
     "source_type": "rss",
     "source_url": "https://www.lesswrong.com/graphql",
-    "fetched_at": "2026-02-23T11:28:12.561296+00:00"
+    "fetched_at": "2026-02-23T18:09:45.771459+00:00"
   },
   {
     "title": "The Spectre haunting the \"AI Safety\" Community",
@@ -34,7 +102,7 @@
     "published_date": "2026-02-21T11:14:10.772000+00:00",
     "source_type": "rss",
     "source_url": "https://www.lesswrong.com/graphql",
-    "fetched_at": "2026-02-23T11:28:12.561321+00:00"
+    "fetched_at": "2026-02-23T18:09:45.771496+00:00"
   },
   {
     "title": "How will we do SFT on models with opaque reasoning?",
@@ -44,10 +112,23 @@
     "organization": "Alignment Forum",
     "abstract": "Current LLMs externalize lots of their reasoning in human interpretable language. This reasoning is sometimes unfaithful , sometimes strange and concerning , and LLMs can do somewhat impressive reasoning without using CoT , but my overall impression is that CoT currently is a reasonably complete and accurate representation of LLM reasoning. However, reasoning in interpretable language might turn out to be uncompetitive—if so, it seems probable that opaque reasoning will be adopted in frontier AI labs. If future AI models have opaque reasoning, this will probably change what training we can apply to these AIs. For example, currently we train models to reason in a good way about math problems, or to reason in a desired way about the spec that we hope they’ll follow.",
     "url": "https://www.alignmentforum.org/posts/GJTzhQgaRWLFJkPbt/how-will-we-do-sft-on-models-with-opaque-reasoning",
-    "published_date": "2026-02-21T00:00:17+00:00",
+    "published_date": "2026-02-21T05:00:17+00:00",
     "source_type": "rss",
     "source_url": "https://www.alignmentforum.org/feed.xml",
-    "fetched_at": "2026-02-23T11:27:58.686752+00:00"
+    "fetched_at": "2026-02-23T18:09:25.521759+00:00"
+  },
+  {
+    "title": "Our First Proof submissions",
+    "authors": [
+      "OpenAI News"
+    ],
+    "organization": "OpenAI",
+    "abstract": "Research from OpenAI titled 'Our First Proof submissions'. Published 2026-02-20. Authors: OpenAI News.",
+    "url": "https://openai.com/index/first-proof-submissions",
+    "published_date": "2026-02-20T19:30:00+00:00",
+    "source_type": "rss",
+    "source_url": "https://openai.com/news/rss.xml",
+    "fetched_at": "2026-02-23T18:09:23.979142+00:00"
   },
   {
     "title": "Theory and interpretability of Quantum Extreme Learning Machines: a Pauli-transfer matrix approach",
@@ -61,20 +142,7 @@
     "published_date": "2026-02-20T17:33:27+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T11:28:02.977806+00:00"
-  },
-  {
-    "title": "Our First Proof submissions",
-    "authors": [
-      "OpenAI News"
-    ],
-    "organization": "OpenAI",
-    "abstract": "Research from OpenAI titled 'Our First Proof submissions'. Published 2026-02-20. Authors: OpenAI News.",
-    "url": "https://openai.com/index/first-proof-submissions",
-    "published_date": "2026-02-20T14:30:00+00:00",
-    "source_type": "rss",
-    "source_url": "https://openai.com/news/rss.xml",
-    "fetched_at": "2026-02-23T11:27:57.654838+00:00"
+    "fetched_at": "2026-02-23T18:09:32.865145+00:00"
   },
   {
     "title": "RamanSeg: Interpretability-driven Deep Learning on Raman Spectra for Cancer Diagnosis",
@@ -98,7 +166,7 @@
     "published_date": "2026-02-20T10:18:27+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T11:28:02.977905+00:00"
+    "fetched_at": "2026-02-23T18:09:32.865225+00:00"
   },
   {
     "title": "ROCKET: Residual-Oriented Multi-Layer Alignment for Spatially-Aware Vision-Language-Action Models",
@@ -119,7 +187,7 @@
     "published_date": "2026-02-20T03:06:22+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T11:28:02.978238+00:00"
+    "fetched_at": "2026-02-23T18:09:32.865490+00:00"
   },
   {
     "title": "Alignment in Time: Peak-Aware Orchestration for Long-Horizon Agentic Systems",
@@ -133,7 +201,7 @@
     "published_date": "2026-02-20T00:16:07+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T11:28:02.978297+00:00"
+    "fetched_at": "2026-02-23T18:09:32.865537+00:00"
   },
   {
     "title": "Differences in Typological Alignment in Language Models' Treatment of Differential Argument Marking",
@@ -148,7 +216,7 @@
     "published_date": "2026-02-19T18:56:34+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T11:28:02.978352+00:00"
+    "fetched_at": "2026-02-23T18:09:32.865586+00:00"
   },
   {
     "title": "ODESteer: A Unified ODE-Based Steering Framework for LLM Alignment",
@@ -171,7 +239,7 @@
     "published_date": "2026-02-19T17:13:44+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T11:28:02.978434+00:00"
+    "fetched_at": "2026-02-23T18:09:32.865649+00:00"
   },
   {
     "title": "Systematic Evaluation of Single-Cell Foundation Model Interpretability Reveals Attention Captures Co-Expression Rather Than Unique Regulatory Signal",
@@ -184,7 +252,7 @@
     "published_date": "2026-02-19T16:43:12+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T11:28:02.978503+00:00"
+    "fetched_at": "2026-02-23T18:09:32.865706+00:00"
   },
   {
     "title": "Inelastic Constitutive Kolmogorov-Arnold Networks: A generalized framework for automated discovery of interpretable inelastic material models",
@@ -201,7 +269,20 @@
     "published_date": "2026-02-19T15:51:24+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T11:28:02.978566+00:00"
+    "fetched_at": "2026-02-23T18:09:32.865770+00:00"
+  },
+  {
+    "title": "Five lessons from having helped run an AI-Biology RCT",
+    "authors": [
+      "METR"
+    ],
+    "organization": "METR",
+    "abstract": "Evidence-based AI policy is important but hard. We need more in-depth studies – which often don’t fit into commercial release cycles. NOTE: This post reflects my personal meta takeaways about the role of Randomized Controlled Trials (RCTs) in AI safety testing. If you have not yet read the Active Site RCT study itself, consider doing so first: see the main results and forecasts . In early 2025, AI systems began outperforming biology experts on biology benchmarks – OpenAI’s o3 outperformed 94% of virology experts on troubleshooting questions in their own specialties. However, it remained unclear how much this translated to real-world novice “uplift” : Could a novice actually use AI to perform wet-lab tasks they could not otherwise perform? Over the summer, I tested this question directly with Active Site (formerly called Panoplia Laboratories).",
+    "url": "https://metr.org/blog/2026-02-19-five-lessons-from-ai-biology-rct/",
+    "published_date": "2026-02-19T13:00:00+00:00",
+    "source_type": "rss",
+    "source_url": "https://metr.org/feed.xml",
+    "fetched_at": "2026-02-23T18:09:29.866490+00:00"
   },
   {
     "title": "All Leaks Count, Some Count More: Interpretable Temporal Contamination Detection in LLM Backtesting",
@@ -216,7 +297,7 @@
     "published_date": "2026-02-19T10:28:00+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T11:28:02.978950+00:00"
+    "fetched_at": "2026-02-23T18:09:32.866119+00:00"
   },
   {
     "title": "Mechanistic Interpretability of Cognitive Complexity in LLMs via Linear Probing using Bloom's Taxonomy",
@@ -230,20 +311,7 @@
     "published_date": "2026-02-19T10:19:04+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T11:28:02.979017+00:00"
-  },
-  {
-    "title": "Five lessons from having helped run an AI-Biology RCT",
-    "authors": [
-      "METR"
-    ],
-    "organization": "METR",
-    "abstract": "Evidence-based AI policy is important but hard. We need more in-depth studies – which often don’t fit into commercial release cycles. NOTE: This post reflects my personal meta takeaways about the role of Randomized Controlled Trials (RCTs) in AI safety testing. If you have not yet read the Active Site RCT study itself, consider doing so first: see the main results and forecasts . In early 2025, AI systems began outperforming biology experts on biology benchmarks – OpenAI’s o3 outperformed 94% of virology experts on troubleshooting questions in their own specialties. However, it remained unclear how much this translated to real-world novice “uplift” : Could a novice actually use AI to perform wet-lab tasks they could not otherwise perform? Over the summer, I tested this question directly with Active Site (formerly called Panoplia Laboratories).",
-    "url": "https://metr.org/blog/2026-02-19-five-lessons-from-ai-biology-rct/",
-    "published_date": "2026-02-19T08:00:00+00:00",
-    "source_type": "rss",
-    "source_url": "https://metr.org/feed.xml",
-    "fetched_at": "2026-02-23T11:28:00.649619+00:00"
+    "fetched_at": "2026-02-23T18:09:32.866169+00:00"
   },
   {
     "title": "The Emergence of Lab-Driven Alignment Signatures: A Psychometric Framework for Auditing Latent Bias and Compounding Risk in Generative AI",
@@ -256,7 +324,7 @@
     "published_date": "2026-02-19T06:56:01+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T11:28:02.979067+00:00"
+    "fetched_at": "2026-02-23T18:09:32.866226+00:00"
   },
   {
     "title": "Instructor-Aligned Knowledge Graphs for Personalized Learning",
@@ -272,7 +340,7 @@
     "published_date": "2026-02-19T06:15:10+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T11:28:02.979116+00:00"
+    "fetched_at": "2026-02-23T18:09:32.866276+00:00"
   },
   {
     "title": "FLoRG: Federated Fine-tuning with Low-rank Gram Matrices and Procrustes Alignment",
@@ -287,7 +355,7 @@
     "published_date": "2026-02-19T05:35:23+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T11:28:02.979164+00:00"
+    "fetched_at": "2026-02-23T18:09:32.866325+00:00"
   },
   {
     "title": "Fail-Closed Alignment for Large Language Models",
@@ -303,7 +371,7 @@
     "published_date": "2026-02-19T00:33:35+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T11:28:02.979211+00:00"
+    "fetched_at": "2026-02-23T18:09:32.866373+00:00"
   },
   {
     "title": "What will the first human-level AI look like, and how might things go wrong?",
@@ -314,7 +382,7 @@
     "published_date": "2026-02-19T00:00:00+00:00",
     "source_type": "scrape",
     "source_url": "https://far.ai/blog/",
-    "fetched_at": "2026-02-23T11:28:07.329112+00:00"
+    "fetched_at": "2026-02-23T18:09:37.570782+00:00"
   },
   {
     "title": "Method: Concept Influence",
@@ -325,7 +393,7 @@
     "published_date": "2026-02-19T00:00:00+00:00",
     "source_type": "scrape",
     "source_url": "https://far.ai/blog/",
-    "fetched_at": "2026-02-23T11:28:07.329938+00:00"
+    "fetched_at": "2026-02-23T18:09:37.572357+00:00"
   },
   {
     "title": "Funding 60 projects to advance AI alignment research",
@@ -336,7 +404,7 @@
     "published_date": "2026-02-19T00:00:00+00:00",
     "source_type": "scrape",
     "source_url": "https://www.aisi.gov.uk/work",
-    "fetched_at": "2026-02-23T11:28:07.803933+00:00"
+    "fetched_at": "2026-02-23T18:09:38.535621+00:00"
   },
   {
     "title": "Beyond Message Passing: A Symbolic Alternative for Expressive and Interpretable Graph Learning",
@@ -356,7 +424,7 @@
     "published_date": "2026-02-18T23:25:25+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T11:28:02.979273+00:00"
+    "fetched_at": "2026-02-23T18:09:32.866437+00:00"
   },
   {
     "title": "Narrow fine-tuning erodes safety alignment in vision-language agents",
@@ -370,7 +438,20 @@
     "published_date": "2026-02-18T22:47:28+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T11:28:02.979318+00:00"
+    "fetched_at": "2026-02-23T18:09:32.866484+00:00"
+  },
+  {
+    "title": "Why we should expect ruthless sociopath ASI",
+    "authors": [
+      "Steven Byrnes"
+    ],
+    "organization": "Alignment Forum",
+    "abstract": "The conversation begins (Fictional) Optimist: So you expect future artificial superintelligence (ASI) “by default”, i.e. in the absence of yet-to-be-invented techniques, to be a ruthless sociopath, happy to lie, cheat, and steal, whenever doing so is selfishly beneficial, and with callous indifference to whether anyone (including its own programmers and users) lives or dies? Me: Yup! (Alas.) Optimist: …Despite all the evidence right in front of our eyes from humans and LLMs. Me: Yup! Optimist: OK, well, I’m here to tell you: that is a very specific and strange thing to expect, especially in the absence of any concrete evidence whatsoever. There’s no reason to expect it. If you think that ruthless sociopathy is the “true core nature of intelligence” or whatever, then&nbsp; you should really look at yourself in a mirror and ask yourself where your life went horribly wrong .",
+    "url": "https://www.alignmentforum.org/posts/ZJZZEuPFKeEdkrRyf/why-we-should-expect-ruthless-sociopath-asi",
+    "published_date": "2026-02-18T22:28:17+00:00",
+    "source_type": "rss",
+    "source_url": "https://www.alignmentforum.org/feed.xml",
+    "fetched_at": "2026-02-23T18:09:25.521907+00:00"
   },
   {
     "title": "Formal Mechanistic Interpretability: Automated Circuit Discovery with Provable Guarantees",
@@ -385,7 +466,7 @@
     "published_date": "2026-02-18T19:41:01+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T11:28:02.979369+00:00"
+    "fetched_at": "2026-02-23T18:09:32.866541+00:00"
   },
   {
     "title": "References Improve LLM Alignment in Non-Verifiable Domains",
@@ -403,7 +484,7 @@
     "published_date": "2026-02-18T19:03:34+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T11:28:02.979435+00:00"
+    "fetched_at": "2026-02-23T18:09:32.866594+00:00"
   },
   {
     "title": "Causality is Key for Interpretability Claims to Generalise",
@@ -421,7 +502,7 @@
     "published_date": "2026-02-18T18:45:04+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T11:28:02.979485+00:00"
+    "fetched_at": "2026-02-23T18:09:32.866645+00:00"
   },
   {
     "title": "Align Once, Benefit Multilingually: Enforcing Multilingual Consistency for LLM Safety Alignment",
@@ -438,20 +519,7 @@
     "published_date": "2026-02-18T18:01:23+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T11:28:02.979534+00:00"
-  },
-  {
-    "title": "Why we should expect ruthless sociopath ASI",
-    "authors": [
-      "Steven Byrnes"
-    ],
-    "organization": "Alignment Forum",
-    "abstract": "The conversation begins (Fictional) Optimist: So you expect future artificial superintelligence (ASI) “by default”, i.e. in the absence of yet-to-be-invented techniques, to be a ruthless sociopath, happy to lie, cheat, and steal, whenever doing so is selfishly beneficial, and with callous indifference to whether anyone (including its own programmers and users) lives or dies? Me: Yup! (Alas.) Optimist: …Despite all the evidence right in front of our eyes from humans and LLMs. Me: Yup! Optimist: OK, well, I’m here to tell you: that is a very specific and strange thing to expect, especially in the absence of any concrete evidence whatsoever. There’s no reason to expect it. If you think that ruthless sociopathy is the “true core nature of intelligence” or whatever, then&nbsp; you should really look at yourself in a mirror and ask yourself where your life went horribly wrong .",
-    "url": "https://www.alignmentforum.org/posts/ZJZZEuPFKeEdkrRyf/why-we-should-expect-ruthless-sociopath-asi",
-    "published_date": "2026-02-18T17:28:17+00:00",
-    "source_type": "rss",
-    "source_url": "https://www.alignmentforum.org/feed.xml",
-    "fetched_at": "2026-02-23T11:27:58.686916+00:00"
+    "fetched_at": "2026-02-23T18:09:32.866698+00:00"
   },
   {
     "title": "Functional Decomposition and Shapley Interactions for Interpreting Survival Models",
@@ -469,7 +537,7 @@
     "published_date": "2026-02-18T14:47:20+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T11:28:02.979587+00:00"
+    "fetched_at": "2026-02-23T18:09:32.866756+00:00"
   },
   {
     "title": "Interpretability-by-Design with Accurate Locally Additive Models and Conditional Feature Effects",
@@ -489,7 +557,7 @@
     "published_date": "2026-02-18T14:45:33+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T11:28:02.979644+00:00"
+    "fetched_at": "2026-02-23T18:09:32.866820+00:00"
   },
   {
     "title": "Intra-Fairness Dynamics: The Bias Spillover Effect in Targeted LLM Alignment",
@@ -504,7 +572,7 @@
     "published_date": "2026-02-18T13:19:11+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T11:28:02.979689+00:00"
+    "fetched_at": "2026-02-23T18:09:32.866867+00:00"
   },
   {
     "title": "Prediction of Major Solar Flares Using Interpretable Class-dependent Reward Framework with Active Region Magnetograms and Domain Knowledge",
@@ -533,7 +601,7 @@
     "published_date": "2026-02-18T08:30:02+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T11:28:02.979766+00:00"
+    "fetched_at": "2026-02-23T18:09:32.866952+00:00"
   },
   {
     "title": "Introducing EVMbench",
@@ -543,10 +611,10 @@
     "organization": "OpenAI",
     "abstract": "OpenAI and Paradigm introduce EVMbench, a benchmark evaluating AI agents’ ability to detect, patch, and exploit high-severity smart contract vulnerabilities.",
     "url": "https://openai.com/index/introducing-evmbench",
-    "published_date": "2026-02-18T00:00:00+00:00",
+    "published_date": "2026-02-18T05:00:00+00:00",
     "source_type": "rss",
     "source_url": "https://openai.com/news/rss.xml",
-    "fetched_at": "2026-02-23T11:27:57.654933+00:00"
+    "fetched_at": "2026-02-23T18:09:23.979222+00:00"
   },
   {
     "title": "Multi-Objective Alignment of Language Models for Personalized Psychotherapy",
@@ -565,7 +633,7 @@
     "published_date": "2026-02-17T22:08:14+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T11:28:02.979816+00:00"
+    "fetched_at": "2026-02-23T18:09:32.867005+00:00"
   },
   {
     "title": "Operationalising the Superficial Alignment Hypothesis via Task Complexity",
@@ -583,7 +651,7 @@
     "published_date": "2026-02-17T18:59:39+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T11:28:02.979864+00:00"
+    "fetched_at": "2026-02-23T18:09:32.867056+00:00"
   },
   {
     "title": "The Geometry of Alignment Collapse: When Fine-Tuning Breaks Safety",
@@ -603,7 +671,7 @@
     "published_date": "2026-02-17T18:39:15+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T11:28:02.979916+00:00"
+    "fetched_at": "2026-02-23T18:09:32.867112+00:00"
   },
   {
     "title": "Intent Laundering: AI Safety Datasets Are Not What They Seem",
@@ -617,7 +685,7 @@
     "published_date": "2026-02-17T18:29:22+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T11:28:02.979958+00:00"
+    "fetched_at": "2026-02-23T18:09:32.867158+00:00"
   },
   {
     "title": "MRC-GAT: A Meta-Relational Copula-Based Graph Attention Network for Interpretable Multimodal Alzheimer's Disease Diagnosis",
@@ -632,7 +700,7 @@
     "published_date": "2026-02-17T17:15:32+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T11:28:02.980012+00:00"
+    "fetched_at": "2026-02-23T18:09:32.867221+00:00"
   },
   {
     "title": "Analyzing coding agent transcripts to upper bound productivity gains from AI agents",
@@ -642,10 +710,10 @@
     "organization": "METR",
     "abstract": "Introduction Human uplift studies like the one we did in 2025 are becoming more expensive as working without AI becomes increasingly costly. In this post, I investigate whether coding agent transcripts could serve as a cheaper alternative for estimating uplift. I prototyped this using 5305 Claude Code transcripts generated in January 2026 by 7 METR technical staff 1 . I used an LLM judge to estimate how long each task would have taken an experienced software engineer without AI tools, then compared that to the time people actually spent on these tasks to calculate a time savings factor . Takeaways This method estimates a time savings factor of ~1.5x to ~13x on Claude Code-assisted tasks for 7 METR technical staff in January 2026 – though this result comes with substantial caveats.",
     "url": "https://metr.org/notes/2026-02-17-exploratory-transcript-analysis-for-estimating-time-savings-from-coding-agents/",
-    "published_date": "2026-02-17T08:00:00+00:00",
+    "published_date": "2026-02-17T13:00:00+00:00",
     "source_type": "rss",
     "source_url": "https://metr.org/feed.xml",
-    "fetched_at": "2026-02-23T11:28:00.649985+00:00"
+    "fetched_at": "2026-02-23T18:09:29.866832+00:00"
   },
   {
     "title": "GMAIL: Generative Modality Alignment for generated Image Learning",
@@ -659,7 +727,7 @@
     "published_date": "2026-02-17T05:40:25+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T11:28:02.980378+00:00"
+    "fetched_at": "2026-02-23T18:09:32.867524+00:00"
   },
   {
     "title": "Discovering Implicit Large Language Model Alignment Objectives",
@@ -674,7 +742,20 @@
     "published_date": "2026-02-17T03:58:55+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T11:28:02.980479+00:00"
+    "fetched_at": "2026-02-23T18:09:32.867573+00:00"
+  },
+  {
+    "title": "Will reward-seekers respond to distant incentives?",
+    "authors": [
+      "Alex Mallen"
+    ],
+    "organization": "Alignment Forum",
+    "abstract": "Reward-seekers are usually modeled as responding only to local incentives administered by developers. Here I ask: Will AIs or humans be able to influence their incentives at a distance—e.g., by retroactively reinforcing actions substantially in the future or by committing to run many copies of them in simulated deployments with different incentives? If reward-seekers are responsive to distant incentives, it fundamentally changes the threat model, and is probably bad news for developers on balance. The core problem is asymmetric control: developers can relatively [1] tightly control local incentives—the reward signal during training and deployment—but they can't prevent distant actors from offering competing incentives. This means a remotely-influenceable reward-seeker might overall act like a schemer : strategically undermining developer control, letting attacks through as a monitor, and hiding its misaligned propensities, not because of a flaw in its local training, but because it's responding to incentives developers don’t control.",
+    "url": "https://www.alignmentforum.org/posts/8cyjgrTSxGNdghesE/will-reward-seekers-respond-to-distant-incentives",
+    "published_date": "2026-02-17T00:35:12+00:00",
+    "source_type": "rss",
+    "source_url": "https://www.alignmentforum.org/feed.xml",
+    "fetched_at": "2026-02-23T18:09:25.522164+00:00"
   },
   {
     "title": "Boundary Point Jailbreaking: A new way to break the strongest AI defences",
@@ -685,20 +766,20 @@
     "published_date": "2026-02-17T00:00:00+00:00",
     "source_type": "scrape",
     "source_url": "https://www.aisi.gov.uk/work",
-    "fetched_at": "2026-02-23T11:28:07.804809+00:00"
+    "fetched_at": "2026-02-23T18:09:38.536960+00:00"
   },
   {
-    "title": "Will reward-seekers respond to distant incentives?",
+    "title": "InferenceX v2: NVIDIA Blackwell Vs AMD vs Hopper - Formerly InferenceMAX",
     "authors": [
-      "Alex Mallen"
+      "Dylan Patel"
     ],
-    "organization": "Alignment Forum",
-    "abstract": "Reward-seekers are usually modeled as responding only to local incentives administered by developers. Here I ask: Will AIs or humans be able to influence their incentives at a distance—e.g., by retroactively reinforcing actions substantially in the future or by committing to run many copies of them in simulated deployments with different incentives? If reward-seekers are responsive to distant incentives, it fundamentally changes the threat model, and is probably bad news for developers on balance. The core problem is asymmetric control: developers can relatively [1] tightly control local incentives—the reward signal during training and deployment—but they can't prevent distant actors from offering competing incentives. This means a remotely-influenceable reward-seeker might overall act like a schemer : strategically undermining developer control, letting attacks through as a monitor, and hiding its misaligned propensities, not because of a flaw in its local training, but because it's responding to incentives developers don’t control.",
-    "url": "https://www.alignmentforum.org/posts/8cyjgrTSxGNdghesE/will-reward-seekers-respond-to-distant-incentives",
-    "published_date": "2026-02-16T19:35:12+00:00",
+    "organization": "SemiAnalysis",
+    "abstract": "The Artist Known as InferenceMAX. GB300 NVL72, MI355X, B200, H100, Disaggregated Serving, Wide Expert Parallelism, Large Mixture of Experts, SGLang, vLLM, TRTLLM",
+    "url": "https://newsletter.semianalysis.com/p/inferencex-v2-nvidia-blackwell-vs",
+    "published_date": "2026-02-16T22:13:11+00:00",
     "source_type": "rss",
-    "source_url": "https://www.alignmentforum.org/feed.xml",
-    "fetched_at": "2026-02-23T11:27:58.687145+00:00"
+    "source_url": "https://newsletter.semianalysis.com/feed",
+    "fetched_at": "2026-02-23T18:09:32.487171+00:00"
   },
   {
     "title": "Don't Trust the Salt: AI Summarization, Multilingual Safety, and LLM Guardrails",
@@ -706,12 +787,12 @@
       "benbreen"
     ],
     "organization": "Hacker News",
-    "abstract": "Research from Hacker News titled 'Don't Trust the Salt: AI Summarization, Multilingual Safety, and LLM Guardrails'. Published 2026-02-16. Authors: benbreen.",
+    "abstract": "How AI summaries can be steered: bilingual prompts, hidden policies, and why multilingual LLM guardrails fail in human rights contexts.",
     "url": "https://royapakzad.substack.com/p/multilingual-llm-evaluation-to-guardrails",
     "published_date": "2026-02-16T17:57:46+00:00",
     "source_type": "rss",
     "source_url": "https://news.ycombinator.com/",
-    "fetched_at": "2026-02-23T11:28:12.829391+00:00"
+    "fetched_at": "2026-02-23T18:09:46.069305+00:00"
   },
   {
     "title": "Tool-Aware Planning in Contact Center AI: Evaluating LLMs through Lineage-Guided Query Decomposition",
@@ -726,20 +807,7 @@
     "published_date": "2026-02-16T17:36:05+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T11:28:02.980564+00:00"
-  },
-  {
-    "title": "InferenceX v2: NVIDIA Blackwell Vs AMD vs Hopper - Formerly InferenceMAX",
-    "authors": [
-      "Dylan Patel"
-    ],
-    "organization": "SemiAnalysis",
-    "abstract": "The Artist Known as InferenceMAX. GB300 NVL72, MI355X, B200, H100, Disaggregated Serving, Wide Expert Parallelism, Large Mixture of Experts, SGLang, vLLM, TRTLLM",
-    "url": "https://newsletter.semianalysis.com/p/inferencex-v2-nvidia-blackwell-vs",
-    "published_date": "2026-02-16T17:13:11+00:00",
-    "source_type": "rss",
-    "source_url": "https://newsletter.semianalysis.com/feed",
-    "fetched_at": "2026-02-23T11:28:01.944686+00:00"
+    "fetched_at": "2026-02-23T18:09:32.867624+00:00"
   },
   {
     "title": "Concept Influence: Leveraging Interpretability to Improve Performance and Efficiency in Training Data Attribution",
@@ -760,7 +828,7 @@
     "published_date": "2026-02-16T16:02:09+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T11:28:02.980826+00:00"
+    "fetched_at": "2026-02-23T18:09:32.867796+00:00"
   },
   {
     "title": "Interactionless Inverse Reinforcement Learning: A Data-Centric Framework for Durable Alignment",
@@ -774,7 +842,7 @@
     "published_date": "2026-02-16T15:40:10+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-23T11:28:02.980902+00:00"
+    "fetched_at": "2026-02-23T18:09:32.867840+00:00"
   },
   {
     "title": "“Will reward-seekers respond to distant incentives?” by Alex Mallen",
@@ -784,9 +852,9 @@
     "organization": "Redwood Research",
     "abstract": "Subtitle: Reward-seekers are supposed to be safer because they respond to incentives under developer control. But what if they also respond to incentives that aren't?. Reward-seekers are usually modeled as responding only to local incentives administered by developers. Here I ask: Will AIs or humans be able to influence their incentives at a distance—e.g., by retroactively reinforcing actions substantially in the future or by committing to run many copies of them in simulated deployments with different incentives? If reward-seekers are responsive to distant incentives, it fundamentally changes the threat model, and is probably bad news for developers on balance. The core problem is asymmetric control: developers can relatively[1]tightly control local incentives—the reward signal during training and deployment—but they can’t prevent distant actors from offering competing incentives.",
     "url": "https://blog.redwoodresearch.org/p/will-reward-seekers-respond-to-distant",
-    "published_date": "2026-02-16T00:00:00+00:00",
+    "published_date": "2026-02-16T05:00:00+00:00",
     "source_type": "rss",
     "source_url": "https://feeds.type3.audio/redwood-research.rss",
-    "fetched_at": "2026-02-23T11:27:58.345578+00:00"
+    "fetched_at": "2026-02-23T18:09:24.804684+00:00"
   }
 ]

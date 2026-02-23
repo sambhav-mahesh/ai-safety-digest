@@ -61,7 +61,8 @@ RESEARCH_ORGS: set[str] = {
     "epoch ai", "chai", "mats", "govai", "cset", "iaps", "cltr",
     "rand", "dan hendrycks", "paul christiano", "yoshua bengio",
     "lennart heim", "fli", "lesswrong", "semianalysis",
-    "zvi mowshowitz",
+    "zvi mowshowitz", "dean ball", "seb krier", "peter wildeford",
+    "ajeya cotra", "cnas",
 }
 
 # Minimum matching terms to keep a paper

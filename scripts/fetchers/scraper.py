@@ -85,10 +85,15 @@ def _parse_date_string(text: str) -> Optional[str]:
                     dt = datetime.strptime(date_str, fmt).replace(
                         tzinfo=timezone.utc
                     )
-                    # For month-only dates (e.g. "February 2026"), use the 15th
-                    # so current-month papers aren't excluded by the 7-day filter.
+                    # For month-only dates (e.g. "February 2026"), use the
+                    # current day-of-month if it's the current month so papers
+                    # aren't excluded by the 7-day filter late in the month.
                     if fmt == "%B %Y":
-                        dt = dt.replace(day=15)
+                        now = datetime.now(timezone.utc)
+                        if dt.year == now.year and dt.month == now.month:
+                            dt = dt.replace(day=now.day)
+                        else:
+                            dt = dt.replace(day=15)
                     return dt.isoformat()
                 except ValueError:
                     continue
@@ -113,6 +118,16 @@ def _extract_date(element) -> Optional[str]:
         parsed = _parse_date_string(time_tag.get_text(strip=True))
         if parsed:
             return parsed
+
+    # Try short metadata elements (spans, small tags) before full-text scan.
+    # This avoids picking up dates from paragraph content (e.g. "between
+    # January 1, 2023 and...") instead of the actual publication date.
+    for tag in element.find_all(["span", "small"]):
+        tag_text = tag.get_text(strip=True)
+        if tag_text and len(tag_text) < 60:
+            parsed = _parse_date_string(tag_text)
+            if parsed:
+                return parsed
 
     # Fall back to scanning the element text
     text = element.get_text(" ", strip=True)
@@ -176,7 +191,7 @@ def _extract_link(element, base_url: str) -> str:
 
 
 ARTICLE_CLASSES = re.compile(
-    r"post|card|entry|research|publication|article|blog|item", re.IGNORECASE
+    r"post|card|entry|research|publication|article|blog|item|teaser", re.IGNORECASE
 )
 
 # Titles that are obviously not papers/articles
@@ -285,6 +300,7 @@ def fetch_scraped(scrapers_config: list[dict]) -> list[Paper]:
         site_name = site_cfg.get("name", site_url)
         link_must_contain = site_cfg.get("link_must_contain", "")
         keywords = [k.lower() for k in site_cfg.get("keywords", [])]
+        article_class = site_cfg.get("article_class", "")
 
         logger.info("Scraping: %s (%s)", site_name, site_url)
 
@@ -295,7 +311,10 @@ def fetch_scraped(scrapers_config: list[dict]) -> list[Paper]:
             response.raise_for_status()
 
             soup = BeautifulSoup(response.text, "html.parser")
-            elements = _find_article_elements(soup)
+            if article_class:
+                elements = soup.find_all(class_=article_class)
+            else:
+                elements = _find_article_elements(soup)
 
             if not elements:
                 logger.info("No article elements found on %s", site_name)

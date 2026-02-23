@@ -31,6 +31,7 @@ from scripts.fetchers.arxiv_fetcher import fetch_arxiv
 from scripts.fetchers.scraper import fetch_scraped
 from scripts.fetchers.lesswrong import fetch_lesswrong
 from scripts.fetchers.trending import fetch_trending
+from scripts.fetchers.twitter import fetch_twitter
 from scripts.dedup import deduplicate
 from scripts.enrich import enrich_abstracts
 from scripts.filter import filter_papers
@@ -95,6 +96,7 @@ def main() -> None:
         ("scrapers",    fetch_scraped,   "scrapers"),
         ("LessWrong",   fetch_lesswrong, "lesswrong"),
         ("trending",    fetch_trending,  "trending"),
+        ("Twitter/X",   fetch_twitter,   "twitter"),
     ]:
         cfg = config.get(cfg_key, [] if cfg_key in ("rss_feeds", "scrapers") else {})
         if cfg:
@@ -144,7 +146,7 @@ def main() -> None:
     # -- Summary ---------------------------------------------------------------
     counts = Counter(p.source_type for p in papers)
     logger.info("--- Summary ---")
-    for src in ("rss", "arxiv", "scrape"):
+    for src in ("rss", "arxiv", "scrape", "twitter"):
         logger.info("  %-8s %d papers", src, counts.get(src, 0))
     logger.info("  %-8s %d papers", "TOTAL", len(papers))
 

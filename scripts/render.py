@@ -124,6 +124,11 @@ PRIORITY_ORGS: list[str] = [
     "Lennart Heim",
     "SemiAnalysis",
     "Zvi Mowshowitz",
+    "Dean Ball",
+    "Seb Krier",
+    "Peter Wildeford",
+    "Ajeya Cotra",
+    "CNAS",
 ]
 
 # Community/aggregator sources: useful for the grid but should not dominate
