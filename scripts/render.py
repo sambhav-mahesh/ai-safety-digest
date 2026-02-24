@@ -116,6 +116,7 @@ PRIORITY_ORGS: list[str] = [
     "MIRI",
     "Microsoft Research",
     "FAR AI",
+    "Forethought",
     "MATS",
     "GovAI",
     "IAPS",

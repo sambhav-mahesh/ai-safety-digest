@@ -60,7 +60,7 @@ RESEARCH_ORGS: set[str] = {
     "arc", "miri", "cais", "far ai", "uk aisi", "us aisi",
     "epoch ai", "chai", "mats", "govai", "cset", "iaps", "cltr",
     "rand", "dan hendrycks", "paul christiano", "yoshua bengio",
-    "lennart heim", "fli", "lesswrong", "semianalysis",
+    "lennart heim", "fli", "lesswrong", "semianalysis", "forethought",
     "zvi mowshowitz", "dean ball", "seb krier", "peter wildeford",
     "ajeya cotra", "cnas",
 }

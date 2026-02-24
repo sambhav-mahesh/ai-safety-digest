@@ -124,6 +124,11 @@ scrapers:
 
   # Safety orgs
 
+  - name: "Forethought"
+    url: "https://www.forethought.org/research"
+    org: "Forethought"
+    link_must_contain: "/research/"
+
   - name: "Apollo Research"
     url: "https://www.apolloresearch.ai/blog"
     org: "Apollo Research"

@@ -12,7 +12,7 @@ You can also open `site/index.html` directly in any browser if you clone the rep
 
 ## Sources
 
-The digest aggregates research from 45+ sources across six fetcher types:
+The digest aggregates research from 46+ sources across six fetcher types:
 
 ### RSS Feeds
 | Organization | Feed |
@@ -42,6 +42,7 @@ Keyword search across `cs.AI`, `cs.LG`, `cs.CL` for: AI safety, alignment, inter
 |---|---|---|
 | Anthropic Alignment Science | alignment.anthropic.com | Blog posts with dates |
 | Google DeepMind Safety | deepmind.google (responsible-development-and-safety) | Safety category |
+| Forethought | forethought.org/research | Links containing `/research/` |
 | Apollo Research | apolloresearch.ai/blog | All blog posts |
 | ARC (Alignment Research Center) | alignment.org/blog | Links containing `/blog/` |
 | MIRI | intelligence.org/research | Links containing `/research/` |
