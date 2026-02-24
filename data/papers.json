@@ -8,7 +8,7 @@
     "published_date": "2026-02-24T00:00:00+00:00",
     "source_type": "scrape",
     "source_url": "https://alignment.anthropic.com/",
-    "fetched_at": "2026-02-24T15:57:16.241631+00:00"
+    "fetched_at": "2026-02-24T17:17:09.977112+00:00"
   },
   {
     "title": "Gemini 3.1 Pro: A smarter model for your most complex tasks",
@@ -19,7 +19,7 @@
     "published_date": "2026-02-24T00:00:00+00:00",
     "source_type": "scrape",
     "source_url": "https://deepmind.google/discover/blog/?category=responsible-development-and-safety",
-    "fetched_at": "2026-02-24T15:57:19.926286+00:00"
+    "fetched_at": "2026-02-24T17:17:10.404053+00:00"
   },
   {
     "title": "China’s Military AI Wish List",
@@ -30,7 +30,7 @@
     "published_date": "2026-02-24T00:00:00+00:00",
     "source_type": "scrape",
     "source_url": "https://cset.georgetown.edu/publications/",
-    "fetched_at": "2026-02-24T15:57:23.823645+00:00"
+    "fetched_at": "2026-02-24T17:17:14.861392+00:00"
   },
   {
     "title": "Physical AI",
@@ -41,7 +41,7 @@
     "published_date": "2026-02-24T00:00:00+00:00",
     "source_type": "scrape",
     "source_url": "https://cset.georgetown.edu/publications/",
-    "fetched_at": "2026-02-24T15:57:23.824100+00:00"
+    "fetched_at": "2026-02-24T17:17:14.861849+00:00"
   },
   {
     "title": "Position: General Alignment Has Hit a Ceiling; Edge Alignment Must Be Taken Seriously",
@@ -61,7 +61,7 @@
     "published_date": "2026-02-23T16:51:43+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-24T15:57:16.004674+00:00"
+    "fetched_at": "2026-02-24T17:17:09.837689+00:00"
   },
   {
     "title": "Assessing Risks of Large Language Models in Mental Health Support: A Framework for Automated Clinical AI Red Teaming",
@@ -78,7 +78,7 @@
     "published_date": "2026-02-23T15:17:18+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-24T15:57:16.004752+00:00"
+    "fetched_at": "2026-02-24T17:17:09.837797+00:00"
   },
   {
     "title": "The Moving and the Still",
@@ -91,7 +91,7 @@
     "published_date": "2026-02-23T14:45:22+00:00",
     "source_type": "rss",
     "source_url": "https://www.hyperdimensional.co/feed",
-    "fetched_at": "2026-02-24T15:56:59.554875+00:00"
+    "fetched_at": "2026-02-24T17:17:05.055897+00:00"
   },
   {
     "title": "Why we no longer evaluate SWE-bench Verified",
@@ -104,7 +104,7 @@
     "published_date": "2026-02-23T11:00:00+00:00",
     "source_type": "rss",
     "source_url": "https://openai.com/news/rss.xml",
-    "fetched_at": "2026-02-24T15:56:58.115760+00:00"
+    "fetched_at": "2026-02-24T17:17:03.517419+00:00"
   },
   {
     "title": "CTC-TTS: LLM-based dual-streaming text-to-speech with CTC alignment",
@@ -120,7 +120,7 @@
     "published_date": "2026-02-23T07:44:14+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-24T15:57:16.005226+00:00"
+    "fetched_at": "2026-02-24T17:17:09.838249+00:00"
   },
   {
     "title": "Can a Teenager Fool an AI? Evaluating Low-Cost Cosmetic Attacks on Age Estimation Systems",
@@ -141,7 +141,7 @@
     "published_date": "2026-02-23T06:13:52+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-24T15:57:16.005487+00:00"
+    "fetched_at": "2026-02-24T17:17:09.838558+00:00"
   },
   {
     "title": "Red-Teaming Claude Opus and ChatGPT-based Security Advisors for Trusted Execution Environments",
@@ -154,7 +154,7 @@
     "published_date": "2026-02-23T02:47:05+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-24T15:57:16.005541+00:00"
+    "fetched_at": "2026-02-24T17:17:09.838660+00:00"
   },
   {
     "title": "IR$^3$: Contrastive Inverse Reinforcement Learning for Interpretable Detection and Mitigation of Reward Hacking",
@@ -172,7 +172,7 @@
     "published_date": "2026-02-23T01:14:53+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-24T15:57:16.005598+00:00"
+    "fetched_at": "2026-02-24T17:17:09.838755+00:00"
   },
   {
     "title": "Judge Reliability Harness",
@@ -183,7 +183,7 @@
     "published_date": "2026-02-23T00:00:00+00:00",
     "source_type": "scrape",
     "source_url": "https://www.rand.org/topics/artificial-intelligence.html",
-    "fetched_at": "2026-02-24T15:57:23.585194+00:00"
+    "fetched_at": "2026-02-24T17:17:14.724264+00:00"
   },
   {
     "title": "Decisive Economic Advantage: Modeling the Transition from Temporary First-Mover Leads to Economic Dominance in Artificial General Intelligence",
@@ -194,7 +194,7 @@
     "published_date": "2026-02-23T00:00:00+00:00",
     "source_type": "scrape",
     "source_url": "https://www.rand.org/topics/artificial-intelligence.html",
-    "fetched_at": "2026-02-24T15:57:23.585421+00:00"
+    "fetched_at": "2026-02-24T17:17:14.724493+00:00"
   },
   {
     "title": "Safe and Interpretable Multimodal Path Planning for Multi-Agent Cooperation",
@@ -214,7 +214,7 @@
     "published_date": "2026-02-22T18:57:07+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-24T15:57:16.005833+00:00"
+    "fetched_at": "2026-02-24T17:17:09.839031+00:00"
   },
   {
     "title": "Understanding Empirical Unlearning with Combinatorial Interpretability",
@@ -230,7 +230,7 @@
     "published_date": "2026-02-22T14:51:48+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-24T15:57:16.005893+00:00"
+    "fetched_at": "2026-02-24T17:17:09.839119+00:00"
   },
   {
     "title": "Detecting Cybersecurity Threats by Integrating Explainable AI with SHAP Interpretability and Strategic Data Sampling",
@@ -244,7 +244,7 @@
     "published_date": "2026-02-22T08:01:14+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-24T15:57:16.006169+00:00"
+    "fetched_at": "2026-02-24T17:17:09.839400+00:00"
   },
   {
     "title": "An interpretable framework using foundation models for fish sex identification",
@@ -258,7 +258,7 @@
     "published_date": "2026-02-22T03:21:26+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-24T15:57:16.006231+00:00"
+    "fetched_at": "2026-02-24T17:17:09.839488+00:00"
   },
   {
     "title": "Did Claude 3 Opus align itself via gradient hacking?",
@@ -271,7 +271,7 @@
     "published_date": "2026-02-21T22:24:31.247000+00:00",
     "source_type": "rss",
     "source_url": "https://www.lesswrong.com/graphql",
-    "fetched_at": "2026-02-24T15:57:28.112459+00:00"
+    "fetched_at": "2026-02-24T17:17:18.710809+00:00"
   },
   {
     "title": "The Spectre haunting the \"AI Safety\" Community",
@@ -284,7 +284,7 @@
     "published_date": "2026-02-21T11:14:10.772000+00:00",
     "source_type": "rss",
     "source_url": "https://www.lesswrong.com/graphql",
-    "fetched_at": "2026-02-24T15:57:28.112475+00:00"
+    "fetched_at": "2026-02-24T17:17:18.710822+00:00"
   },
   {
     "title": "Synthesizing Multimodal Geometry Datasets from Scratch and Enabling Visual Alignment via Plotting Code",
@@ -303,7 +303,7 @@
     "published_date": "2026-02-21T07:53:48+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-24T15:57:16.006286+00:00"
+    "fetched_at": "2026-02-24T17:17:09.839575+00:00"
   },
   {
     "title": "MiSCHiEF: A Benchmark in Minimal-Pairs of Safety and Culture for Holistic Evaluation of Fine-Grained Image-Caption Alignment",
@@ -322,7 +322,7 @@
     "published_date": "2026-02-21T06:06:46+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-24T15:57:16.006342+00:00"
+    "fetched_at": "2026-02-24T17:17:09.839688+00:00"
   },
   {
     "title": "How will we do SFT on models with opaque reasoning?",
@@ -335,7 +335,7 @@
     "published_date": "2026-02-21T00:00:17+00:00",
     "source_type": "rss",
     "source_url": "https://www.alignmentforum.org/feed.xml",
-    "fetched_at": "2026-02-24T15:56:59.216026+00:00"
+    "fetched_at": "2026-02-24T17:17:04.794672+00:00"
   },
   {
     "title": "Theory and interpretability of Quantum Extreme Learning Machines: a Pauli-transfer matrix approach",
@@ -349,7 +349,7 @@
     "published_date": "2026-02-20T17:33:27+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-24T15:57:16.006563+00:00"
+    "fetched_at": "2026-02-24T17:17:09.839916+00:00"
   },
   {
     "title": "Our First Proof submissions",
@@ -362,7 +362,7 @@
     "published_date": "2026-02-20T14:30:00+00:00",
     "source_type": "rss",
     "source_url": "https://openai.com/news/rss.xml",
-    "fetched_at": "2026-02-24T15:56:58.115832+00:00"
+    "fetched_at": "2026-02-24T17:17:03.517487+00:00"
   },
   {
     "title": "RamanSeg: Interpretability-driven Deep Learning on Raman Spectra for Cancer Diagnosis",
@@ -386,7 +386,7 @@
     "published_date": "2026-02-20T10:18:27+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-24T15:57:16.006631+00:00"
+    "fetched_at": "2026-02-24T17:17:09.840022+00:00"
   },
   {
     "title": "ROCKET: Residual-Oriented Multi-Layer Alignment for Spatially-Aware Vision-Language-Action Models",
@@ -407,7 +407,7 @@
     "published_date": "2026-02-20T03:06:22+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-24T15:57:16.006905+00:00"
+    "fetched_at": "2026-02-24T17:17:09.840359+00:00"
   },
   {
     "title": "Alignment in Time: Peak-Aware Orchestration for Long-Horizon Agentic Systems",
@@ -421,7 +421,7 @@
     "published_date": "2026-02-20T00:16:07+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-24T15:57:16.006989+00:00"
+    "fetched_at": "2026-02-24T17:17:09.840434+00:00"
   },
   {
     "title": "Sketch2Feedback: Grammar-in-the-Loop Framework for Rubric-Aligned Feedback on Student STEM Diagrams",
@@ -434,7 +434,7 @@
     "published_date": "2026-02-19T20:34:24+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-24T15:57:16.007230+00:00"
+    "fetched_at": "2026-02-24T17:17:09.840722+00:00"
   },
   {
     "title": "Trojan Horses in Recruiting: A Red-Teaming Case Study on Indirect Prompt Injection in Standard vs. Reasoning Models",
@@ -447,7 +447,7 @@
     "published_date": "2026-02-19T19:26:21+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-24T15:57:16.007281+00:00"
+    "fetched_at": "2026-02-24T17:17:09.840801+00:00"
   },
   {
     "title": "Differences in Typological Alignment in Language Models' Treatment of Differential Argument Marking",
@@ -462,7 +462,7 @@
     "published_date": "2026-02-19T18:56:34+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-24T15:57:16.007327+00:00"
+    "fetched_at": "2026-02-24T17:17:09.840874+00:00"
   },
   {
     "title": "ODESteer: A Unified ODE-Based Steering Framework for LLM Alignment",
@@ -485,7 +485,7 @@
     "published_date": "2026-02-19T17:13:44+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-24T15:57:16.007383+00:00"
+    "fetched_at": "2026-02-24T17:17:09.840966+00:00"
   },
   {
     "title": "Systematic Evaluation of Single-Cell Foundation Model Interpretability Reveals Attention Captures Co-Expression Rather Than Unique Regulatory Signal",
@@ -498,7 +498,7 @@
     "published_date": "2026-02-19T16:43:12+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-24T15:57:16.007435+00:00"
+    "fetched_at": "2026-02-24T17:17:09.841032+00:00"
   },
   {
     "title": "Inelastic Constitutive Kolmogorov-Arnold Networks: A generalized framework for automated discovery of interpretable inelastic material models",
@@ -515,7 +515,7 @@
     "published_date": "2026-02-19T15:51:24+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-24T15:57:16.007492+00:00"
+    "fetched_at": "2026-02-24T17:17:09.841089+00:00"
   },
   {
     "title": "All Leaks Count, Some Count More: Interpretable Temporal Contamination Detection in LLM Backtesting",
@@ -530,7 +530,7 @@
     "published_date": "2026-02-19T10:28:00+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-24T15:57:16.007869+00:00"
+    "fetched_at": "2026-02-24T17:17:09.841481+00:00"
   },
   {
     "title": "Mechanistic Interpretability of Cognitive Complexity in LLMs via Linear Probing using Bloom's Taxonomy",
@@ -544,7 +544,7 @@
     "published_date": "2026-02-19T10:19:04+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-24T15:57:16.007949+00:00"
+    "fetched_at": "2026-02-24T17:17:09.841555+00:00"
   },
   {
     "title": "Five lessons from having helped run an AI-Biology RCT",
@@ -557,7 +557,7 @@
     "published_date": "2026-02-19T08:00:00+00:00",
     "source_type": "rss",
     "source_url": "https://metr.org/feed.xml",
-    "fetched_at": "2026-02-24T15:57:03.124552+00:00"
+    "fetched_at": "2026-02-24T17:17:07.737510+00:00"
   },
   {
     "title": "The Emergence of Lab-Driven Alignment Signatures: A Psychometric Framework for Auditing Latent Bias and Compounding Risk in Generative AI",
@@ -570,7 +570,7 @@
     "published_date": "2026-02-19T06:56:01+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-24T15:57:16.007999+00:00"
+    "fetched_at": "2026-02-24T17:17:09.841628+00:00"
   },
   {
     "title": "Instructor-Aligned Knowledge Graphs for Personalized Learning",
@@ -586,7 +586,7 @@
     "published_date": "2026-02-19T06:15:10+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-24T15:57:16.008048+00:00"
+    "fetched_at": "2026-02-24T17:17:09.841729+00:00"
   },
   {
     "title": "FLoRG: Federated Fine-tuning with Low-rank Gram Matrices and Procrustes Alignment",
@@ -601,7 +601,7 @@
     "published_date": "2026-02-19T05:35:23+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-24T15:57:16.008096+00:00"
+    "fetched_at": "2026-02-24T17:17:09.841809+00:00"
   },
   {
     "title": "Fail-Closed Alignment for Large Language Models",
@@ -617,7 +617,7 @@
     "published_date": "2026-02-19T00:33:35+00:00",
     "source_type": "arxiv",
     "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-02-24T15:57:16.008143+00:00"
+    "fetched_at": "2026-02-24T17:17:09.841857+00:00"
   },
   {
     "title": "What will the first human-level AI look like, and how might things go wrong?",
@@ -628,7 +628,7 @@
     "published_date": "2026-02-19T00:00:00+00:00",
     "source_type": "scrape",
     "source_url": "https://far.ai/blog/",
-    "fetched_at": "2026-02-24T15:57:22.322440+00:00"
+    "fetched_at": "2026-02-24T17:17:13.458367+00:00"
   },
   {
     "title": "Method: Concept Influence",
@@ -639,7 +639,7 @@
     "published_date": "2026-02-19T00:00:00+00:00",
     "source_type": "scrape",
     "source_url": "https://far.ai/blog/",
-    "fetched_at": "2026-02-24T15:57:22.323438+00:00"
+    "fetched_at": "2026-02-24T17:17:13.459297+00:00"
   },
   {
     "title": "Funding 60 projects to advance AI alignment research",
@@ -650,7 +650,7 @@
     "published_date": "2026-02-19T00:00:00+00:00",
     "source_type": "scrape",
     "source_url": "https://www.aisi.gov.uk/work",
-    "fetched_at": "2026-02-24T15:57:22.812125+00:00"
+    "fetched_at": "2026-02-24T17:17:14.278522+00:00"
   },
   {
     "title": "Why we should expect ruthless sociopath ASI",
@@ -663,7 +663,7 @@
     "published_date": "2026-02-18T17:28:17+00:00",
     "source_type": "rss",
     "source_url": "https://www.alignmentforum.org/feed.xml",
-    "fetched_at": "2026-02-24T15:56:59.216191+00:00"
+    "fetched_at": "2026-02-24T17:17:04.794838+00:00"
   },
   {
     "title": "Introducing EVMbench",
@@ -676,7 +676,7 @@
     "published_date": "2026-02-18T00:00:00+00:00",
     "source_type": "rss",
     "source_url": "https://openai.com/news/rss.xml",
-    "fetched_at": "2026-02-24T15:56:58.115933+00:00"
+    "fetched_at": "2026-02-24T17:17:03.517572+00:00"
   },
   {
     "title": "Analyzing coding agent transcripts to upper bound productivity gains from AI agents",
@@ -689,7 +689,7 @@
     "published_date": "2026-02-17T08:00:00+00:00",
     "source_type": "rss",
     "source_url": "https://metr.org/feed.xml",
-    "fetched_at": "2026-02-24T15:57:03.124893+00:00"
+    "fetched_at": "2026-02-24T17:17:07.737877+00:00"
   },
   {
     "title": "Boundary Point Jailbreaking: A new way to break the strongest AI defences",
@@ -700,6 +700,6 @@
     "published_date": "2026-02-17T00:00:00+00:00",
     "source_type": "scrape",
     "source_url": "https://www.aisi.gov.uk/work",
-    "fetched_at": "2026-02-24T15:57:22.813190+00:00"
+    "fetched_at": "2026-02-24T17:17:14.279578+00:00"
   }
 ]
