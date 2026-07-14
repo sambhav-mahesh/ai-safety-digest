@@ -197,8 +197,17 @@ def _finalize_abstract(text: str) -> str:
 # Extraction strategies
 # ---------------------------------------------------------------------------
 
-def _extract_meta_description(soup: BeautifulSoup) -> str | None:
-    """Return the content of a meta description / og:description tag."""
+def _looks_truncated(text: str) -> bool:
+    """Return True if text appears cut off (CMS teaser/meta ellipsis)."""
+    return text.rstrip().endswith(("...", "…", "[…]"))
+
+
+def _extract_meta_description(soup: BeautifulSoup, allow_truncated: bool = True) -> str | None:
+    """Return the content of a meta description / og:description tag.
+
+    With ``allow_truncated=False``, descriptions ending in an ellipsis are
+    skipped so richer on-page strategies get a chance first.
+    """
     for attrs in (
         {"name": "description"},
         {"property": "og:description"},
@@ -208,6 +217,8 @@ def _extract_meta_description(soup: BeautifulSoup) -> str | None:
         if tag and tag.get("content"):
             cleaned = _clean_text(tag["content"])
             if len(cleaned) >= MIN_ABSTRACT_LEN:
+                if not allow_truncated and _looks_truncated(cleaned):
+                    continue
                 return cleaned
     return None
 
@@ -369,14 +380,28 @@ def _extract_substack_blog(soup: BeautifulSoup, url: str) -> str | None:
 
 
 def _extract_semantic_classes(soup: BeautifulSoup) -> str | None:
-    """Look for elements with common abstract/summary CSS classes."""
-    for class_name in ("abstract", "summary", "description", "post-excerpt",
-                       "entry-summary", "article-summary", "paper-abstract"):
-        # Search across common element types
-        for tag_name in ("div", "p", "section", "span", "blockquote"):
-            el = soup.find(tag_name, class_=class_name)
+    """Look for elements with common abstract/summary CSS classes.
+
+    Matches class *substrings* (e.g. GovAI's ``research-abstract-container``).
+    When the matched element contains paragraphs, only their text is used so
+    headings (title/subtitle) inside the container don't leak in.
+    """
+    for class_re in (re.compile(r"abstract", re.IGNORECASE),
+                     re.compile(r"(?:^|-)summary", re.IGNORECASE),
+                     re.compile(r"excerpt", re.IGNORECASE),
+                     re.compile(r"^description$", re.IGNORECASE)):
+        for tag_name in ("blockquote", "section", "div", "p", "span"):
+            el = soup.find(tag_name, class_=class_re)
             if el:
-                cleaned = _clean_text(el.get_text())
+                paragraphs = el.find_all("p")
+                if paragraphs:
+                    text = " ".join(
+                        p.get_text(" ", strip=True) for p in paragraphs
+                        if p.get_text(strip=True)
+                    )
+                else:
+                    text = el.get_text(" ", strip=True)
+                cleaned = _clean_text(text)
                 if len(cleaned) >= MIN_ABSTRACT_LEN:
                     return cleaned
     return None
@@ -487,8 +512,8 @@ def _fetch_abstract_from_url(url: str) -> str | None:
     if result:
         return _finalize_abstract(result)
 
-    # --- Strategy 3: meta description tags ---
-    result = _extract_meta_description(soup)
+    # --- Strategy 3: meta description tags (skip truncated ones for now) ---
+    result = _extract_meta_description(soup, allow_truncated=False)
     if result:
         return _finalize_abstract(result)
 
@@ -499,6 +524,11 @@ def _fetch_abstract_from_url(url: str) -> str | None:
 
     # --- Strategy 5: first substantial <p> in article/main ---
     result = _extract_first_paragraph(soup)
+    if result:
+        return _finalize_abstract(result)
+
+    # --- Strategy 6: fall back to a truncated meta description ---
+    result = _extract_meta_description(soup)
     if result:
         return _finalize_abstract(result)
 
@@ -545,6 +575,7 @@ def enrich_abstracts(papers: list[Paper]) -> list[Paper]:
         p for p in papers
         if len((p.abstract or "").strip()) < MIN_ABSTRACT_LEN
         or len((p.abstract or "").split()) < MIN_ABSTRACT_WORDS
+        or _looks_truncated(p.abstract or "")
     ]
 
     if not to_enrich:

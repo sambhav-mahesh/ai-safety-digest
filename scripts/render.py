@@ -376,6 +376,12 @@ def render(papers: list[dict], css: str) -> str:
     grid_papers = [p for p in papers if p.get("url") not in featured_urls]
     total_count = len(papers)
 
+    org_counts = {}
+    for p in papers:
+        org = p.get("organization")
+        if org:
+            org_counts[org] = org_counts.get(org, 0) + 1
+
     html = template.render(
         papers=grid_papers,
         featured_papers=featured_papers,
@@ -384,6 +390,7 @@ def render(papers: list[dict], css: str) -> str:
         week_end=week_end,
         last_updated=last_updated,
         organizations=organizations,
+        org_counts=org_counts,
         css=css,
     )
     return html

@@ -53,6 +53,8 @@ DATE_PATTERNS = [
         r"October|November|December)\s+\d{4})\b",
         re.IGNORECASE,
     ),
+    # Numeric US-style "6/2/26" or "06/02/2026" (Squarespace <time> tags)
+    re.compile(r"\b(\d{1,2}/\d{1,2}/\d{2,4})\b"),
 ]
 
 DATE_FORMATS = [
@@ -63,6 +65,8 @@ DATE_FORMATS = [
     "%b %d %Y",
     "%d %B %Y",
     "%B %Y",
+    "%m/%d/%Y",
+    "%m/%d/%y",
 ]
 
 

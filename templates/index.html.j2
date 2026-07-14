@@ -7,7 +7,7 @@
   <meta name="description" content="A curated weekly digest of {{ total_count }} AI safety research papers from leading organizations and researchers. {{ week_start }} through {{ week_end }}.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..800;1,6..72,400..600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     {{ css | safe }}
   </style>
@@ -38,7 +38,7 @@
   {%- macro paper_card(paper, card_class="grid-card") -%}
   <article class="paper-card {{ card_class }}" data-org="{{ paper.organization }}">
     <div class="paper-meta">
-      <span class="org-tag" data-org="{{ paper.organization }}">{{ paper.organization }}</span>
+      <span class="org-tag" data-org="{{ paper.organization }}"><span class="org-dot" aria-hidden="true"></span>{{ paper.organization }}</span>
       <span class="paper-date">{{ fmt_date(paper.published_date) }}</span>
     </div>
     <h3 class="paper-title">
@@ -65,25 +65,30 @@
   <!-- Masthead -->
   <header class="site-header">
     <div class="header-inner">
-      <h1 class="site-title">AI Safety Weekly Digest</h1>
-      <hr class="header-rule">
+      <p class="header-eyebrow">Weekly research digest</p>
+      <h1 class="site-title">AI Safety <em>Digest</em></h1>
+      <p class="header-tagline">Papers, technical posts, and reports on alignment, interpretability, evaluations, and AI governance &mdash; collected from {{ organizations | length }} organizations every Monday.</p>
       <div class="header-meta">
         <span class="header-daterange">{{ week_start }} &mdash; {{ week_end }}</span>
         {%- if total_count %}
-        <span class="header-separator">&middot;</span>
-        <span class="header-count"><strong>{{ total_count }}</strong> papers</span>
+        <span class="header-separator" aria-hidden="true"></span>
+        <span class="header-count"><strong>{{ total_count }}</strong> papers this week</span>
         {%- endif %}
       </div>
     </div>
   </header>
 
   <!-- Filter Bar -->
-  <nav class="filter-bar" aria-label="Filter papers by organization">
+  <nav class="filter-bar" aria-label="Filter papers">
     <div class="filter-bar-inner">
+      <div class="search-wrap">
+        <svg class="search-icon" aria-hidden="true" viewBox="0 0 16 16" width="14" height="14"><circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/><line x1="10.8" y1="10.8" x2="14.2" y2="14.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <input type="search" id="paper-search" class="search-input" placeholder="Search titles &amp; abstracts&hellip;" aria-label="Search papers">
+      </div>
       <div class="filter-scroll">
         <button class="filter-pill active" data-filter="all">All{% if total_count %} <span class="pill-count">{{ total_count }}</span>{% endif %}</button>
         {%- for org in organizations %}
-        <button class="filter-pill" data-filter="{{ org }}">{{ org }}</button>
+        <button class="filter-pill" data-filter="{{ org }}" data-org="{{ org }}"><span class="org-dot" aria-hidden="true"></span>{{ org }}{% if org_counts and org_counts.get(org) %} <span class="pill-count">{{ org_counts[org] }}</span>{% endif %}</button>
         {%- endfor %}
       </div>
     </div>
@@ -92,7 +97,7 @@
   <!-- Featured Section -->
   {% if featured_papers %}
   <section class="hero-section">
-    <h2 class="section-label">Featured Research</h2>
+    <h2 class="section-label">Featured this week</h2>
     <div class="hero-grid">
       {%- for paper in featured_papers %}
       {{ paper_card(paper, "hero-card") }}
@@ -104,7 +109,7 @@
   <!-- Papers Grid -->
   <main class="papers-section">
     {% if papers %}
-    <h2 class="section-label">All Papers</h2>
+    <h2 class="section-label">All papers</h2>
     <div class="papers-grid">
       {%- for paper in papers %}
       {{ paper_card(paper, "grid-card") }}
@@ -116,53 +121,71 @@
       <p class="empty-sub">Check back soon &mdash; new research is published daily.</p>
     </div>
     {% endif %}
+    <div class="no-results" id="no-results" hidden>
+      <p>Nothing matches your search.</p>
+      <p class="empty-sub">Try a different term, or clear the organization filter.</p>
+    </div>
   </main>
 
   <!-- Footer -->
   <footer class="site-footer">
     <div class="footer-inner">
-      <p class="footer-note">Curated automatically &middot; Powered by Python + GitHub Actions</p>
-      <p class="footer-timestamp">{{ last_updated }}</p>
+      <p class="footer-note">Curated automatically from {{ organizations | length }} sources &middot; <a href="https://github.com/sambhav-mahesh/ai-safety-digest" target="_blank" rel="noopener noreferrer">Source on GitHub</a></p>
+      <p class="footer-timestamp">Last updated {{ last_updated }}</p>
     </div>
   </footer>
 
-  <!-- Filter JS -->
+  <!-- Filter + Search JS -->
   <script>
     (function () {
       var pills = document.querySelectorAll('.filter-pill');
       var cards = document.querySelectorAll('.paper-card');
       var heroSection = document.querySelector('.hero-section');
-      var heroLabel = heroSection ? heroSection.querySelector('.section-label') : null;
       var gridLabel = document.querySelector('.papers-section .section-label');
+      var papersGrid = document.querySelector('.papers-grid');
+      var noResults = document.getElementById('no-results');
+      var searchInput = document.getElementById('paper-search');
+
+      var activeOrg = 'all';
+      var query = '';
+
+      // Pre-index card text once for fast search
+      cards.forEach(function (card) {
+        card.setAttribute('data-text', card.textContent.toLowerCase());
+      });
+
+      function applyFilters() {
+        var heroVisible = 0;
+        var gridVisible = 0;
+        cards.forEach(function (card) {
+          var orgOk = activeOrg === 'all' || card.getAttribute('data-org') === activeOrg;
+          var textOk = !query || card.getAttribute('data-text').indexOf(query) !== -1;
+          var show = orgOk && textOk;
+          card.style.display = show ? '' : 'none';
+          if (show && card.classList.contains('hero-card')) heroVisible++;
+          if (show && card.classList.contains('grid-card')) gridVisible++;
+        });
+        if (heroSection) heroSection.style.display = heroVisible > 0 ? '' : 'none';
+        if (gridLabel) gridLabel.style.display = gridVisible > 0 ? '' : 'none';
+        if (papersGrid) papersGrid.style.display = gridVisible > 0 ? '' : 'none';
+        if (noResults) noResults.hidden = (heroVisible + gridVisible) > 0;
+      }
 
       pills.forEach(function (pill) {
         pill.addEventListener('click', function () {
-          var filter = this.getAttribute('data-filter');
-
-          // Update active pill
+          activeOrg = this.getAttribute('data-filter');
           pills.forEach(function (p) { p.classList.remove('active'); });
           this.classList.add('active');
-
-          // Filter cards and count visible
-          var visible = 0;
-          var heroVisible = 0;
-          var gridVisible = 0;
-          cards.forEach(function (card) {
-            if (filter === 'all' || card.getAttribute('data-org') === filter) {
-              card.style.display = '';
-              visible++;
-              if (card.classList.contains('hero-card')) heroVisible++;
-              if (card.classList.contains('grid-card')) gridVisible++;
-            } else {
-              card.style.display = 'none';
-            }
-          });
-
-          // Show/hide section labels when no cards visible in that section
-          if (heroSection) heroSection.style.display = heroVisible > 0 ? '' : 'none';
-          if (gridLabel) gridLabel.style.display = gridVisible > 0 ? '' : 'none';
+          applyFilters();
         });
       });
+
+      if (searchInput) {
+        searchInput.addEventListener('input', function () {
+          query = this.value.trim().toLowerCase();
+          applyFilters();
+        });
+      }
     })();
   </script>
 

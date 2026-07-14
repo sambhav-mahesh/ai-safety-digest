@@ -179,12 +179,14 @@ scrapers:
   - name: "GovAI Oxford"
     url: "https://www.governance.ai/research"
     org: "GovAI"
+    article_class: "research-card"
     link_must_contain: "/research-paper/"
 
   - name: "IAPS"
     url: "https://www.iaps.ai/research"
     org: "IAPS"
-    link_must_contain: "/research-paper/"
+    article_class: "blog-item-text"
+    link_must_contain: "/research/"
 
   - name: "CLTR"
     url: "https://www.longtermresilience.org/research"
