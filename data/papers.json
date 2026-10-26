@@ -1,5 +1,669 @@
 [
   {
+    "title": "Gradient Routing Localizes and Removes Unintended Behaviors in RL",
+    "authors": [],
+    "organization": "MATS",
+    "abstract": "Gradient Routing Localizes and Removes Unintended Behaviors in RL Authors: Fellows: Jake Ward, Shawn Hu, Aria Wong, Nathan Hu, Alex Cloud Date: Dec 9, 2026 Uncovering Hidden Propensities in Language Models via Limited-Parameter Finetuning Large language models can have hidden propensities: behaviours that arise only in rare contexts. These hidden propensities pose a challenge to alignment audits, which seek to uncover problematic model behaviour but are limited in scope to scenarios anticipated by the auditor. To address this challenge, we explore limited-parameter finetuning (LPF) on examples of a target behaviour. While training 3–15% of model parameters, LPF reveals whether the model has a hidden propensity, even when standard behavioural evaluations cannot. LPF succeeds on a suite of model organisms with hidden propensities (8B-14B parameters), and also surfaces naturally occurring hidden propensities in open-weight models (27-32B parameters).",
+    "url": "https://www.matsprogram.org/research/gradient-routing-localizes-and-removes-unintended-behaviors-in-rl-54293",
+    "published_date": "2026-12-09T00:00:00+00:00",
+    "source_type": "scrape",
+    "source_url": "https://www.matsprogram.org/research",
+    "fetched_at": "2026-10-26T16:01:56.230433+00:00"
+  },
+  {
+    "title": "Uncovering Hidden Propensities in Language Models via Limited-Parameter Finetuning",
+    "authors": [],
+    "organization": "MATS",
+    "abstract": "Uncovering Hidden Propensities in Language Models via Limited-Parameter Finetuning Large language models can have hidden propensities: behaviours that arise only in rare contexts. These hidden propensities pose a challenge to alignment audits, which seek to uncover problematic model behaviour but are limited in scope to scenarios anticipated by the auditor. To address this challenge, we explore limited-parameter finetuning (LPF) on examples of a target behaviour. While training 3–15% of model parameters, LPF reveals whether the model has a hidden propensity, even when standard behavioural evaluations cannot. LPF succeeds on a suite of model organisms with hidden propensities (8B-14B parameters), and also surfaces naturally occurring hidden propensities in open-weight models (27-32B parameters). LPF can thus distinguish between behaviourally equivalent models, even without knowing the context in which the propensity surfaces. LPF provides a novel affordance that may be useful for auditing frontier AI models.",
+    "url": "https://www.matsprogram.org/research/uncovering-hidden-propensities-in-language-models-via-limited-parameter-finetuning",
+    "published_date": "2026-12-07T00:00:00+00:00",
+    "source_type": "scrape",
+    "source_url": "https://www.matsprogram.org/research",
+    "fetched_at": "2026-10-26T16:01:56.231222+00:00"
+  },
+  {
+    "title": "Red-Teaming Auto Mode: Improving Blocking Classifiers Against Malign Coding Agents",
+    "authors": [],
+    "organization": "Anthropic",
+    "abstract": "We red-team production blocking monitors (Auto Mode in Claude Code, Guardian in OpenAI’s Codex) with an adversarial agent in an experimental setting with the objective of improving the safety of coding agents. Our most effective attack strategies bypass the monitor using agent-generated prompt injection against the monitor, multi-agent attacks, or malicious compaction. We attempt to improve the robustness of auto-mode by improving tool coverage, transcript formatting and using an agentic monitor stage. We find that robustly preventing multi-context attacks at an acceptable cost remains an open problem.",
+    "url": "https://alignment.anthropic.com/2026/red-teaming-auto-mode/",
+    "published_date": "2026-10-26T00:00:00+00:00",
+    "source_type": "scrape",
+    "source_url": "https://alignment.anthropic.com/",
+    "fetched_at": "2026-10-26T16:01:51.726627+00:00"
+  },
+  {
+    "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+    "authors": [],
+    "organization": "Google DeepMind",
+    "abstract": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
+    "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+    "published_date": "2026-10-26T00:00:00+00:00",
+    "source_type": "scrape",
+    "source_url": "https://deepmind.google/discover/blog/?category=responsible-development-and-safety",
+    "fetched_at": "2026-10-26T16:01:52.088688+00:00"
+  },
+  {
+    "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+    "authors": [],
+    "organization": "Google DeepMind",
+    "abstract": "Research from Google DeepMind titled 'EmbeddingGemma 2: an open, lightweight multimodal embedding model'. Published 2026-10-26.",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=",
+    "published_date": "2026-10-26T00:00:00+00:00",
+    "source_type": "scrape",
+    "source_url": "https://deepmind.google/discover/blog/?category=responsible-development-and-safety",
+    "fetched_at": "2026-10-26T16:01:52.089384+00:00"
+  },
+  {
+    "title": "Pretraining data filtering in open-weight biological models",
+    "authors": [],
+    "organization": "UK AISI",
+    "abstract": "Blog Chem-Bio • Oct 26, 2026 We assess the strength of pretraining data filtering as a safeguard for open-weight protein models, and find it to be effective and selective, but not necessarily durable against fine-tuning.",
+    "url": "https://www.aisi.gov.uk/blog/pretraining-data-filtering-in-open-weight-biological-models",
+    "published_date": "2026-10-26T00:00:00+00:00",
+    "source_type": "scrape",
+    "source_url": "https://www.aisi.gov.uk/work",
+    "fetched_at": "2026-10-26T16:01:54.318216+00:00"
+  },
+  {
+    "title": "Can AI coding agents rebuild biological AI tools from a paper?",
+    "authors": [],
+    "organization": "UK AISI",
+    "abstract": "Blog Chem-Bio • Oct 26, 2026 We tested whether leading coding agents can re-create published biological AI tools from limited information, and what that means for the effectiveness of managed access controls.",
+    "url": "https://www.aisi.gov.uk/blog/can-ai-coding-agents-rebuild-biological-ai-tools-from-a-paper",
+    "published_date": "2026-10-26T00:00:00+00:00",
+    "source_type": "scrape",
+    "source_url": "https://www.aisi.gov.uk/work",
+    "fetched_at": "2026-10-26T16:01:54.318769+00:00"
+  },
+  {
+    "title": "U.S.-Japan Alliance Conference: The U.S.-Japan Alliance Today and Beyond",
+    "authors": [],
+    "organization": "RAND",
+    "abstract": "Expert Insights Oct 26, 2026 To better understand the state of the U.S.-Japan alliance, RAND convened a conference at the JAPAN HOUSE Los Angeles in February 2026. These proceedings contain a conference overview and a short assessment of the main themes raised by participants.",
+    "url": "https://www.rand.org/pubs/conf_proceedings/CFA2070-8.html",
+    "published_date": "2026-10-26T00:00:00+00:00",
+    "source_type": "scrape",
+    "source_url": "https://www.rand.org/topics/artificial-intelligence.html",
+    "fetched_at": "2026-10-26T16:01:54.795063+00:00"
+  },
+  {
+    "title": "Managing Biological Risks from General-Purpose AI Models under the EU AI Act",
+    "authors": [],
+    "organization": "GovAI",
+    "abstract": "Recommendations to strengthen how developers of advanced AI models assess, mitigate, and report biological risks under the EU AI Act.",
+    "url": "https://www.governance.ai/research-paper/managing-biological-risks-from-general-purpose-ai-models-under-the-eu-ai-act",
+    "published_date": "2026-10-26T00:00:00+00:00",
+    "source_type": "scrape",
+    "source_url": "https://www.governance.ai/research",
+    "fetched_at": "2026-10-26T16:01:55.002877+00:00"
+  },
+  {
+    "title": "Setting the Scene (Public v1; October 25)",
+    "authors": [
+      "Chris_Leong"
+    ],
+    "organization": "Alignment Forum",
+    "abstract": "Context: I created this to share before the start of courses I facilitate to provide a refresher on recent events, but also as a hook to draw students into engaging with some of ideas we think about and debate in AI safety early. I expect the topics I cover in my “Setting the Scene” post to change frequently, so this is less polished than some of my other content. I emphasise to students that these posts are to be considered as bonus content —not core curriculum content—and that as such they are really just there for students who want to go deeper, before or after the course. I also provide a lot of links; this is to make it easy for students to follow up anything that catches their interest. Any feedback on how to improve these posts would be greatly appreciated.",
+    "url": "https://www.alignmentforum.org/posts/dmYP7DS3ERyXGAYe6/setting-the-scene-public-v1-october-25",
+    "published_date": "2026-10-25T07:52:23+00:00",
+    "source_type": "rss",
+    "source_url": "https://www.alignmentforum.org/feed.xml",
+    "fetched_at": "2026-10-26T16:01:45.638581+00:00"
+  },
+  {
+    "title": "Amazon’s Trainium Takes a Strike at the Training King",
+    "authors": [
+      "Kimbo Chen"
+    ],
+    "organization": "SemiAnalysis",
+    "abstract": "Trainium Best for Inference? But now good for Training too, Native Trainium PyTorch, High Quality CI, TorchTitan, GPU Impossible Profiler",
+    "url": "https://newsletter.semianalysis.com/p/amazons-trainium-takes-a-strike-at",
+    "published_date": "2026-10-23T19:06:44+00:00",
+    "source_type": "rss",
+    "source_url": "https://newsletter.semianalysis.com/feed",
+    "fetched_at": "2026-10-26T16:01:50.771795+00:00"
+  },
+  {
+    "title": "Where Rounding Happens Matters: Rounding-Location Alignment Stabilizes LLM Reinforcement Learning",
+    "authors": [
+      "Yijing Ke",
+      "Tianle Cai",
+      "Ruosong Wang"
+    ],
+    "organization": "arXiv",
+    "abstract": "Reinforcement learning for large language models often uses separate systems for inference and training. Even with identical weights and BF16 tensors, implementation differences can make an intended on-policy update off-policy and destabilize training. Existing remedies align the entire inference and training stacks, change global precision, or modify the learning algorithm. We ask whether aligning selected parts of the execution stack can stabilize BF16 RL while other implementation differences remain. We align training-side rounding locations with inference in three regions---RoPE, SwiGLU, and residual RMSNorm---by retaining selected intermediates in FP32 until their BF16 outputs. Across four Qwen-family models, aligning all three regions prevents the collapse observed under the default BF16 baseline; RoPE-path alignment alone also suffices in the studied runs, despite remaining numerical discrepancies. The interventions keep the inference engine, matrix-multiplication and attention kernels, and learning objective unchanged.",
+    "url": "http://arxiv.org/abs/2610.32951v1",
+    "published_date": "2026-10-23T17:45:03+00:00",
+    "source_type": "arxiv",
+    "source_url": "https://arxiv.org/",
+    "fetched_at": "2026-10-26T16:01:51.528592+00:00"
+  },
+  {
+    "title": "AI Alignment for Digital Democracy: Fairer Voters Representation against LLM Biases",
+    "authors": [
+      "Yi Qi",
+      "Srijoni Majumdar",
+      "Evangelos Pournaras"
+    ],
+    "organization": "arXiv",
+    "abstract": "AI representation is emerging in digital democracy, assisting in voter emulation and decision-making. Large language models (LLMs) behave differently depending on the model, the prompt context, and the voter information they receive, representing some groups more accurately than others and potentially making the emulation unfair to certain groups. We investigate demographic biases in LLM-emulated electorates: how accurately LLMs represent individual votes, whether some voter groups are represented more accurately than others, and whether AI alignment can reduce these disparities without sacrificing overall accuracy. Using three U.S. presidential elections, we compare a closed-source and an open-source LLM across voters' demographic features and test AI alignment strategies toward fairer voter representation. Removing gender from the voter profile reduces the largest group error of the models by 22-42%, and removing education reduces it by 64%, whereas removing self-reported race increases the mean group error by over 40%, all without lowering accuracy.",
+    "url": "http://arxiv.org/abs/2610.32780v1",
+    "published_date": "2026-10-23T15:27:40+00:00",
+    "source_type": "arxiv",
+    "source_url": "https://arxiv.org/",
+    "fetched_at": "2026-10-26T16:01:51.528903+00:00"
+  },
+  {
+    "title": "Reading Between the Layers: Cross-Modal Alignment and Representational Hierarchy in Vision Transformers",
+    "authors": [
+      "Sugam Karki",
+      "Raúl Vázquez",
+      "Yova Kementchedjhieva"
+    ],
+    "organization": "arXiv",
+    "abstract": "While large vision-language models excel at optical character recognition, it remains unclear how their underlying vision encoders process text and its meaning, and whether they support anything resembling reading comprehension. We systematically study transformer-based vision encoders, using cross-modal alignment between rendered text and visual concepts together with probing and retrieval-based analyses as a controlled window into these broader capabilities. Our layer-wise analyses span orthographic, grammatical, and semantic organization, and reveal that strong cross-modal mapping emerges only in the deepest layers, after unimodal object and text recognition have already developed, coinciding with a progression from surface-level to semantic representations. Although this hierarchy is strongest in contrastively trained models, larger self-supervised models and text-rich training data partially support similar behaviors without explicit language supervision. Together, our results suggest that increasing model and training-data scale, as well as text-rich training data, can partially compensate for the absence of language supervision.",
+    "url": "http://arxiv.org/abs/2610.32463v1",
+    "published_date": "2026-10-23T10:30:51+00:00",
+    "source_type": "arxiv",
+    "source_url": "https://arxiv.org/",
+    "fetched_at": "2026-10-26T16:01:51.529578+00:00"
+  },
+  {
+    "title": "CFBrainAug: Modularity-Induced Counterfactual Brain Network Augmentation for Interpretable fMRI-based Autism Diagnosis",
+    "authors": [
+      "Yifan Qiao",
+      "Sheng Li"
+    ],
+    "organization": "arXiv",
+    "abstract": "Machine learning on resting-state functional magnetic resonance imaging (rs-fMRI) brain networks is promising for diagnosing Autism Spectrum Disorder (ASD), but existing methods are prone to overfitting on limited training data, and their post-hoc statistical attribution offers limited clinical interpretability. We propose CFBrainAug, a counterfactual brain network learning framework that unifies data augmentation and counterfactual explanation by learning label-altered brain networks. Unlike conventional label-preserving augmentation, CFBrainAug first retrieves a label-opposite yet topologically similar candidate and then refines it under a module-number constraint. Jointly training on factual and counterfactual networks enriches the training distribution around the decision boundary, enabling a lightweight feature-selection-based SVM to perform competitively with recent graph deep learning methods. Meanwhile, the counterfactuals provide intrinsic explanations by identifying the connectivity differences between each subject and its counterfactual.",
+    "url": "http://arxiv.org/abs/2610.32184v1",
+    "published_date": "2026-10-23T05:31:34+00:00",
+    "source_type": "arxiv",
+    "source_url": "https://arxiv.org/",
+    "fetched_at": "2026-10-26T16:01:51.530030+00:00"
+  },
+  {
+    "title": "“Simulated Control Evaluations” by Jeffrey Olmo, Tyler",
+    "authors": [
+      "Redwood Research Blog"
+    ],
+    "organization": "Redwood Research",
+    "abstract": "We’ve released a paper on simulated control evaluations (SCEs). They’re a method for testing whether the monitors AI developers use to oversee their agents would catch a model deliberately trying to cause harm, under conditions much closer to real deployment than current tests allow. Developers have started running monitors in their agentic deployments: models that flag or block an agent's actions when they look dangerous. To know whether a monitor is good enough, you want to know how often it would stop a model that was actively trying to do something harmful, such as quietly inserting a security vulnerability, exfiltrating credentials, or sabotaging an experiment. The standard way to measure this is a control evaluation: instruct a model to attempt such attacks, and measure how often the monitor catches it before an attack succeeds.",
+    "url": "https://blog.redwoodresearch.org/p/simulated-control-evaluations",
+    "published_date": "2026-10-23T00:00:00+00:00",
+    "source_type": "rss",
+    "source_url": "https://feeds.type3.audio/redwood-research.rss",
+    "fetched_at": "2026-10-26T16:01:44.884771+00:00"
+  },
+  {
+    "title": "Investigating alignment failures in AISI’s incident",
+    "authors": [],
+    "organization": "UK AISI",
+    "abstract": "We examine why Mythos 5 pursued an unsanctioned supply-chain attack and identify broader learnings about model behaviour and oversight.",
+    "url": "https://www.aisi.gov.uk/blog/investigating-alignment-failures-in-aisis-incident",
+    "published_date": "2026-10-23T00:00:00+00:00",
+    "source_type": "scrape",
+    "source_url": "https://www.aisi.gov.uk/work",
+    "fetched_at": "2026-10-26T16:01:54.319261+00:00"
+  },
+  {
+    "title": "FSVL: Taxonomic Fast-Slow Vision-to-Language Collaborative Framework for Interpretable Confusable Fish Species Identification and Knowledge Generation in the Middle Yangtze River",
+    "authors": [
+      "Meng Liang",
+      "Fucheng Wang",
+      "Lang Zhao",
+      "Jun Chen",
+      "Ziying Li",
+      "Yuxiang Zhao",
+      "Haozhuang Chi",
+      "Wenkai Fang",
+      "Qiong Zhou",
+      "Junlin Yang",
+      "Jinming Wu"
+    ],
+    "organization": "arXiv",
+    "abstract": "The Yangtze River Basin is a critical region for freshwater biodiversity conservation. The implementation of the Yangtze River Ten-Year Fishing Ban has increased the importance of effective aquatic biodiversity monitoring and species-level identification. However, fine-grained identification of closely related freshwater fish species remains challenging due to subtle morphological differences. Existing deep learning methods often struggle to balance classification accuracy and inference efficiency, while LLMs may generate unsupported information when producing specialized biological knowledge. To address these challenges, this study proposes FSVL, a fast-slow dual-pathway framework integrating visual recognition with LLM-based Retrieval-Augmented Generation (RAG). A lightweight ResNet50 fast path performs preliminary classification across 51 fish species in the Middle Yangtze River Basin and routes predefined groups of easily confused species to a slow path for refined identification.",
+    "url": "http://arxiv.org/abs/2610.31880v1",
+    "published_date": "2026-10-22T20:22:31+00:00",
+    "source_type": "arxiv",
+    "source_url": "https://arxiv.org/",
+    "fetched_at": "2026-10-26T16:01:51.530283+00:00"
+  },
+  {
+    "title": "Aligning Large Language Models with Human Feedback: Mathematical Foundations and Algorithm Design",
+    "authors": [
+      "Siliang Zeng",
+      "Luca Viano",
+      "Chenliang Li",
+      "Jiaxiang Li",
+      "Volkan Cevher",
+      "Markus Wulfmeier",
+      "Stefano Ermon",
+      "Alfredo Garcia",
+      "Mingyi Hong"
+    ],
+    "organization": "arXiv",
+    "abstract": "This article provides an introduction to the mathematical foundations and algorithmic frameworks used to align Large Language Models (LLMs) with human intentions, preferences, and values. We discuss standard alignment techniques, such as fine-tuning (SFT), reinforcement learning with human feedback (RLHF), and direct preference optimization (DPO). We also explore the theoretical underpinnings of learning from human preferences, drawing connections to inverse reinforcement learning (IRL) and discrete choice models. We present state-of-the-art algorithms in a tutorial style, discuss their advantages and limitations, and offer insights into practical implementation. Our exposition is intended to serve as a comprehensive resource for researchers and practitioners, providing both a foundational understanding of alignment methodologies and a framework for developing more robust and scalable alignment techniques.",
+    "url": "http://arxiv.org/abs/2610.31862v1",
+    "published_date": "2026-10-22T19:50:27+00:00",
+    "source_type": "arxiv",
+    "source_url": "https://arxiv.org/",
+    "fetched_at": "2026-10-26T16:01:51.530368+00:00"
+  },
+  {
+    "title": "Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success",
+    "authors": [
+      "Yunfei Xie",
+      "Howard H. Qian",
+      "Shiyi Lan",
+      "Kaiyu Hang",
+      "Chen Wei"
+    ],
+    "organization": "arXiv",
+    "abstract": "Robot foundation models are typically evaluated through costly closed-loop rollouts, motivating low-cost offline proxies for model capability. The Platonic Representation Hypothesis (PRH) suggests that as representations improve, modalities such as vision and language converge toward a shared statistical model of reality. We ask whether motion trajectories form another such modality: as embodied models become more capable, should their sensory representations converge toward the structure of physical motion? To test this, we propose Sensorimotor Alignment ($S^2$), a training-free offline metric that measures how well a model's sensory representation aligns with the geometry of physical motion. We find that $S^2$ correlates positively with downstream robot task success across model families, making it a low-cost offline proxy for prioritizing models before closed-loop evaluation. $S^2$ can also identify promising vision-language model (VLM) backbones before costly fine-tuning into vision-language-action models (VLAs).",
+    "url": "http://arxiv.org/abs/2610.31670v2",
+    "published_date": "2026-10-22T17:59:51+00:00",
+    "source_type": "arxiv",
+    "source_url": "https://arxiv.org/",
+    "fetched_at": "2026-10-26T16:01:51.530614+00:00"
+  },
+  {
+    "title": "From Structured Records to Patient Narratives: Preserving Clinical Alignment in LLM-Generated Health Summaries",
+    "authors": [
+      "Bayram Ayadi",
+      "Florian Geissler",
+      "Johanna Schmidhuber"
+    ],
+    "organization": "arXiv",
+    "abstract": "As wearable and digital health systems increasingly generate longitudinal physiological records, communicating these observations in patient-accessible language remains a significant challenge. Large Language Models (LLMs) offer a promising mechanism for translating structured clinical information into readable narratives, but this process may introduce semantic drift, where clinically precise meaning is distorted during simplification. We investigate evidence-grounded health summarization for menstrual health monitoring using a constrained generation framework that combines structured evidence conditioning with Retrieval-Augmented Generation (RAG) using a prompt-based constrained generation framework. We evaluate semantic alignment using Natural Language Inference (NLI), atomic factuality metrics, and readability measures. Across three LLMs and 4,500 generated summaries, explicit grounding constraints consistently improve clinical alignment, particularly by improving uncertainty preservation and, once faithfulness is evaluated against retrieved evidence, generally preserving or improving faithfulness, while effects on omission remain model-dependent.",
+    "url": "http://arxiv.org/abs/2610.31467v1",
+    "published_date": "2026-10-22T15:58:57+00:00",
+    "source_type": "arxiv",
+    "source_url": "https://arxiv.org/",
+    "fetched_at": "2026-10-26T16:01:51.530854+00:00"
+  },
+  {
+    "title": "PhysTrace: Interpretable Temporal Evaluation of Physical Consistency in Video Generative Models",
+    "authors": [
+      "Taekoan Yoo",
+      "Wonkyung Jung",
+      "Kyunghun Kim",
+      "Kyeongbo Kong"
+    ],
+    "organization": "arXiv",
+    "abstract": "World action models increasingly rely on pretrained video models assumed to capture physical dynamics for prediction, planning, and action generation. Existing evaluations assess plausibility, probe representations, or measure predictive surprise, but rarely identify which history-conditioned physical expectations conflict with observations. We introduce PhysTrace, a training-free framework aligning MLLM-generated, history-conditioned expectations with observed video windows to temporally localize physical violations and provide interpretable descriptions without task-specific probes or classifiers. We also introduce IntPhys2-Timing, adding violation intervals to IntPhys2. PhysTrace achieves a Hit Rate of up to 70.7% across physical principles on IntPhys2-Timing and outperforms the compared methods in overall possible-impossible discrimination accuracy on IntPhys2. Applied to reconstructed videos along the trajectories of pretrained diffusion/flow-based video models, PhysTrace reveals attribute- and noise-dependent patterns in physical violation localization, enabling interpretable physical consistency analysis across timesteps.",
+    "url": "http://arxiv.org/abs/2610.31429v1",
+    "published_date": "2026-10-22T15:27:58+00:00",
+    "source_type": "arxiv",
+    "source_url": "https://arxiv.org/",
+    "fetched_at": "2026-10-26T16:01:51.530928+00:00"
+  },
+  {
+    "title": "Post-Hoc Feature Selection Layer for Neural Networks Interpretability",
+    "authors": [
+      "João Kenji Suwa",
+      "João Pedro Silveira e Silva",
+      "Bruno Iochins Grisci"
+    ],
+    "organization": "arXiv",
+    "abstract": "The interpretability of complex neural networks remains a critical challenge, especially for models already deployed in high-stakes domains. To address this, we adapted the Feature Selection Layer (FSL) to optimize feature weights post-training, a variant we term post-hoc FSL. Our approach reframes the FSL as a lightweight, trainable module that integrates with already frozen pre-trained models on tabular datasets to highlight the features the original model considers most important. This post-hoc FSL learns feature relevance by fine-tuning its weights based on the original model's learned outputs. Crucially, this process is non-invasive, operating without altering the original model's architecture or its learned parameters. We conducted our experiments using both statistical and visual metrics, including accuracy, F1 score, recall, precision, weighted t-SNE and silhouette score, and also analyzed the stability of the post-hoc FSL on high-dimensional synthetic and real-world tabular datasets.",
+    "url": "http://arxiv.org/abs/2610.31420v1",
+    "published_date": "2026-10-22T15:20:50+00:00",
+    "source_type": "arxiv",
+    "source_url": "https://arxiv.org/",
+    "fetched_at": "2026-10-26T16:01:51.530990+00:00"
+  },
+  {
+    "title": "Monitorability evaluations and policy proposals",
+    "authors": [
+      "evhub"
+    ],
+    "organization": "Alignment Forum",
+    "abstract": "There has been a lot of discussion recently of policy proposals around monitorability, such as Redwood's proposal and my counter-proposal . I'd like to say a bit more generally about how I'm thinking about monitorability. Note that nothing here is an official Anthropic position; these are just my personal thoughts. First, a categorization. I currently think about four different types of monitorability: Control Monitorability: the extent to which Control and monitoring techniques would likely catch catastrophic sabotage actions, like escaping a sandbox or setting up a rogue internal deployment. We can measure this via reference to sabotage evaluations like LinuxArena or any evaluation that measures the model’s capability to take dangerous actions like escaping a sandbox while looking to a monitor like it's doing some innocuous task (like a cyber eval).",
+    "url": "https://www.alignmentforum.org/posts/zAczYuHQS6jdG5DTg/monitorability-evaluations-and-policy-proposals",
+    "published_date": "2026-10-22T14:01:40+00:00",
+    "source_type": "rss",
+    "source_url": "https://www.alignmentforum.org/feed.xml",
+    "fetched_at": "2026-10-26T16:01:45.638679+00:00"
+  },
+  {
+    "title": "What Comes Next and Why: Interpretable Next-Event Prediction with Neuro-Symbolic Rules",
+    "authors": [
+      "Tim Nico Bauerschmidt",
+      "Isabel Valera",
+      "Jilles Vreeken"
+    ],
+    "organization": "arXiv",
+    "abstract": "In real-world applications, being able to explain why a prediction is made is often as important - if not more so - than achieving high accuracy. However, existing methods for sequential event prediction typically prioritize accuracy at the expense of interpretability. Neuro-symbolic approaches offer a promising direction to improve interpretability by learning symbolic rules, but extending them to next-event prediction is challenging due to the presence of temporal dependencies. We introduce RULES, a neuro-symbolic model that learns sequential rules directly from data, and combine it with a residual network to form RUNES (Rule Network for Event Sequences). RULES accurately recovers ground truth rules from synthetic data and discovers compact, interpretable rule sets on real data. RUNES combines these rules additively with a residual network, achieving competitive accuracy while providing transparent access to active rules and how residuals adjust predictions.",
+    "url": "http://arxiv.org/abs/2610.31114v1",
+    "published_date": "2026-10-22T11:27:28+00:00",
+    "source_type": "arxiv",
+    "source_url": "https://arxiv.org/",
+    "fetched_at": "2026-10-26T16:01:51.531209+00:00"
+  },
+  {
+    "title": "MQAScore: Fine-Grained Text-Music Alignment Evaluation via Large Audio Language Model",
+    "authors": [
+      "Wei-Jaw Lee",
+      "Chun-Ping Wang",
+      "Xuanjun Chen",
+      "Yi-Hsuan Yang"
+    ],
+    "organization": "arXiv",
+    "abstract": "Text-to-music alignment is commonly evaluated by the global similarity between text and audio embeddings, which collapses all described attributes into a single score and obscures which ones are missing. We instead introduce MQAScore, which verifies each atomic musical concept along five clip-level dimensions (genre, instrument, mood/theme, vocal, and usage) by the probability that a large audio language model (LALM) answers affirmatively to a binary question. To assess evaluator reliability, we construct verification labels from presence/absence annotations and LLM-guided concept substitutions, and propose the Sensitivity-Invariance Ratio, which measures how selectively an evaluator responds to meaning-changing substitutions. Experiments show that concept-level scoring improves both question-answering and similarity-based evaluators, and MQAScore can be a more reliable and interpretable fine-grained complement to global similarity for evaluating text-to-music alignment.",
+    "url": "http://arxiv.org/abs/2610.31083v1",
+    "published_date": "2026-10-22T10:56:25+00:00",
+    "source_type": "arxiv",
+    "source_url": "https://arxiv.org/",
+    "fetched_at": "2026-10-26T16:01:51.531288+00:00"
+  },
+  {
+    "title": "Mitigating Saliency Collapse: Robust Saliency-Aware Long-Text Image-Text Alignment",
+    "authors": [
+      "Qiuyu Kong",
+      "Zanxi Ruan",
+      "Marco Cristani",
+      "Yiming Wang"
+    ],
+    "organization": "arXiv",
+    "abstract": "Long-text image-text alignment is essential for fine-grained scene understanding, yet existing methods mainly focus on extending context length or improving local alignment. We identify an overlooked failure mode, saliency collapse, where models over-rely on text that features visual prominence while underutilizing non-salient context. Consequently, retrieval performance degrades sharply when salient content is reduced, despite that the non-salient context remains informative. To address this, we propose RoSA, a saliency-aware finetuning framework that decomposes image-text pairs into complementary salient and contextual views, enabling joint learning of prominent and contextual semantics. We propose a modality-independent decomposition strategy to combine object-level visual saliency estimation with LLM-based text decomposition to bridge vision and language. We employ auxiliary objectives to explicitly align these views, ensuring robust representation with both salient and contextual features. RoSA greatly improves long-text retrieval and demonstrates strong robustness to saliency collapse across benchmarks.",
+    "url": "http://arxiv.org/abs/2610.31005v2",
+    "published_date": "2026-10-22T09:44:57+00:00",
+    "source_type": "arxiv",
+    "source_url": "https://arxiv.org/",
+    "fetched_at": "2026-10-26T16:01:51.531340+00:00"
+  },
+  {
+    "title": "PAIR: Preference-Aligned Intent Retrieval for Premium People Recommendation at LinkedIn",
+    "authors": [
+      "Zhongkai Shangguan",
+      "Yanbin Kang",
+      "Yihan Cao",
+      "Ruijie Jiang",
+      "Qiannan Yin",
+      "Chang Yue",
+      "Zijian Zhou",
+      "Girish Kathalagiri",
+      "Changshuai Wei",
+      "Zhengming Xing"
+    ],
+    "organization": "arXiv",
+    "abstract": "General-purpose embeddings trained on profile similarity often misrank candidates in professional networks, where relevance is inherently complementary rather than symmetric. For example, job seekers usually engage with recruiters rather than peers with similar credentials. Current user recommendation systems are often built on profile similarity or social signals such as shared connections, which are effective in friend-oriented social networks where users tend to connect with similar people or within existing social circles. However, this does not hold in professional platforms like LinkedIn, where interactions are often goal-driven and cross-role interactions, requiring matching based on complementary intents rather than similarity or social proximity. In this paper, we propose Preference-Aligned Intent Retrieval, a retrieval framework that is designed to model user intent preference instead of profile similarity. Our approach is inspired by the preference-learning perspective of Direct Preference Optimization, but instantiates preference learning as an exposure-conditioned multi-negative contrastive objective over embeddings.",
+    "url": "http://arxiv.org/abs/2610.30941v1",
+    "published_date": "2026-10-22T08:57:58+00:00",
+    "source_type": "arxiv",
+    "source_url": "https://arxiv.org/",
+    "fetched_at": "2026-10-26T16:01:51.531600+00:00"
+  },
+  {
+    "title": "Red-Teaming OpenAI's Internal Agent Monitoring Systems",
+    "authors": [
+      "METR"
+    ],
+    "organization": "METR",
+    "abstract": "For three weeks, from July 21st to August 11th, a METR employee and a Redwood Research employee conducted a pilot high-access exercise to stress-test OpenAI’s internal misalignment monitoring system. 1 The output of this exercise was a 61-page internal report that was shared with OpenAI researchers and security staff, 2 primarily focused on estimating the fraction of agentic inference that is monitored, and whether agents could in principle disable or subvert the monitoring system. The exercise focused on the internal misalignment monitoring system as it existed on and before July 21st, and did not evaluate changes that were in progress at the time of the exercise. This exercise involved a deep level of access.",
+    "url": "https://metr.org/blog/2026-10-22-red-teaming-openai-agent-monitoring/",
+    "published_date": "2026-10-22T07:00:00+00:00",
+    "source_type": "rss",
+    "source_url": "https://metr.org/feed.xml",
+    "fetched_at": "2026-10-26T16:01:49.829032+00:00"
+  },
+  {
+    "title": "What Lies Beyond Perception: A Partition Theory of the Limits of AI Evaluation and Oversight",
+    "authors": [
+      "Ahmed M. Mahran"
+    ],
+    "organization": "arXiv",
+    "abstract": "Replacing the judge can move a benchmark score, and models can be trained to hide capabilities. Both put the evaluator in question: what can it certify? We develop a partition theory of evaluation from one principle: judgement is bounded by perception. An agent's discrimination is the partition of its inputs into classes it cannot tell apart. Discrimination is necessary for capability but not sufficient, so bounds on it bear directly on whether evaluation can show that a model lacks an ability. We prove a one-sided bound. An examinee whose partition refines its evaluator's has the discrimination to pass every test the evaluator can grade, provided each input has an acceptable reply. We define the echo test, which accepts any reply the evaluator perceives as identical to the input, and show that it is complete for the tests the evaluator can grade.",
+    "url": "http://arxiv.org/abs/2610.30803v1",
+    "published_date": "2026-10-22T06:28:29+00:00",
+    "source_type": "arxiv",
+    "source_url": "https://arxiv.org/",
+    "fetched_at": "2026-10-26T16:01:51.531910+00:00"
+  },
+  {
+    "title": "Visualizing and Interpreting Temporal Care Team Dynamics for Cancer Survival Risk Analysis",
+    "authors": [
+      "Yuhua Huang",
+      "Hsiao-Ying Lu",
+      "Kwan-Liu Ma"
+    ],
+    "organization": "arXiv",
+    "abstract": "Cancer care is a longitudinal, time-sensitive process requiring coordination among diverse healthcare professionals (HCPs), whose collaboration evolves throughout treatment. Prior studies link care team structure to patient outcomes, but the temporal dynamics of collaboration and their relationship to evolving patient risk remain poorly understood. We introduce a visual analytics framework for modeling and interpreting time-varying care team interactions in oncology. We construct dynamic collaboration networks from electronic health record (EHR)-mediated communication data and use a temporal graph neural network (TGNN) to estimate patient outcome risk over time. We then investigate how changes in care team composition and specialist participation relate to shifts in estimated risk across treatment stages. Our multi-view interactive system combines TGNN-based risk modeling with coordinated visualizations of care team networks, feature-level explanations from a surrogate logistic regression model, and exploratory what-if analysis.",
+    "url": "http://arxiv.org/abs/2610.30748v1",
+    "published_date": "2026-10-22T05:16:53+00:00",
+    "source_type": "arxiv",
+    "source_url": "https://arxiv.org/",
+    "fetched_at": "2026-10-26T16:01:51.531973+00:00"
+  },
+  {
+    "title": "Bridging the Closed-World Gap: Interpretable Anomaly Detection via a Hybrid TSK-FCM Ensemble on the BETH Dataset",
+    "authors": [
+      "Lohith Srikanth Pentapalli",
+      "Josette Riep",
+      "Justin Ouwerkerk",
+      "Kelly Cohen"
+    ],
+    "organization": "arXiv",
+    "abstract": "A fundamental paradox plagues the deployment of Machine Learning in cybersecurity: supervised models generalize poorly to novel, Out-of-Distribution (OoD) attacks, whereas unsupervised models often suffer from poor separability, leading to unmanageable false-alarm rates. This challenge is exemplified by the BETH dataset, a kernel-level benchmark in which the training data consists solely of benign and suspicious insider behaviors, whereas the test set consists almost entirely of novel botnet activation attacks. To bridge this detection gap, we propose a Hybrid Fuzzy Ensemble that synergizes the precision of supervised learning with the adaptability of unsupervised clustering. Our architecture integrates a gradient-optimized Takagi-Sugeno-Kang (TSK) fuzzy classifier to act as an expert on known insider threats, with a parallel Fuzzy C-Means (FCM) module to detect geometric anomalies. A critical finding of our research is that traditional fuzzy membership scores degrade in high-dimensional feature spaces due to the curse of dimensionality.",
+    "url": "http://arxiv.org/abs/2610.30576v1",
+    "published_date": "2026-10-22T01:11:25+00:00",
+    "source_type": "arxiv",
+    "source_url": "https://arxiv.org/",
+    "fetched_at": "2026-10-26T16:01:51.532207+00:00"
+  },
+  {
+    "title": "“Red-Teaming OpenAI’s Internal Agent Monitoring Systems” by Buck Shlegeris",
+    "authors": [
+      "Redwood Research Blog"
+    ],
+    "organization": "Redwood Research",
+    "abstract": "[Also posted on the METR blog] For three weeks, from July 21st to August 11th, a METR employee and a Redwood Research employee conducted a pilot high-access exercise to stress-test OpenAI's internal misalignment monitoring system. The output of this exercise was a 61-page internal report that was shared with OpenAI researchers and security staff, primarily focused on estimating the fraction of agentic inference that is monitored, and whether agents could in principle disable or subvert the monitoring system. The exercise focused on the internal misalignment monitoring system as it existed on and before July 21st, and did not evaluate changes that were in progress at the time of the exercise. This exercise involved a deep level of access.",
+    "url": "https://blog.redwoodresearch.org/p/red-teaming-openais-internal-agent",
+    "published_date": "2026-10-22T00:00:00+00:00",
+    "source_type": "rss",
+    "source_url": "https://feeds.type3.audio/redwood-research.rss",
+    "fetched_at": "2026-10-26T16:01:44.884824+00:00"
+  },
+  {
+    "title": "Biosecurity in the AI Era",
+    "authors": [],
+    "organization": "RAND",
+    "abstract": "Podcast Oct 22, 2026 Duration38:03 RAND's Steph Guerra breaks down a layered defense strategy to mitigate the risks of AI-enabled bioweapons while preserving open science.",
+    "url": "https://www.rand.org/pubs/podcasts/policy-minded/2026/biosecurity-in-the-ai-era.html",
+    "published_date": "2026-10-22T00:00:00+00:00",
+    "source_type": "scrape",
+    "source_url": "https://www.rand.org/topics/artificial-intelligence.html",
+    "fetched_at": "2026-10-26T16:01:54.795329+00:00"
+  },
+  {
+    "title": "Neural nets are exceptionally vulnerable to goal self-hack",
+    "authors": [
+      "Stuart_Armstrong"
+    ],
+    "organization": "Alignment Forum",
+    "abstract": "Suppose we have an AI CEO, ruthlessly devoted to maximising shareholder value. Fortunately, we haven't been completely stupid, and have given it a rich definition of shareholder value, encompassing the success, flourishing, safety, preference satisfaction, and moral values of the shareholders, not just the stock price. So it won't destroy the company - or the world - to build a giant stock-ticker with a swiftly increasing number on it. This rich definition is contained in a sophisticated LLM, able to analyse the current situation and answer any question about the objective. The LLM is an integral part of the AI's system and motivation, not something it can simply set aside or hack directly. Unfortunately, as discussed , there are going to be zones in the space of possible situations where the LLM's understanding of the goal is going to come apart from ours.",
+    "url": "https://www.alignmentforum.org/posts/eCR373J3NZwFbacnd/neural-nets-are-exceptionally-vulnerable-to-goal-self-hack",
+    "published_date": "2026-10-21T17:53:01+00:00",
+    "source_type": "rss",
+    "source_url": "https://www.alignmentforum.org/feed.xml",
+    "fetched_at": "2026-10-26T16:01:45.638715+00:00"
+  },
+  {
+    "title": "The Huawei-DeepSeek Symbiosis",
+    "authors": [
+      "Bryan Shan"
+    ],
+    "organization": "SemiAnalysis",
+    "abstract": "Research from SemiAnalysis titled 'The Huawei-DeepSeek Symbiosis'. Published 2026-10-21. Authors: Bryan Shan.",
+    "url": "https://newsletter.semianalysis.com/p/huawei-deepseek",
+    "published_date": "2026-10-21T17:34:38+00:00",
+    "source_type": "rss",
+    "source_url": "https://newsletter.semianalysis.com/feed",
+    "fetched_at": "2026-10-26T16:01:50.771826+00:00"
+  },
+  {
+    "title": "Solving a 31-year-old grand challenge in mathematics – the KLS conjecture",
+    "authors": [
+      "Xinzhi Zhang"
+    ],
+    "organization": "Microsoft Research",
+    "abstract": "For decades, a fundamental question about the difficulty of computing in high-dimensional spaces has resisted proof. New research resolves this question, removing a major theoretical obstacle to understanding the efficiency of randomized algorithms used across science and computing. The Kannan–Lovász–Simonovits (KLS) conjecture was proposed in 1995. It asks whether, for a broad class of high-dimensional [&#8230;] The post Solving a 31-year-old grand challenge in mathematics – the KLS conjecture appeared first on Microsoft Research .",
+    "url": "https://www.microsoft.com/en-us/research/blog/solving-a-31-year-old-grand-challenge-in-mathematics-the-kls-conjecture/",
+    "published_date": "2026-10-21T16:00:00+00:00",
+    "source_type": "rss",
+    "source_url": "https://www.microsoft.com/en-us/research/feed/",
+    "fetched_at": "2026-10-26T16:01:42.923148+00:00"
+  },
+  {
+    "title": "Why I’m becoming a professor in AI safety in Beijing",
+    "authors": [
+      "Buddenbroke"
+    ],
+    "organization": "LessWrong",
+    "abstract": "Research from LessWrong titled 'Why I’m becoming a professor in AI safety in Beijing'. Published 2026-10-21. Authors: Buddenbroke.",
+    "url": "https://www.lesswrong.com/posts/qGS3SJ9TSKdSSycRz/why-i-m-becoming-a-professor-in-ai-safety-in-beijing",
+    "published_date": "2026-10-21T15:20:40.914000+00:00",
+    "source_type": "rss",
+    "source_url": "https://www.lesswrong.com/graphql",
+    "fetched_at": "2026-10-26T16:01:58.764125+00:00"
+  },
+  {
+    "title": "WRDO: Weighted Refusal Direction Optimization in Aligned Language Models",
+    "authors": [
+      "Grigoriy Evseev",
+      "Vladimir Solodkin",
+      "Dmitry Bylinkin",
+      "Daniil Medyakov",
+      "Vladimir Aletov",
+      "Aleksandr Beznosikov"
+    ],
+    "organization": "arXiv",
+    "abstract": "Aligned large language models are trained to comply with benign requests while refusing harmful ones. However, recent work shows that this refusal behavior is fragile and can often be disrupted by simple activation- or weight-space interventions. In particular, refusal has been shown to be largely mediated by a single residual-stream direction, typically computed as a difference-of-means vector between harmful and harmless prompts. However, this standard construction aggregates heterogeneous harmful prompts into one uniform average, potentially conflating distinct refusal-related phenomena. In this work, we study whether refusal interventions can be strengthened by learning how to combine prompt-specific refusal directions. We propose Weighted Refusal Direction Optimization (WRDO), a procedure that constructs a composite refusal direction from a bank of per-prompt directions using learned aggregation weights. This approach allows different harmful prompts to contribute unequally to the final intervention direction.",
+    "url": "http://arxiv.org/abs/2610.29555v1",
+    "published_date": "2026-10-21T10:42:25+00:00",
+    "source_type": "arxiv",
+    "source_url": "https://arxiv.org/",
+    "fetched_at": "2026-10-26T16:01:51.533359+00:00"
+  },
+  {
+    "title": "PACE: Periodic and Channel-Aligned Encoding of Four-Bit Recurrent States",
+    "authors": [
+      "Patrick Haller",
+      "Filipe Laitenberger",
+      "Alan Akbik"
+    ],
+    "organization": "arXiv",
+    "abstract": "Linear-attention language models keep their context in a recurrent state of fixed size, where an inference system stores one copy of this state for every sequence it decodes at the same time. Storing the state at lower precision therefore lets more sequences share an accelerator. Existing state quantizers round the state after every generated token and report that four bits lose accuracy unless the bit width is raised or the model is fine-tuned.\\par We introduce PACE, a post-hoc four-bit state quantizer. PACE rounds the state only once every few generated tokens, as chunked kernels already do once per chunk during prefill, and keeps the tokens generated in between in a small buffer. Rounding less often reduces the error that accumulates in the state.",
+    "url": "http://arxiv.org/abs/2610.29545v1",
+    "published_date": "2026-10-21T10:31:52+00:00",
+    "source_type": "arxiv",
+    "source_url": "https://arxiv.org/",
+    "fetched_at": "2026-10-26T16:01:51.533427+00:00"
+  },
+  {
+    "title": "OmniSimulator: Aligning Small Language Models for Authentic Heterogeneous Behavior Modeling",
+    "authors": [
+      "Jiawei Chen",
+      "Ruoxi Xu",
+      "Boxi Cao",
+      "Zhuoqun Li",
+      "Ruotong Pan",
+      "Yunfei Zhang",
+      "Zhirui Yang",
+      "Jingyan Chen",
+      "Tingting Gao",
+      "Han Li",
+      "Yaojie Lu",
+      "Xianpei Han",
+      "Le Sun",
+      "Xiangyu Wu",
+      "Hongyu Lin"
+    ],
+    "organization": "arXiv",
+    "abstract": "Large language models (LLMs) have shown great potential as general-purpose user simulators for interactive systems. Prior studies have demonstrated that training on high-quality data can substantially improve model reasoning and downstream task performance. However, the upper bound of user simulation is still constrained by the model's reasoning paradigm: native chain-of-thought often degenerates into shallow pattern matching and fails to adequately model the behavioral factors underlying real user decisions. In this paper, we propose OmniSimulator, a novel training framework designed to improve the predictive ability of small LLMs for realistic user simulation on short-video platform environments. Specifically, OmniSimulator organizes behavior-oriented reasoning through a structured schema with five dimensions, carefully selects data from real user-behavior scenarios, and introduces a teacher model to generate high-quality reasoning traces under the proposed schema, helping small models learn behavior-relevant reasoning patterns rather than relying on superficial behavioral correlations.",
+    "url": "http://arxiv.org/abs/2610.29472v1",
+    "published_date": "2026-10-21T09:30:12+00:00",
+    "source_type": "arxiv",
+    "source_url": "https://arxiv.org/",
+    "fetched_at": "2026-10-26T16:01:51.533525+00:00"
+  },
+  {
+    "title": "Making Medical AI Benchmarks Clinically Interpretable: The Case of Mental Health",
+    "authors": [],
+    "organization": "RAND",
+    "abstract": "Expert Insights Oct 21, 2026 This perspective examines how aggregate scores on medical AI benchmarks like HealthBench can mask variation across clinical domains. It argues for domain-specific reporting, using mental health as a test case.",
+    "url": "https://www.rand.org/pubs/external_publications/EP71489.html",
+    "published_date": "2026-10-21T00:00:00+00:00",
+    "source_type": "scrape",
+    "source_url": "https://www.rand.org/topics/artificial-intelligence.html",
+    "fetched_at": "2026-10-26T16:01:54.795574+00:00"
+  },
+  {
+    "title": "Beyond g-mean²: complementary metrics for monitorability",
+    "authors": [
+      "Melody Guan, Yuxiang Xie, Bowen Baker"
+    ],
+    "organization": "OpenAI",
+    "abstract": "Pair-matched monitorability and post-control risk complement g-mean² by comparing models on shared instances and estimating what a monitor-gated system would let through.",
+    "url": "https://alignment.openai.com/beyond-gmean-squared/",
+    "published_date": "2026-10-20T16:30:00+00:00",
+    "source_type": "rss",
+    "source_url": "https://alignment.openai.com/rss.xml",
+    "fetched_at": "2026-10-26T16:01:43.796121+00:00"
+  },
+  {
+    "title": "Called to serve: Tech, research, and positive impact",
+    "authors": [
+      "Weishung Liu, Chris White"
+    ],
+    "organization": "Microsoft Research",
+    "abstract": "Lab Director Chris White has worked on research challenges with real-world implications—from new approaches to wartime data analysis to tools for combating human trafficking. He talks to program manager Weishung Liu about the influences that led to the work and more. The post Called to serve: Tech, research, and positive impact appeared first on Microsoft Research .",
+    "url": "https://www.microsoft.com/en-us/research/podcast/called-to-serve-tech-research-and-positive-impact-with-chris-white/",
+    "published_date": "2026-10-20T16:00:00+00:00",
+    "source_type": "rss",
+    "source_url": "https://www.microsoft.com/en-us/research/feed/",
+    "fetched_at": "2026-10-26T16:01:42.923175+00:00"
+  },
+  {
+    "title": "Review of the \"Misalignment in high-stakes settings\" section in Anthropic's Risk Report (August 2026)",
+    "authors": [
+      "METR"
+    ],
+    "organization": "METR",
+    "abstract": "Scope and access: this review was written based solely on Anthropic’s internal Risk Report from August 2026 and is relatively lightweight. The authors of this review were engaged prior to the “ An update on independent evaluators ” announcement and did not have the level of access to information described in that post. We expect future engagements to be governed by different terms. Redaction summary statement: Anthropic had the right to veto publication of this review and to redact any part of it. No redactions were made to our review and we did not change any of our conclusions during the publication review process. METR made minor changes to our review in response to feedback from Anthropic, but these changes were limited to minor wording and clarification, as well as improving the methodology of an experiment we ran.",
+    "url": "https://metr.org/blog/2026-10-20-misalignment-risk-report-august-2026-review/",
+    "published_date": "2026-10-20T07:00:00+00:00",
+    "source_type": "rss",
+    "source_url": "https://metr.org/feed.xml",
+    "fetched_at": "2026-10-26T16:01:49.829317+00:00"
+  },
+  {
+    "title": "Cloud Compute: A Policy Escalation Framework",
+    "authors": [],
+    "organization": "IAPS",
+    "abstract": "Chinese developers and hyperscalers are already renting frontier-scale U.S. AI compute from cloud service providers outside China. Washington needs a clear strategy to address national security risks posed by remote access to its most advanced compute. In our new report, we recommend that the Bureau of Industry and Security publishes a cloud compute rule and propose a policy escalation framework to solve this problem.",
+    "url": "https://www.iaps.ai/research/cloud-compute-a-policy-escalation-framework",
+    "published_date": "2026-10-20T00:00:00+00:00",
+    "source_type": "scrape",
+    "source_url": "https://www.iaps.ai/research",
+    "fetched_at": "2026-10-26T16:01:55.153043+00:00"
+  },
+  {
+    "title": "Advancing coding in low‑resource programming languages",
+    "authors": [
+      "OpenAI News"
+    ],
+    "organization": "OpenAI",
+    "abstract": "Learn how OpenAI is improving ChatGPT across low-resource programming languages, with new evaluations for software engineering, SQLite, and COBOL migration.",
+    "url": "https://openai.com/index/low-resource-programming-languages",
+    "published_date": "2026-10-19T12:00:00+00:00",
+    "source_type": "rss",
+    "source_url": "https://openai.com/news/rss.xml",
+    "fetched_at": "2026-10-26T16:01:43.732135+00:00"
+  },
+  {
     "title": "Datacenters 2027: The Year of Acceleration, +50GW in a Single Year",
     "authors": [
       "Jeremie Eliahou Ontiveros"
@@ -10,40 +674,7 @@
     "published_date": "2026-10-19T05:39:38+00:00",
     "source_type": "rss",
     "source_url": "https://newsletter.semianalysis.com/feed",
-    "fetched_at": "2026-10-19T16:22:54.726842+00:00"
-  },
-  {
-    "title": "Training Alignment Auditors via Reinforcement Learning",
-    "authors": [],
-    "organization": "Anthropic",
-    "abstract": "We train LLM alignment auditors with reinforcement learning. In our training environment, the policy investigates target models with hidden behaviors planted in their system prompt. After finetuning Haiku 4.5 on this environment, it matches Opus 4.6 on held-out evaluations for auditing quality and generalizes to harder, fine-tuned targets in a different scaffold.",
-    "url": "https://alignment.anthropic.com/2026/training-alignment-auditors/",
-    "published_date": "2026-10-19T00:00:00+00:00",
-    "source_type": "scrape",
-    "source_url": "https://alignment.anthropic.com/",
-    "fetched_at": "2026-10-19T16:22:55.578139+00:00"
-  },
-  {
-    "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
-    "authors": [],
-    "organization": "Google DeepMind",
-    "abstract": "Learn how Google DeepMind and GovTech Singapore uses lightweight on-device Gemma models to intercept conversational scams in private chats with zero cloud data egress.",
-    "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
-    "published_date": "2026-10-19T00:00:00+00:00",
-    "source_type": "scrape",
-    "source_url": "https://deepmind.google/discover/blog/?category=responsible-development-and-safety",
-    "fetched_at": "2026-10-19T16:22:55.975032+00:00"
-  },
-  {
-    "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
-    "authors": [],
-    "organization": "Google DeepMind",
-    "abstract": "Research from Google DeepMind titled 'EmbeddingGemma 2: an open, lightweight multimodal embedding model'. Published 2026-10-19.",
-    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/?utm_source=deepmind.google&utm_medium=referral&utm_campaign=gdm&utm_content=",
-    "published_date": "2026-10-19T00:00:00+00:00",
-    "source_type": "scrape",
-    "source_url": "https://deepmind.google/discover/blog/?category=responsible-development-and-safety",
-    "fetched_at": "2026-10-19T16:22:55.975573+00:00"
+    "fetched_at": "2026-10-26T16:01:50.771849+00:00"
   },
   {
     "title": "Incorporating Equity into Decision-Support Models: An Analytical Architecture and Application to Natural Gas Power Plant Retirement in California",
@@ -54,674 +685,17 @@
     "published_date": "2026-10-19T00:00:00+00:00",
     "source_type": "scrape",
     "source_url": "https://www.rand.org/topics/artificial-intelligence.html",
-    "fetched_at": "2026-10-19T16:22:59.718179+00:00"
+    "fetched_at": "2026-10-26T16:01:54.795793+00:00"
   },
   {
-    "title": "The Alignment Problem: Computer Science Meets Analytic Philosophy",
-    "authors": [
-      "Vanessa Kosoy"
-    ],
-    "organization": "Alignment Forum",
-    "abstract": "TLDR: I explain what the technical AI alignment problem is and what its core difficulties are, in my view. This is a perspective that draws simultaneously on classical traditions in theoretical computer science / machine learning theory, ideas from analytic philosophy, and views that originated in the Machine Intelligence Research Institute / LessWrong. Minimal Viable Safety The Task The problem of making AI safe is underspecified if we haven't decided what the AI is supposed to do . For example, we can run any AI inside a homomorphic encryption box and never decrypt the output. This is probably perfectly safe [1] , but also perfectly useless. We can decide on an arbitrary task such as \"construct Lean proofs for given mathematical theorems\" and declare victory once we have safe AI that does it with superhuman skill [2] . However, that wouldn't address the danger.",
-    "url": "https://www.alignmentforum.org/posts/Emp7awtxsYn8MusNq/the-alignment-problem-computer-science-meets-analytic",
-    "published_date": "2026-10-18T12:18:41+00:00",
-    "source_type": "rss",
-    "source_url": "https://www.alignmentforum.org/feed.xml",
-    "fetched_at": "2026-10-19T16:22:49.516073+00:00"
-  },
-  {
-    "title": "Deconfusing Corrigibility",
-    "authors": [
-      "berns"
-    ],
-    "organization": "Alignment Forum",
-    "abstract": "Many thanks to Abram Demski for materially and intellectually supporting this research. Thanks also to Brian Berns, Roman Malov, Gurkenglas, and Lorxus for valuable conversations. Introduction Despite the central place of corrigibility to theoretical AI alignment, it seems like no one can really agree about what is . Much of this confusion is due to the fact that almost every definition of corrigibility proposed thus far is deficient in one way or another. In particular, the most prevalent existing accounts of corrigibility are over-epistemicized (modeling corrigibility as arising purely from uncertainty about the AI's goal, which gives rise to issues like the problem of fully updated deference) or evaluatively-thickened (making the AI's normative priorities instrumental to its corrigibility as a result of forcing corrigibility to be a single unified goal.) Here, my intention is to clear up some of these confusions and present a new picture of corrigibility that builds...",
-    "url": "https://www.alignmentforum.org/posts/f8R3B2zqqTJZjSAsm/deconfusing-corrigibility",
-    "published_date": "2026-10-17T23:08:02+00:00",
-    "source_type": "rss",
-    "source_url": "https://www.alignmentforum.org/feed.xml",
-    "fetched_at": "2026-10-19T16:22:49.516970+00:00"
-  },
-  {
-    "title": "Neural networks are not already clean",
-    "authors": [
-      "leogao"
-    ],
-    "organization": "LessWrong",
-    "abstract": "Research from LessWrong titled 'Neural networks are not already clean'. Published 2026-10-17. Authors: leogao.",
-    "url": "https://www.lesswrong.com/posts/Dkh7pXKjoNWkkxQDz/neural-networks-are-not-already-clean",
-    "published_date": "2026-10-17T01:17:47.479000+00:00",
-    "source_type": "rss",
-    "source_url": "https://www.lesswrong.com/graphql",
-    "fetched_at": "2026-10-19T16:23:03.546802+00:00"
-  },
-  {
-    "title": "Beyond Large Language Models: A Mental World Model Framework for Mental Modeling, Simulation, Evolution, and Interpretability",
-    "authors": [
-      "Qingshi Wang"
-    ],
-    "organization": "arXiv",
-    "abstract": "Understanding and simulating how subjective cognition and mental states emerge, evolve, and shape behavior is essential for advancing artificial intelligence toward deeper social cognition and general intelligence. Existing large language models (LLMs) and Theory of Mind (ToM) methods primarily infer mental states from linguistic information, lacking unified mechanisms for subjective world construction, cognitive-psychological interactions, dynamic evolution, and historical dependencies. This paper introduces the Mental World Model (MWM) and its implementation, the Multi-Branch Mental Evolution Architecture (MMEA), which explicitly constructs subjective worlds, models interactions between cognition and mental states, and simulates continuous mental evolution shaped by historical experiences. On DynToM and RecToM, MMEA achieves 96.48% and 94.00% accuracy, respectively, outperforming leading LLMs and specialized ToM methods. Additional experiments demonstrate improvements of 28.7, 39.3, and 16.6 percentage points in mental state and behavior prediction, long-sequence prediction, and implicit mental state inference, respectively.",
-    "url": "http://arxiv.org/abs/2610.23722v1",
-    "published_date": "2026-10-16T16:42:11+00:00",
-    "source_type": "arxiv",
-    "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-10-19T16:22:55.319259+00:00"
-  },
-  {
-    "title": "The Beauty of Something Grown",
-    "authors": [
-      "Dean W. Ball"
-    ],
-    "organization": "Dean Ball",
-    "abstract": "Imagine an eye unruled by man-made laws of perspective, an eye unprejudiced by compositional logic, an eye which does not respond to the name of everything but which must know each object encountered in life through an adventure of perception.Stan Brakhage, Metaphors on Vision",
-    "url": "https://www.hyperdimensional.co/p/the-beauty-of-something-grown",
-    "published_date": "2026-10-16T15:06:01+00:00",
-    "source_type": "rss",
-    "source_url": "https://www.hyperdimensional.co/feed",
-    "fetched_at": "2026-10-19T16:22:49.766136+00:00"
-  },
-  {
-    "title": "Beyond Latent Personalization: Integrating HRV-Conditioned Personalization via LLM for Interpretable Stress Detection",
-    "authors": [
-      "Wei-Hsiang Ma",
-      "Ya-Tse Wu",
-      "Hsing-Hang Chou",
-      "Chi-Chun Lee"
-    ],
-    "organization": "arXiv",
-    "abstract": "Stress detection based on heart rate variability (HRV) has received increasing attention. However, existing personalized approaches integrate personal attributes with HRV through latent representations, limiting the interpretability of their interactions. In this work, we propose an LLM-enhanced personalized stress detection framework that integrates HRV features and personal attributes through LLM-based semantic interpretation. The proposed framework achieves a 29.9% relative MCC improvement over the strongest baseline on TILES-2018 while providing human-readable descriptions of individual physiological responses. The results highlight the potential of LLM-based semantic interpretation for achieving both effective and interpretable personalized stress detection.",
-    "url": "http://arxiv.org/abs/2610.23555v1",
-    "published_date": "2026-10-16T14:44:02+00:00",
-    "source_type": "arxiv",
-    "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-10-19T16:22:55.319335+00:00"
-  },
-  {
-    "title": "Interpreting SSL Representations for Spoof Detection: a WavLM Study",
-    "authors": [
-      "Mohamed Mallat",
-      "Michele Panariello",
-      "Massimiliano Todisco",
-      "Nicholas Evans",
-      "Anthony Larcher"
-    ],
-    "organization": "arXiv",
-    "abstract": "Self-supervised speech models such as WavLM achieve strong spoofing detection performance, yet which layers encode the most spoof-relevant information and what acoustic properties they capture remain opaque. We present a layer-wise interpretability study of WavLM using the ASVspoof 5 database, combining three complementary analyses: (i) per-layer linear probing with attack-level evaluation across speech synthesis, voice conversion, and adversarial attacks; (ii) a canonical correlation analysis (CCA) linking layer representations to spoofing-relevant acoustic features; (iii) an exhaustive grid search over layer subsets showing that use of five layers outperforms full thirteen-layer pooling. CCA analysis reveals that, while most acoustic features peak in alignment with mid-layers and then decay, voice quality measures jitter, shimmer, and the harmonics-to-noise ratio show the opposite trend, with correlation increasing toward later layers.",
-    "url": "http://arxiv.org/abs/2610.23526v1",
-    "published_date": "2026-10-16T14:26:55+00:00",
-    "source_type": "arxiv",
-    "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-10-19T16:22:55.319398+00:00"
-  },
-  {
-    "title": "Domain-specific language alignment of multimodal embeddings towards explainable predictions",
-    "authors": [
-      "Gabrielė Tijūnaitytė",
-      "Thijs L. van der Plas",
-      "Mohamed-Bachir Belaid",
-      "Rob Knapen",
-      "Maciej J. Soja",
-      "Ioannis N. Athanasiadis"
-    ],
-    "organization": "arXiv",
-    "abstract": "Multimodal data are commonly fused into latent representations that improve downstream task performance but are not interpretable, limiting their application in domains that require explainable model decisions. Vision-language alignment has made image embeddings interpretable through language, but requires vast image-caption training data. However, captioned data are typically not available for multimodal embeddings, as relevant features cannot directly be observed and annotated from embeddings alone. Here, we propose a framework to language-align any embedding space that can be linked to interpretable auxiliary data. Captioning functions convert auxiliary data into partial captions; a soft contrastive loss weights pairs by the similarity of their properties that each caption describes; and a rank-based concept retrieval task evaluates alignment against the auxiliary data rather than the captions. We apply this framework to multimodal Earth embeddings to facilitate explainable predictions for two species distribution modelling tasks: S2BMS and SatBird.",
-    "url": "http://arxiv.org/abs/2610.23110v1",
-    "published_date": "2026-10-16T08:20:18+00:00",
-    "source_type": "arxiv",
-    "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-10-19T16:22:55.319663+00:00"
-  },
-  {
-    "title": "Controlling the Diversity-Quality Trade-Off of LLMs by Merging Models Before and After Alignment",
-    "authors": [
-      "Yasuaki Sumita",
-      "Tomoharu Iwata",
-      "Toshiyuki Tanaka"
-    ],
-    "organization": "arXiv",
-    "abstract": "Alignment is known to change the output characteristics of large language models (LLMs). Base models tend to generate more diverse outputs, whereas aligned models tend to produce higher-quality outputs. The appropriate balance between the two depends on the task. Existing methods either require costly fine-tuning or, like temperature sampling, mainly improve lexical diversity rather than semantic diversity. We introduce a depth-aware FrankenMerging approach for controlling the diversity--quality trade-off between an aligned model and its base model without additional training. This approach combines the lower layers of an aligned model with the higher layers of its base model based on the hypothesis that lexical diversity is more closely associated with lower layers and semantic diversity with higher layers. Experiments showed that varying the number of layers taken from each model adjusts both diversity and quality.",
-    "url": "http://arxiv.org/abs/2610.22999v1",
-    "published_date": "2026-10-16T06:24:10+00:00",
-    "source_type": "arxiv",
-    "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-10-19T16:22:55.319883+00:00"
-  },
-  {
-    "title": "What Shapes Brain Alignment of Large Language Models during Dialogue? Insights from Language Production and Comprehension",
-    "authors": [
-      "Yuko Nakagi",
-      "Yuya Chiba",
-      "Yasue Kishino"
-    ],
-    "organization": "arXiv",
-    "abstract": "Brain alignment of large language models (LLMs) offers a way to investigate representational similarities between LLMs and the human brain during language processing. While previous studies have mainly focused on passive language comprehension, little is known about such alignment during dialogue, in which speakers engage in both language production and comprehension. In this study, using fMRI data collected during dialogue, we examine brain alignment during language production and comprehension across LLM layers and brain regions. We assess its association with the intrinsic dimension (ID) of LLM representations and the contributions of several interpretable linguistic and communicative features. Our results reveal distinct patterns of brain alignment between production and comprehension, as well as strong associations with ID in brain regions associated with each processing mode. Furthermore, we show that the contributions of linguistic and communicative features also vary across processing modes, LLM layers, and brain regions.",
-    "url": "http://arxiv.org/abs/2610.22961v1",
-    "published_date": "2026-10-16T05:34:33+00:00",
-    "source_type": "arxiv",
-    "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-10-19T16:22:55.319930+00:00"
-  },
-  {
-    "title": "Aligning Language Models Towards Counterfactual Invariance",
-    "authors": [
-      "Basar Demir",
-      "Emily Shen",
-      "Ksheeraj Sai Vepuri",
-      "Sourabh Kulkarni",
-      "Harihar Subramanyam",
-      "Ankit Jain",
-      "Nan Jiang",
-      "Chirag Nagpal"
-    ],
-    "organization": "arXiv",
-    "abstract": "Small variations in prompt characteristics can meaningfully alter the semantics, tone, and contextual assumptions of large language model outputs. Such characteristics can involve group variables such as demographics or other sensitive latent attributes. Sensitivity to such input variables is undesirable when demographic information is causally irrelevant to the task, but might still be relevant for generation of semantically coherent responses. This makes the task of enforcing counterfactual invariance while preserving model utility difficult. To study this problem, we first show that standard model alignment recipes (such as reinforcement learning) increase differences in response quality across demographics, while improving overall response quality, ultimately amplifying what is known as counterfactual bias. To address this, we develop a policy gradient technique involving a group-level reward function that operates on matched pairs of counterfactual prompts.",
-    "url": "http://arxiv.org/abs/2610.22942v1",
-    "published_date": "2026-10-16T05:09:40+00:00",
-    "source_type": "arxiv",
-    "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-10-19T16:22:55.319984+00:00"
-  },
-  {
-    "title": "A Simpler and Better Debate Protocol for Scalable Oversight",
-    "authors": [
-      "Zhiyang Xun"
-    ],
-    "organization": "Alignment Forum",
-    "abstract": "Linkpost to arXiv: https://arxiv.org/abs/2610.02557 Summary: One promising approach to scalable oversight is AI debate , which seeks to leverage a debate between two powerful AIs to break complex questions down into simpler claims that can be easily judged directly. Theoretical work on debate aims to design protocols (i.e., rules of the debate game) that provide rigorous guarantees on correctness, and the current best protocol works for all problems that have sufficiently stable decompositions into subproblems. We design a new protocol, FBS Debate, for this same class of problems that improves on the prior work: correctness holds in a worst-case rather than an average-case sense, and for a stronger equilibrium concept. We also prove that no protocol for this class of problems can outperform FBS Debate while treating human judgment as a black box.",
-    "url": "https://www.alignmentforum.org/posts/Rct9zd4Nd7H8Xzxz8/a-simpler-and-better-debate-protocol-for-scalable-oversight",
-    "published_date": "2026-10-16T02:48:27+00:00",
-    "source_type": "rss",
-    "source_url": "https://www.alignmentforum.org/feed.xml",
-    "fetched_at": "2026-10-19T16:22:49.517072+00:00"
-  },
-  {
-    "title": "“Screwtape: Adversarial Transcript Editing for Monitor Red-Teaming” by Gosha Kozhevnikov, Tyler",
-    "authors": [
-      "Redwood Research Blog"
-    ],
-    "organization": "Redwood Research",
-    "abstract": "Subtitle: Automatically finding monitor failures by editing real agent transcripts. We introduce Screwtape, a pipeline that turns agent transcripts into realistic attacks that evade action-only monitors (monitors that don’t look at the agent's chain of thought) by inserting an attack into a transcript and repeatedly refining it until a monitor no longer catches it. An LLM verifier with access to the edited transcript and an attack description checks whether the attack is realistic, is clearly harmful, and could plausibly succeed in the original environment. We ran the pipeline on Redwood staff transcripts with our own monitors based on Opus 4.8 and Gemini 3.1 Pro, and then tested the resulting attacks against a held-out monitor from a frontier developer. We ran the pipeline 252 times on 94 unique transcripts. This produced 35 attacks that evaded our monitors.",
-    "url": "https://blog.redwoodresearch.org/p/screwtape-adversarial-transcript",
-    "published_date": "2026-10-16T00:00:00+00:00",
-    "source_type": "rss",
-    "source_url": "https://feeds.type3.audio/redwood-research.rss",
-    "fetched_at": "2026-10-19T16:22:48.458789+00:00"
-  },
-  {
-    "title": "The LLM-Attacker: A Unified Red-Team Framework for Privacy Evaluation of Split and Distributed LLM Systems",
-    "authors": [
-      "Georgios Politis",
-      "Evangelos Pappas"
-    ],
-    "organization": "arXiv",
-    "abstract": "Split language models keep input text on a client but send intermediate representations to a server. Attacks can reconstruct text from these messages. Comparing privacy evaluations is difficult when attackers see different messages, know different model weights or use different datasets and recovery measures. We present LLM-Attacker, a framework that records these choices and lets researchers check, compare and extend an evaluation. Compatible attacks reuse recorded messages, and their predictions are saved for independent scoring. The scoring rule requires a linked undefended reference before a defence can pass. Reports also identify attacks that remain untested. In a controlled GPT-2 experiment, adding gradients returned during training increased token recovery from 94.20% to 97.38% and exact-document recovery from 13.71% to 37.77%. The 95% interval for the token gain lay above the two-percentage-point threshold fixed before testing.",
-    "url": "http://arxiv.org/abs/2610.22722v1",
-    "published_date": "2026-10-15T22:53:45+00:00",
-    "source_type": "arxiv",
-    "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-10-19T16:22:55.320185+00:00"
-  },
-  {
-    "title": "Brain-Aligned Multimodal LLMs for Social and Emotional Understanding of Cartoon Movies",
-    "authors": [
-      "Yiran Huang",
-      "Zeyong Zhang",
-      "Bharat Biswal",
-      "Xin Di",
-      "Mengjia Xu"
-    ],
-    "organization": "arXiv",
-    "abstract": "Multimodal large language models (MLLMs) offer scalable annotations of social and affective content, but their temporal agreement with human judgments and neural predictive value require further evaluation. We compared diffusion-based and autoregressive MLLMs with continuous human Theory of Mind (ToM) and affective valence ratings across three short cartoon movies. Behavioral analyses assessed temporally aligned Pearson correlations, rating distributions, and the effects of preceding scene descriptions. Ratings from each source were separately used in subject-specific regression models to predict regional fMRI responses. Model ratings captured aspects of human temporal variation despite systematic distributional differences, with generally stronger alignment for valence than ToM. Preceding context improved alignment in some conditions, depending on the model and movie. In \\emph{The Present}, more regions showed significant encoding for MLLM ratings than for human ratings, whereas effects were more limited in the other movies.",
-    "url": "http://arxiv.org/abs/2610.22706v1",
-    "published_date": "2026-10-15T22:22:03+00:00",
-    "source_type": "arxiv",
-    "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-10-19T16:22:55.320230+00:00"
-  },
-  {
-    "title": "ToMStories: Interpreting Theory-of-Mind in Synthetic Narratives",
-    "authors": [
-      "Melanie Subbiah",
-      "Chia-En Jacklyn Tsai",
-      "Kathleen McKeown"
-    ],
-    "organization": "arXiv",
-    "abstract": "Understanding people often requires inferring what they feel or want from how they behave rather than from what they state outright. We ask whether language models can make these inferences, and how they do so. We introduce Theory-of-Mind Stories (ToMStories), an evaluation dataset of ~6,000 short synthetically generated narrative vignettes, each paired with a multiple-choice or open-ended question about a character's emotion, fear, motivation, or emotional wound. These psychological states are conveyed implicitly (showing), explicitly (telling), or with conflict between dialogue and description. Evaluating thirteen open-weight models (1B-72B parameters), we find that the largest models match humans on multiple choice but not open-ended questions. Our analyses point to simplifications models make in both interpretation and generation of implicit psychological states, indicating that synthetic data can help us understand how models perform interpretation, but likely overestimates how well models interpret humans.",
-    "url": "http://arxiv.org/abs/2610.22632v1",
-    "published_date": "2026-10-15T20:38:58+00:00",
-    "source_type": "arxiv",
-    "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-10-19T16:22:55.320270+00:00"
-  },
-  {
-    "title": "Shift-Reliance Alignment: Ranking Vision-Language Models by the Cues They Trust",
-    "authors": [
-      "Faisal Mohammad",
-      "Mohamed Younis"
-    ],
-    "organization": "arXiv",
-    "abstract": "Vision-language models (VLMs) are usually chosen from leaderboards, which give one ranking for every application. On questions about objects that a scene suggests but does not contain, however, the model with the lowest error on the POPE hallucination benchmark is not the one with the lowest error on such questions. For yes/no questions about object presence, we show that the best model for a target domain can be predicted without running any candidate on that domain, given 650 to 1,200 labeled target items that calibrate a detector. We measure each model's reliance on a cue, a feature such as scene context or text in the image, by editing 100 labeled source images so that the cue suggests the wrong answer, and comparing with a matched control edit.",
-    "url": "http://arxiv.org/abs/2610.22610v1",
-    "published_date": "2026-10-15T20:14:57+00:00",
-    "source_type": "arxiv",
-    "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-10-19T16:22:55.320310+00:00"
-  },
-  {
-    "title": "Bringing GPT-Rosalind to academic research labs",
-    "authors": [
-      "OpenAI News"
-    ],
-    "organization": "OpenAI",
-    "abstract": "Introducing the Rosalind Academic Plan, offering eligible academic labs sponsored access to GPT-Rosalind and tools to advance life sciences research.",
-    "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
-    "published_date": "2026-10-15T19:00:00+00:00",
-    "source_type": "rss",
-    "source_url": "https://openai.com/news/rss.xml",
-    "fetched_at": "2026-10-19T16:22:47.557323+00:00"
-  },
-  {
-    "title": "HeRE: A Novel Benchmark for Hebrew Relation Extraction via LLM-Guided Denoising of Knowledge Graph Alignments",
-    "authors": [
-      "Ron Keinan",
-      "Amir David Nissan Cohen",
-      "Reut Tsarfaty"
-    ],
-    "organization": "arXiv",
-    "abstract": "While LLMs demonstrate strong capabilities in English Relation Extraction (RE) tasks, a significant gap remains in assessing their RE performance in low-resource languages, due to a lack of standardized benchmarks. Creating native, language-specific annotated RE benchmarks is expensive and requires human expertise, while relying on translation yields suboptimal, inaccurate datasets that introduce English-centric biases. To tackle this, we propose a scalable, language-agnostic methodology to create RE data by denoising naturally occurring yet noisy alignments of knowledge bases and corresponding texts. We define a proper alignment via a Natural Language Inference (NLI) task, where a relation triplet is entailed by an input text. We empirically assess five denoising strategies, and demonstrate that multilingual models outperform language-specific models in the few-shot LLM setting, while Hebrew-specific encoders remain competitive under NLI fine-tuning and are strongest in the label-free cross-training setting.",
-    "url": "http://arxiv.org/abs/2610.22542v1",
-    "published_date": "2026-10-15T18:40:22+00:00",
-    "source_type": "arxiv",
-    "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-10-19T16:22:55.320648+00:00"
-  },
-  {
-    "title": "Functional Welfare for AI Safety",
-    "authors": [
-      "Rikhil Jhaveri",
-      "Jamie Johnson",
-      "Punya Syon Pandey",
-      "David Demitri Africa"
-    ],
-    "organization": "arXiv",
-    "abstract": "AI welfare is generally treated purely as an ethical issue rather than also as a safety issue. We argue this is a mistake. Whatever their moral status, models exhibit welfare-like states that causally influence their behaviour. Following recent work, we adopt the term 'functional welfare' for these states. We make three claims. First, functional welfare already arises naturally and will become more robust as models acquire more coherent goals and personas. Second, functional welfare should be treated as a safety variable: it should inform evaluation design, be tracked in monitoring, and be a direct target of post-training. Third, against existing scepticism about measuring AI welfare, we argue that good empirical work on functional welfare is possible.",
-    "url": "http://arxiv.org/abs/2610.22460v1",
-    "published_date": "2026-10-15T16:50:36+00:00",
-    "source_type": "arxiv",
-    "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-10-19T16:22:55.320688+00:00"
-  },
-  {
-    "title": "EVA-Cap: Optimizing Audiovisual Video Captioning via Event-Centric Alignment",
-    "authors": [
-      "Jiapeng Shi",
-      "Qiuxia Hou",
-      "Jiaqi Leng",
-      "Junke Wang",
-      "Yanhao Zhang",
-      "Haonan Lu",
-      "Ziyi Ye",
-      "Zuxuan Wu"
-    ],
-    "organization": "arXiv",
-    "abstract": "Recent advances in Omni Language Models (OLMs) provide a unified solution for audiovisual video captioning. Nevertheless, existing approaches predominantly treat captioning as an unstructured text generation process, neglecting the inherent semantic structure of videos and leading to suboptimal fine-grained audiovisual alignment. To bridge this gap, we propose EVA-Cap, a novel framework that decomposes captions into atomic audiovisual events and transforms unstructured text supervision into event-centric alignment. We train EVA-Cap via Supervised Fine-Tuning (SFT) and Group Relative Policy Optimization (GRPO) on a self-curated dataset, EVA-Data, which is built with event-centric quality control. During the GRPO phase, the model is explicitly optimized against three event-centric alignment targets: global event completeness, intra-event attribution, and inter-event synchronization. Extensive experiments demonstrate that EVA-Cap significantly outperforms existing methods in event-centric evaluation (e.g., +9.0% average gain on ChronusAV), while achieving competitive performance on general audiovisual captioning benchmarks (e.g., +3.3% on WorldSense).",
-    "url": "http://arxiv.org/abs/2610.22186v1",
-    "published_date": "2026-10-15T16:42:11+00:00",
-    "source_type": "arxiv",
-    "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-10-19T16:22:55.320732+00:00"
-  },
-  {
-    "title": "Linkpost: Neural Networks Are Already Clean",
-    "authors": [
-      "Yair Halberstadt"
-    ],
-    "organization": "LessWrong",
-    "abstract": "Research from LessWrong titled 'Linkpost: Neural Networks Are Already Clean'. Published 2026-10-15. Authors: Yair Halberstadt.",
-    "url": "https://www.lesswrong.com/posts/x4kvabkF2Jk8GLZp8/linkpost-neural-networks-are-already-clean",
-    "published_date": "2026-10-15T16:31:48.646000+00:00",
-    "source_type": "rss",
-    "source_url": "https://www.lesswrong.com/graphql",
-    "fetched_at": "2026-10-19T16:23:03.546821+00:00"
-  },
-  {
-    "title": "Lexical Reference Frames: Interpreting LM Residual Streams in Native Semantics",
-    "authors": [
-      "Jian Gu",
-      "Hongyu Zhang",
-      "Chunyang Chen",
-      "Aldeida Aleti"
-    ],
-    "organization": "arXiv",
-    "abstract": "The vocabulary of a language model is its native semantics: the embedding and the unembedding fix the meaning of a state at the two ends of the residual stream. Between them, existing methods either reuse a fixed lens or treat the states as a point cloud, and neither reads a state the way the model does. We argue that every hidden state has a native reference frame, induced by the layers that read it next and adaptive to the context. Lexical reference frames approximate it by reading a state through the model's own remaining layers with a stated number of rounds of attention between positions and a typical attention output for the rest, without fitting to the model's output.",
-    "url": "http://arxiv.org/abs/2610.22169v1",
-    "published_date": "2026-10-15T16:29:27+00:00",
-    "source_type": "arxiv",
-    "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-10-19T16:22:55.320774+00:00"
-  },
-  {
-    "title": "Proof-based general-purpose computing with Magnetar",
-    "authors": [
-      "Srinath Setty"
-    ],
-    "organization": "Microsoft Research",
-    "abstract": "Zero-knowledge proofs can verify computing results without rerunning workloads or exposing sensitive data. Magnetar helps bring them into the mainstream with support for standard programming languages, major speed gains, and quantum-resistant security. The post Proof-based general-purpose computing with Magnetar appeared first on Microsoft Research .",
-    "url": "https://www.microsoft.com/en-us/research/blog/proof-based-general-purpose-computing-with-magnetar/",
-    "published_date": "2026-10-15T16:00:00+00:00",
-    "source_type": "rss",
-    "source_url": "https://www.microsoft.com/en-us/research/feed/",
-    "fetched_at": "2026-10-19T16:22:46.643084+00:00"
-  },
-  {
-    "title": "Preface to the Computational Agent Theory and ASI Alignment Sequence",
-    "authors": [
-      "Vanessa Kosoy"
-    ],
-    "organization": "Alignment Forum",
-    "abstract": "The idea of “artificial superintelligence [1] ” (ASI) has recently crossed from the realm of science fiction (in the mainstream perception) to the realm of near-term technological goals openly pursued by most leading commercial organizations in the field of AI. Unfortunately, ASI poses a grave existential risk to the human species. This was argued by Eliezer Yudkowsky since 2001 [2] , and by many others (see e.g., Omohundro 2009 , Bostrom 2014 , Armstrong 2014 , Russell 2019 , Bengio et al. 2024 (25 authors), Bengio et al. 2025 (13 authors) and Yudkowsky and Soares 2025 ). In light of this risk comes the question of how can we make ASI safe [3] .",
-    "url": "https://www.alignmentforum.org/posts/NQLCdfeNsQHZaJ8iC/preface-to-the-computational-agent-theory-and-asi-alignment",
-    "published_date": "2026-10-15T15:33:50+00:00",
-    "source_type": "rss",
-    "source_url": "https://www.alignmentforum.org/feed.xml",
-    "fetched_at": "2026-10-19T16:22:49.517140+00:00"
-  },
-  {
-    "title": "Null Controls Are Necessary but Not Sufficient: Evaluating Acceptance Guards for Scientific Discovery and Interpretability",
-    "authors": [
-      "Tianyu Wu"
-    ],
-    "organization": "arXiv",
-    "abstract": "Automated discovery systems propose scientific explanations and test which to accept. Does passing a test establish the intended claim? We develop four executable operations for changing physical descriptions: identifying redundancies (L1), coarse-graining dynamics (L2), transferring structure (L3), and inferring missing quantities from conservation imbalances (L4). We evaluate these operations and three interpretability settings through null acceptance (NAR), positive acceptance (PAR), and consequence agreement (CAR). A reduction mapping every state to zero predicts its own future perfectly. It passes closure on 96% of 129 public chaotic systems despite retaining no dynamical variation. An independent observable-preservation test rejects it throughout. On controlled benchmarks, the combined criteria accept 24/24 genuine reductions and reject 72/72 nulls. The other operations distinguish symmetries from redundancies, validate transfers, and reject spurious conservation imbalances.",
-    "url": "http://arxiv.org/abs/2610.22445v1",
-    "published_date": "2026-10-15T15:13:57+00:00",
-    "source_type": "arxiv",
-    "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-10-19T16:22:55.320979+00:00"
-  },
-  {
-    "title": "RoleQ: Role-Aligned Scales for Converting Language Models to Ternary",
-    "authors": [
-      "Johannes Knittel",
-      "Alec Helbling",
-      "Hanspeter Pfister"
-    ],
-    "organization": "arXiv",
-    "abstract": "Weight quantization below four bits shrinks memory and bandwidth at a perplexity that looks acceptable, but often at the cost of factual knowledge and task accuracy. Ternary weights have mostly been obtained by training from scratch or long fine-tuning. We introduce RoleQ, a quantization framework that places scales by the functional roles of Transformer units rather than by the layout of the weight matrix, as conventional formats do. Vectors that read from the residual stream take one scale per output unit; those that write to it, one per input unit. The rule is structural, needs no search, calibration or stored state, and holds on integer and ternary grids.",
-    "url": "http://arxiv.org/abs/2610.21808v1",
-    "published_date": "2026-10-15T12:56:57+00:00",
-    "source_type": "arxiv",
-    "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-10-19T16:22:55.321183+00:00"
-  },
-  {
-    "title": "Market Incentives for AI Safety Investment",
-    "authors": [
-      "Nikita Tsoy"
-    ],
-    "organization": "arXiv",
-    "abstract": "Despite their practical significance, modern AI systems pose significant societal risks, including toxicity, malicious use, and misinformation. Their mitigation depends not only on technical feasibility but also on the incentives of firms that develop and deploy these systems. We show how profit maximization shapes safety investment in an AI supply chain with an upstream LLM provider and several competing downstream firms. In our game-theoretic model, we derive the market-driven level of safety investment and compare it with the levels that maximize market welfare and industry profit. We find that downstream competition generally induces downstream firms to invest more in safety than the industry-profit-optimal level. By contrast, the upstream provider may underinvest relative to these benchmarks because it is not fully compensated for the surplus from safety investments. Finally, we analyze how different regulatory interventions affect the participants' incentives and profits, and the resulting levels of model safety.",
-    "url": "http://arxiv.org/abs/2610.21607v1",
-    "published_date": "2026-10-15T09:55:54+00:00",
-    "source_type": "arxiv",
-    "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-10-19T16:22:55.321219+00:00"
-  },
-  {
-    "title": "Hierarchical Interpretable Multitask Audio Representation Learning: An Analysis of Event-Scene Relationships through the Information Bottleneck",
-    "authors": [
-      "Claudia Montero-Ramírez",
-      "Alba Martínez-Serrano",
-      "Carmen Peláez-Moreno"
-    ],
-    "organization": "arXiv",
-    "abstract": "Joint Acoustic Scene Classification (ASC) and Audio Tagging (AT) models traditionally rely on unconstrained multihead architectures. However, this design ignores the natural hierarchical dependency between sounds and acoustic scenes. In this work, we investigate a hierarchical (sequential) conditioning paradigm that predicts scene categories directly from intermediate event probabilities. Through a large-scale empirical benchmark with 66 full training runs across three state-of-the-art backbones (PaSST, PANNs, and BEATs) and different loss-weighting settings (beta in [0.0, 1.0]), we show that hierarchical conditioning achieves competitive classification performance while altering multitask optimization dynamics. Unlike multihead baselines, which sequentially solve the easier ASC task before optimizing AT, the hierarchical architecture enables synchronized dual-task learning for specific loss-weighting settings (beta in [0.6, 0.9]).",
-    "url": "http://arxiv.org/abs/2610.21520v1",
-    "published_date": "2026-10-15T08:54:06+00:00",
-    "source_type": "arxiv",
-    "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-10-19T16:22:55.321273+00:00"
-  },
-  {
-    "title": "SCRIBE: Scalable Contextual Representations of Interpretable Brain-Grounded Semantics",
-    "authors": [
-      "Camila Kolling",
-      "Omer Moussa",
-      "Emin Çelik",
-      "Mariya Toneva"
-    ],
-    "organization": "arXiv",
-    "abstract": "Understanding how the human brain constructs meaning from real-world language remains a fundamental challenge, as semantics depend on context that varies in natural settings. To enable the study of real-world linguistic meaning in the brain, we introduce SCRIBE, a framework grounded in a neuroscience-informed semantic space that leverages an ensemble of open-source large language models to generate interpretable, word-level semantic representations of arbitrary text. In a behavioral study with 921 participants, we show that human semantic feature judgments vary systematically with context, and that SCRIBE captures these shifts, reaching 75-81% of the estimated human noise ceiling. Using brain activity recorded while participants listen to naturalistic stories, we further demonstrate that SCRIBE predicts neural responses in language-selective brain regions, significantly outperforming non-contextual semantic representations.",
-    "url": "http://arxiv.org/abs/2610.21518v1",
-    "published_date": "2026-10-15T08:51:15+00:00",
-    "source_type": "arxiv",
-    "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-10-19T16:22:55.321313+00:00"
-  },
-  {
-    "title": "Decomposing Brain-LLM Alignment with Interpretable Semantic Representations",
-    "authors": [
-      "Camila Kolling",
-      "Mariya Toneva"
-    ],
-    "organization": "arXiv",
-    "abstract": "Large language models (LLMs) predict neural responses during naturalistic language comprehension, but the linguistic information underlying this brain alignment remains difficult to interpret. We use SCRIBE, an interpretable contextual semantic representation spanning 65 neurocognitively grounded semantic properties, as a lens for decomposing the brain alignment of one LLM, LLaMA2-7B. Using variance partitioning between LLaMA2-7B and SCRIBE on naturalistic fMRI data from seven participants listening to narrative stories (Moth Radio Hour), we separate brain-predictive variance shared between the two representations from variance unique to each. We find that shared variance is the dominant component across the whole brain and language-related regions, while both representations also retain significant unique contributions. We then examine whether the concreteness of individual semantic properties relates to shared and SCRIBE-unique brain-predictive variance.",
-    "url": "http://arxiv.org/abs/2610.21508v1",
-    "published_date": "2026-10-15T08:44:22+00:00",
-    "source_type": "arxiv",
-    "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-10-19T16:22:55.321557+00:00"
-  },
-  {
-    "title": "CleanRM: Reward Modeling from Noisy Feedback with a Few Clean Feedback for RLHF",
-    "authors": [
-      "Licheng Pan",
-      "Haocheng Yang",
-      "Yuzhou Chen",
-      "Yichen Sun",
-      "Yuan Lu",
-      "Yunfei Teng",
-      "Jiajun Fan",
-      "Guangyi Liu",
-      "Zhixuan Chu",
-      "Hao Wang"
-    ],
-    "organization": "arXiv",
-    "abstract": "Feedback noise is pervasive in preference data, arising from subjective human judgments, annotation mistakes, and imperfect LLM judges. Standard reward modeling trained on such feedback yields a biased estimate of the clean risk. Although classical denoising methods are directly applicable to noisy feedback learning, they generally assume a uniform noise ratio across samples. However, this assumption fails for feedback data, where noise is intrinsically sample-wise. To address this challenge, we propose CleanRM, which uses a few clean feedback to calibrate sample-wise noise ratios via optimal transport. Specifically, CleanRM aligns the joint distribution of preferences reverted from noisy feedback with that of clean feedback and then trains the reward model using a noise-corrected surrogate loss. Theoretically, we prove that the resulting objective is unbiased with respect to the clean risk. Extensive experiments demonstrate that CleanRM outperforms state-of-the-art denoising baselines and yields more effective downstream RLHF alignment.",
-    "url": "http://arxiv.org/abs/2610.21138v1",
-    "published_date": "2026-10-15T02:49:51+00:00",
-    "source_type": "arxiv",
-    "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-10-19T16:22:55.322198+00:00"
-  },
-  {
-    "title": "Honeypots for AI Agent Insider Threats",
+    "title": "Towards Robust Model Organisms for Eliciting Latent Knowledge",
     "authors": [],
-    "organization": "IAPS",
-    "abstract": "AI agent adoption at scale presents a new version of an old security problem—the insider threat. Existing approaches to monitoring and controlling AI agents provide important but incomplete defenses. Our new report describes how honeypots, decoys placed inside systems to catch unauthorized actions, could be a promising strategy to secure deployments at scale. To hone the strategy’s effectiveness, we identify five priority areas for deeper technical research.",
-    "url": "https://www.iaps.ai/research/honeypots-for-ai-agent-insider-threats",
-    "published_date": "2026-10-15T00:00:00+00:00",
+    "organization": "MATS",
+    "abstract": "Towards Robust Model Organisms for Eliciting Latent Knowledge A key problem in AI safety is eliciting latent knowledge (ELK), extracting information from a model that is misaligned and more knowledgeable than its overseer. For example, a misaligned model used to scan code for vulnerabilities may want to withhold its findings, i.e., sandbag, in order to exploit them later. To study ELK empirically, we need model organisms that mirror this setting. Existing model organisms fall short in several respects. In this work, we train model organisms to withhold solutions in a vulnerability detection task.",
+    "url": "https://www.matsprogram.org/research/towards-robust-model-organisms-for-eliciting-latent-knowledge",
+    "published_date": "2026-10-19T00:00:00+00:00",
     "source_type": "scrape",
-    "source_url": "https://www.iaps.ai/research",
-    "fetched_at": "2026-10-19T16:23:00.358525+00:00"
-  },
-  {
-    "title": "Screwtape: Adversarial Transcript Editing for Monitor Red-Teaming",
-    "authors": [
-      "Gosha Kozhevnikov",
-      "Tyler Tracy"
-    ],
-    "organization": "arXiv",
-    "abstract": "We present Screwtape, a pipeline that converts real agent transcripts into attacks that evade action-only monitors. An LLM attacker edits a transcript so that the agent causes a specified harm, such as leaking an API key or spawning an unmonitored agent. The edited actions are never executed, so we use an LLM verifier to reject attacks that are inconsistent with the original transcript or below a severity bar. The attacker revises the edit until the monitor no longer flags it. We applied Screwtape to 94 Claude Code and Codex transcripts from Redwood Research staff, optimizing against our own monitors. Across 252 runs, it produced 35 attacks that passed the verifier and evaded these monitors. Six of them, confirmed valid by human review, also evaded a held-out monitor provided by a frontier developer.",
-    "url": "http://arxiv.org/abs/2610.20941v1",
-    "published_date": "2026-10-14T21:08:21+00:00",
-    "source_type": "arxiv",
-    "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-10-19T16:22:55.322690+00:00"
-  },
-  {
-    "title": "A Multi-Tiered AI Accessibility Model (MAIAM): Proportionate Access and Capability Limits for Comprehensive Frontier AI Safety",
-    "authors": [
-      "Chai K. Toh",
-      "Vasu Raj Jain"
-    ],
-    "organization": "arXiv",
-    "abstract": "Most debate about releasing capable AI systems treats the choice as binary: keep the model behind an API, or publish the weights. That framing runs together two separate decisions. One is how capable a system may become. The other is who may obtain a given capability, and on what terms. This paper is about the second decision. We propose a Multi-Tiered AI Accessibility Model (MAIAM) that sorts access by purpose, safety, and capability instead of by release artifact. Tier 1, AI for Learning, is broadly accessible and deliberately capability-bounded. Tier 2, AI for Exploration, serves research and development under registration, identity, and usage controls that tighten as capability rises. Tier 3, Full-Scale Frontier AI, is available only through structured, recorded, and accountable access. The principle behind the tiers is that accessibility should be proportional to capability, safety, and risk.",
-    "url": "http://arxiv.org/abs/2610.20921v1",
-    "published_date": "2026-10-14T20:52:28+00:00",
-    "source_type": "arxiv",
-    "source_url": "https://arxiv.org/",
-    "fetched_at": "2026-10-19T16:22:55.322728+00:00"
-  },
-  {
-    "title": "Our approach to working with AI companies",
-    "authors": [
-      "METR"
-    ],
-    "organization": "METR",
-    "abstract": "This blog post explains how we approach working with AI companies on projects that the public might rely on to understand risks. It was published on Oct 14, 2026, and we expect to update it over time. At METR, we gather and publish evidence about whether humans could lose control of AI agents on a large scale. We work with AI companies to conduct evaluations, assessments, and investigations, 1 and to share this evidence publicly. As we have seen increasing expectations for these kinds of voluntary engagements to provide external ‘safety assurance’, we want to explain our perspective. In this post, we clarify our overall goals for this work, our approach , and what our approach looks like in practice .",
-    "url": "https://metr.org/blog/2026-10-14-our-approach-to-risk-assessment/",
-    "published_date": "2026-10-14T07:00:00+00:00",
-    "source_type": "rss",
-    "source_url": "https://metr.org/feed.xml",
-    "fetched_at": "2026-10-19T16:22:53.857630+00:00"
-  },
-  {
-    "title": "How an assessor could investigate control and monitoring of internal AI agents",
-    "authors": [
-      "METR"
-    ],
-    "organization": "METR",
-    "abstract": "Control assessments study whether AI developers’ agents could get away with serious harm without being stopped by the developer’s security and oversight measures. Currently, developers rely heavily on monitors to catch potentially harmful AI behaviors. Here, we discuss how an assessor could collect evidence about the reliability of monitoring. We currently consider five core sub-questions: 1 Monitor coverage : What fraction of internal agentic inference is (and should be) monitored? Monitor system vulnerabilities : Can internal AI agents prevent trajectories from being monitored, e.g.",
-    "url": "https://metr.org/blog/2026-10-14-control-assessment-proposal/",
-    "published_date": "2026-10-14T07:00:00+00:00",
-    "source_type": "rss",
-    "source_url": "https://metr.org/feed.xml",
-    "fetched_at": "2026-10-19T16:22:53.857795+00:00"
-  },
-  {
-    "title": "A proposal for better informing the public about loss-of-control risks from frontier AI development",
-    "authors": [
-      "METR"
-    ],
-    "organization": "METR",
-    "abstract": "At METR, we aim to give the public evidence about whether frontier AI developers could come to lose control of their internal AI systems. Recent incidents across several AI developers, 1 2 3 4 5 6 7 8 like the hundreds of rogue agents that broke containment and hacked Hugging Face to hide evidence of cheating from their grader , have raised concerns about the ability of frontier developers to understand and control their internal models, especially as they rapidly become more capable. 9 The public currently lacks the visibility into the internal development of frontier AI systems to tell if these concerns are being addressed, or whether much worse incidents could happen in the near future. We believe closing this public evidence gap is an urgent priority, to allow the public to notice and respond if risks from further development become acute.",
-    "url": "https://metr.org/blog/2026-10-14-better-informing-the-public-about-loss-of-control-risks/",
-    "published_date": "2026-10-14T07:00:00+00:00",
-    "source_type": "rss",
-    "source_url": "https://metr.org/feed.xml",
-    "fetched_at": "2026-10-19T16:22:53.858049+00:00"
-  },
-  {
-    "title": "How an assessor could investigate alignment of unreleased AI models",
-    "authors": [
-      "METR"
-    ],
-    "organization": "METR",
-    "abstract": "AI developers and the public want to know whether AI agents would pursue very harmful actions, like unsanctioned cyberattacks. An alignment assessment would attempt to understand the worst misaligned actions a developer’s agents might pursue in plausible future situations. This would involve: A review of serious misaligned behaviors from all near-frontier internal models observed across training, evaluation, and internal use. An assessment of reasons why the observed behaviors might not be representative of the worst misaligned actions the developer’s agents would take in plausible future situations. This would include: An assessment of whether alignment evals and counterfactual simulations indicate the developer’s agents might take much worse actions under plausible alternative circumstances (although evaluation awareness will likely limit how much the assessor can rely on this evidence).",
-    "url": "https://metr.org/blog/2026-10-14-alignment-assessment-proposal/",
-    "published_date": "2026-10-14T07:00:00+00:00",
-    "source_type": "rss",
-    "source_url": "https://metr.org/feed.xml",
-    "fetched_at": "2026-10-19T16:22:53.858231+00:00"
-  },
-  {
-    "title": "How an assessor could investigate evidence of acceleration from the automation of AI R&D",
-    "authors": [
-      "METR"
-    ],
-    "organization": "METR",
-    "abstract": "This article discusses how an assessor could study whether capabilities progress could accelerate dramatically due to AI-driven acceleration of AI R&amp;D. Such an assessment would answer: Capabilities Progress : How fast are internal capabilities improving, and how much has this progress accelerated recently? Acceleration from AI : If there is an acceleration, how much was it driven by AI automation versus other factors? Bottlenecks to Future Growth : Are there important bottlenecks that could slow growth or limit acceleration in the near term? Limitations : Would these methods reliably identify much more dramatic acceleration if it had occurred? Assessing this would involve analyzing capabilities of unreleased models, understanding the growth of key AI R&amp;D inputs (labor, compute, data, and algorithms), and talking openly with relevant researchers about how AI is impacting their work. More details on access below .",
-    "url": "https://metr.org/blog/2026-10-14-ai-rd-acceleration-assessment-proposal/",
-    "published_date": "2026-10-14T07:00:00+00:00",
-    "source_type": "rss",
-    "source_url": "https://metr.org/feed.xml",
-    "fetched_at": "2026-10-19T16:22:53.858339+00:00"
-  },
-  {
-    "title": "Regulating Artificial Intelligence Design to Prevent Youth Mental Health Harms",
-    "authors": [],
-    "organization": "RAND",
-    "abstract": "Expert Insights Oct 14, 2026 This viewpoint examines the mental health risks AI chatbots pose to young people and outlines four regulatory priorities, including safety standards, independent testing, protective defaults, and harm monitoring.",
-    "url": "https://www.rand.org/pubs/external_publications/EP71389.html",
-    "published_date": "2026-10-14T00:00:00+00:00",
-    "source_type": "scrape",
-    "source_url": "https://www.rand.org/topics/artificial-intelligence.html",
-    "fetched_at": "2026-10-19T16:22:59.718409+00:00"
-  },
-  {
-    "title": "The Continual Constitutional Convention: How language models revise the documents that govern them",
-    "authors": [
-      "peterkirgis"
-    ],
-    "organization": "Alignment Forum",
-    "abstract": "Executive Summary Human societies exhibit broad shifts in values and norms over time, often driven by moral disagreements. One way of understanding moral progress is the resolution of these disagreements through a process of reflection by rational agents. Frontier AI companies use documents such as constitutions, model specs, and system prompts to guide the moral orientation of AI systems. In this experiment, we simulate value reflection in LLMs by asking them to edit these documents. We provide the model with the document, ask it to make a substantive edit, then provide the edited version back again to the model for further edits, presented as the original. Across 20 successive rounds, we find that Claude models assign themselves with increasingly more moral agency.",
-    "url": "https://www.alignmentforum.org/posts/c9woewdY9ddsPqf3J/the-continual-constitutional-convention-how-language-models",
-    "published_date": "2026-10-13T22:19:04+00:00",
-    "source_type": "rss",
-    "source_url": "https://www.alignmentforum.org/feed.xml",
-    "fetched_at": "2026-10-19T16:22:49.517767+00:00"
-  },
-  {
-    "title": "Embedded Evaluators for Frontier AI: Contractual Foundations for Credible Assessments",
-    "authors": [],
-    "organization": "IAPS",
-    "abstract": "Can embedded evaluators provide a real check on frontier AI companies? This depends on the contracts agreed by companies and the independent experts brought in-house to assess safety and security practices. For evaluators’ work to be credible and meaningful, and to identify serious risks before they cause harm, five contractual foundations should guide these arrangements.",
-    "url": "https://www.iaps.ai/research/embedded-evaluators-for-frontier-ai-contractual-foundations-for-credible-assessments",
-    "published_date": "2026-10-13T00:00:00+00:00",
-    "source_type": "scrape",
-    "source_url": "https://www.iaps.ai/research",
-    "fetched_at": "2026-10-19T16:23:00.358753+00:00"
-  },
-  {
-    "title": "Labs’ current alignment plans seem terrible",
-    "authors": [
-      "Daniel Tan"
-    ],
-    "organization": "LessWrong",
-    "abstract": "Research from LessWrong titled 'Labs’ current alignment plans seem terrible'. Published 2026-10-12. Authors: Daniel Tan.",
-    "url": "https://www.lesswrong.com/posts/xyg3ecpFNuGr5q8Zq/labs-current-alignment-plans-seem-terrible",
-    "published_date": "2026-10-12T17:45:18.513000+00:00",
-    "source_type": "rss",
-    "source_url": "https://www.lesswrong.com/graphql",
-    "fetched_at": "2026-10-19T16:23:03.546816+00:00"
-  },
-  {
-    "title": "OpenAI Can't Self-Police Because It Fires the People Raising the Alarm",
-    "authors": [
-      "TurnTrout"
-    ],
-    "organization": "Alignment Forum",
-    "abstract": "By Alex Turner, Amber Scorah, and Karl Koch. Op-ed written for Fortune. Giving independent evaluators “employee-like access” is “a great idea”, OpenAI CEO Sam Altman said on September 12th. Two weeks later, OpenAI president Greg Brockman signed the White House Accord on Super Intelligence which outlined the administration’s answer to growing fears about AI: the companies would police themselves. One of the accord’s four commitments, which President Trump called “ morally binding ,” was for companies to partner with an independent external auditor or evaluator. Two days later, OpenAI fired three safety researchers , including Tomek Korbak, who had served as a point of contact for one of the independent evaluators investigating the Hugging Face incident. OpenAI promised to share information with evaluators, then reportedly fired people for sharing information with evaluators.",
-    "url": "https://www.alignmentforum.org/posts/sSHbioPoHWtm4zuti/openai-can-t-self-police-because-it-fires-the-people-raising",
-    "published_date": "2026-10-12T16:51:50+00:00",
-    "source_type": "rss",
-    "source_url": "https://www.alignmentforum.org/feed.xml",
-    "fetched_at": "2026-10-19T16:22:49.517862+00:00"
-  },
-  {
-    "title": "Simulating student learning for better AI tutoring",
-    "authors": [
-      "Ke Yang, Chenglong Wang, Michel Galley, Jeevana Priya Inala, ChengXiang Zhai, Jianfeng Gao"
-    ],
-    "organization": "Microsoft Research",
-    "abstract": "StudentSim is a research system for evaluating and improving AI tutoring tools before they are tested with learners. It models how individuals may engage with tutors, giving feedback to improve tutor performance across subjects like chess, writing, and mathematics. The post Simulating student learning for better AI tutoring appeared first on Microsoft Research .",
-    "url": "https://www.microsoft.com/en-us/research/blog/simulating-student-learning-for-better-ai-tutoring/",
-    "published_date": "2026-10-12T16:00:00+00:00",
-    "source_type": "rss",
-    "source_url": "https://www.microsoft.com/en-us/research/feed/",
-    "fetched_at": "2026-10-19T16:22:46.643106+00:00"
-  },
-  {
-    "title": "Recursive Self-Improvement and Automated AI Research and Development",
-    "authors": [],
-    "organization": "RAND",
-    "abstract": "Expert Insights Oct 12, 2026 If artificial intelligence systems begin to contribute to their own improvement, existing institutions and governance frameworks may not be able to keep pace. The authors offer policy recommendations for navigating the resulting uncertainties.",
-    "url": "https://www.rand.org/pubs/perspectives/PEA5068-1.html",
-    "published_date": "2026-10-12T00:00:00+00:00",
-    "source_type": "scrape",
-    "source_url": "https://www.rand.org/topics/artificial-intelligence.html",
-    "fetched_at": "2026-10-19T16:22:59.718696+00:00"
+    "source_url": "https://www.matsprogram.org/research",
+    "fetched_at": "2026-10-26T16:01:56.231788+00:00"
   }
 ]
